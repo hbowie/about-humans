@@ -8,11 +8,11 @@ Index: <index>
 
 Tags: <tags>
 
-Seq: <seq: A.n.n.n|A.|xn.|x.n.n|x.n.n.n>
+Seq: <seq: A.n.n.n.n.|x|xn.|xn.n|xn.n.n|xn.n.n.n>
 
-Level: <level: 1 - Book Title; 2 - Section; 3 - Topic; 4 - Subtopic; 5 - Detail; >
+Level: <level: 1 - Book Title; 2 - Section; 3 - Topic; 4 - Subtopic; 5 - Detail; 6 - Subdetail; >
 
-Class: <class: application, author, biblio, cover, def, intro, quote, subtopic, text, title, topic, topic-with-image, work >
+Class: <class: application, author, back, biblio, cover, def, exclude, front, intro, quote, subtopic, text, title, title-page, topic, topic-with-image, work >
 
 Link: <link>
 

@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Search</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+</head>
+<body>
+
+<main>
+<p><a href="back-matter.html" class="nav-link">Back Matter</a>&#160;&#8593;</p><h3 id="search">Search</h3>
+<div class="search-page">
+
+<div class="search-form">
+
+<form action="https://duckduckgo.com/" method="get" id="form-search">
+
+<label for="input-search">Enter your search term:</label>
+
+<input type="text" name="q" id="input-search">
+
+<input type="hidden" name="sites" value="https//abouthumans.net">
+
+<button type="submit" class="btn btn-primary" id="submit-search">Search</button></form></div>
+
+<div id="search-results">
+</div>
+</div>
+<script>
+let searchIndex = [ 
+    { 
+        title: "Important Things to Know About Humans", 
+        date: "", 
+        url: "important-things-to-know-about-humans.html", 
+        summary: "<p class=\"byline\">by <a href=\"https://hbowie.net/about.html\" class=\"ext-link\" target=\"_blank\" rel=\"author noopener\">Herb Bowie</a></p>", 
+        content: " byline Herb Bowie||https hbowie net about html"
+    }, 
+    { 
+        title: "Front Matter", 
+        date: "", 
+        url: "front-matter.html", 
+        summary: "", 
+        content: ""
+    }, 
+    { 
+        title: "Rights and Licenses", 
+        date: "", 
+        url: "rights-and-licenses.html", 
+        summary: "", 
+        content: "<p><a href= https abouthumans net >Important Things to Know About Humans< a> © 2025 by <a href= https hbowie net about html >Herb Bowie< a> is licensed under <a href= https creativecommons org licenses by sa 4 0 >CC BY SA 4 0< a><img src= https mirrors creativecommons org presskit icons cc svg alt= style= max width 1em max height 1em margin left 2em ><img src= https mirrors creativecommons org presskit icons by svg alt= style= max width 1em max height 1em margin left 2em ><img src= https mirrors creativecommons org presskit icons sa svg alt= style= max width 1em max height 1em margin left 2em >< p> Quotations from others are not covered by this license and retain the rights associated with their initial publication Such quotations are included here under the doctrine of Fair Use fairuse fairuse https en wikipedia org wiki Fair use"
+    }, 
+    { 
+        title: "Table of Contents", 
+        date: "", 
+        url: "table-of-contents.html", 
+        summary: "", 
+        content: " outline bullets collection toc 2 5"
+    }, 
+    { 
+        title: "Introduction", 
+        date: "", 
+        url: "introduction.html", 
+        summary: "<p>For some time now, I&#8217;ve wondered if it would be possible to put together some sort of reasonably comprehensive and useful set of insights about what it means to be human. </p>\n\n<p>This work is my attempt to assemble such a synthesis. </p>", 
+        content: "For some time now I ve wondered if it would be possible to put together some sort of reasonably comprehensive and useful set of insights about what it means to be human This work is my attempt to assemble such a synthesis I m sure that such an effort will involve a lot of fumbling around and will like its subject continue to evolve over some significant length of time So rather than wait for the work to achieve some sort of finished state prior to publication I m electing to publish incrementally inviting feedback as I go Thanks in advance for any interest you might have in my little effort"
+    }, 
+    { 
+        title: "Things to Know", 
+        date: "", 
+        url: "things-to-know.html", 
+        summary: "", 
+        content: ""
+    }, 
+    { 
+        title: "We are part of nature", 
+        date: "", 
+        url: "we-are-part-of-nature.html", 
+        summary: "<p><em>Homo Sapiens</em> is a very special species (more about that later), but we must always remember that we humans are, in some important sense, just one species among many in the family of living things that are coexisting on planet Earth. </p>", 
+        content: " Homo Sapiens human is a very special species more about that later but we must always remember that we humans are in some important sense just one species among many in the family of living things that are coexisting on planet Earth Among other things this means that we appear in our current form thanks to the long and gradual process of evolution include quotebiblio Chimps and Humans evolution https en wikipedia org wiki Evolution human https en wikipedia org wiki Human"
+    }, 
+    { 
+        title: "We live in cooperative groups", 
+        date: "", 
+        url: "we-live-in-cooperative-groups.html", 
+        summary: "<p>We do very little completely on our own, without the company or support or products or services provided by others of our species. </p>\n\n<p>We cooperate with others in our groups in order to get stuff done. </p>", 
+        content: "We do very little completely on our own without the company or support or products or services provided by others of our species We cooperate with others in our groups in order to get stuff done The groups within which we cooperate vary in size complexity structure and intent more on this later but we are rarely if ever completely divorced from them In a way you can divine our social nature just by looking at any one of us not especially large not particularly strong not terribly fast not equipped with sharp claws or large teeth not protected by a strong outer layer of thick skin and hair It s clear that we have not evolved to survive on our own but only as part of cooperative groups"
+    }, 
+    { 
+        title: "Each individual is unique", 
+        date: "", 
+        url: "each-individual-is-unique.html", 
+        summary: "<p>Although all humans share certain genetic similarities, and although we operate in groups, each individual human is unique. </p>", 
+        content: "Although all humans share certain genetic similarities and although we operate in groups each individual human is unique This starts with a unique appearance for each of us such that we can recognize friends and family and colleagues when we encounter them But each of us is also a unique bundle of capabilities experiences and preferences"
+    }, 
+    { 
+        title: "Culture provides a group's operating system", 
+        date: "", 
+        url: "culture-provides-a-groups-operating-system.html", 
+        summary: "<p>Humans are flexible enough to operate in many different kinds of groups, for a variety of purposes. </p>\n\n<p>A culture provides a sort of operating system for a group. </p>", 
+        content: "Humans are flexible enough to operate in many different kinds of groups for a variety of purposes A culture provides a sort of operating system for a group Culture includes knowledge customs languages technology and artifacts that are shared between group members and passed on from one generation of members to the next"
+    }, 
+    { 
+        title: "We communicate via sophisticated languages", 
+        date: "", 
+        url: "we-communicate-via-sophisticated-languages.html", 
+        summary: "<p>Humans develop complex and sophisticated languages (including mathematical languages, and programming languages, and other types) and these languages form important parts of our cultures. </p>", 
+        content: "Humans develop complex and sophisticated languages including mathematical languages and programming languages and other types and these languages form important parts of our cultures Note that while all humans have the capacity for language details of a specific language can vary by culture"
+    }, 
+    { 
+        title: "We have powerful imaginations", 
+        date: "", 
+        url: "we-have-powerful-imaginations.html", 
+        summary: "<p>We can imagine possible futures, and can imagine things that do not yet exist. </p>\n\n<p>Note that our imagining is strongly reliant on our language abilities. </p>", 
+        content: "We can imagine possible futures and can imagine things that do not yet exist Note that our imagining is strongly reliant on our language abilities include quotebiblio I Dream Things That Never Were"
+    }, 
+    { 
+        title: "We are easily bored", 
+        date: "", 
+        url: "we-are-easily-bored.html", 
+        summary: "<p>We do not enjoy mindless repetition. </p>", 
+        content: "We do not enjoy mindless repetition"
+    }, 
+    { 
+        title: "We crave play, exploration and innovation", 
+        date: "", 
+        url: "we-crave-play-exploration-and-innovation.html", 
+        summary: "<p>These things can help prevent us from becoming <a href=\"boredom.html\" class=\"wiki-link\">bored</a>. </p>\n\n<p>But these activities also help to invigorate our <a href=\"culture.html\" class=\"wiki-link\">culture</a>. </p>\n\n<p>And they are generally powered by our <a href=\"imaginations.html\" class=\"wiki-link\">imaginations</a>. </p>\n\n<hr />\n\n<hr />\n", 
+        content: "These things can help prevent us from becoming boredom|bored But these activities also help to invigorate our culture And they are generally powered by our imaginations include quotebiblio Play is a thing on its own include quotebiblio This strange hankering for play and surprise"
+    }, 
+    { 
+        title: "Groups define roles for their members", 
+        date: "", 
+        url: "groups-define-roles-for-their-members.html", 
+        summary: "<p>We&#8217;ve said that each group has a culture to provide its operating system. </p>\n\n<p>An important part of such an operating system is a definition of different roles, and rules for how these roles operate together to achieve the group&#8217;s purpose. </p>", 
+        content: "We ve said that each group has a culture to provide its operating system An important part of such an operating system is a definition of different roles and rules for how these roles operate together to achieve the group s purpose A bunch of people without any assigned roles cannot really be called a group in the sense we are intending here"
+    }, 
+    { 
+        title: "Roles often provide for specialization", 
+        date: "", 
+        url: "roles-often-provide-for-specialization.html", 
+        summary: "<p>Multiple members of a group may be assigned the same role. </p>\n\n<p>But when a group provides for multiple roles, it allows members to specialize, and allows for those specialties to cooperate together in productive ways. </p>", 
+        content: "Multiple members of a group may be assigned the same role But when a group provides for multiple roles it allows members to specialize and allows for those specialties to cooperate together in productive ways"
+    }, 
+    { 
+        title: "Groups are often nested", 
+        date: "", 
+        url: "groups-are-often-nested.html", 
+        summary: "<p>Groups are often nested within one another, and this nesting can happen over multiple levels in order to form very large and complex groups, up to and including what we might call society itself. </p>", 
+        content: "Groups are often nested within one another and this nesting can happen over multiple levels in order to form very large and complex groups up to and including what we might call society itself When groups are nested in this manner the lower level groups that are members of larger groups often exhibit some of the same characteristics as individuals within smaller groups For example subgroups are assigned roles within the larger group and such subgroups may also be specialized"
+    }, 
+    { 
+        title: "Values form one element of a group's culture", 
+        date: "", 
+        url: "values-form-one-element-of-a-groups-culture.html", 
+        summary: "<p>Every culture includes a set of values, stated either implicitly or explicitly. These are communicated via example, as well as via precept. </p>", 
+        content: "Every culture includes a set of values stated either implicitly or explicitly These are communicated via example as well as via precept"
+    }, 
+    { 
+        title: "Values are also nested", 
+        date: "", 
+        url: "values-are-also-nested.html", 
+        summary: "<p>As with <a href=\"groups-are-often-nested.html\" class=\"wiki-link\">groups</a> themselves, values are also nested. </p>", 
+        content: "As with Groups are often nested|groups themselves values are also nested This means that lower level group values must be consistent with higher level values that is the lower level values must fit within the values of the higher level group"
+    }, 
+    { 
+        title: "Values are not absolutes", 
+        date: "", 
+        url: "values-are-not-absolutes.html", 
+        summary: "<p>A culture&#8217;s values are not absolute, and are often in tension with one another. </p>\n\n<hr />\n", 
+        content: "A culture s values are not absolute and are often in tension with one another include quotebiblio Consistency is the playground of dull minds"
+    }, 
+    { 
+        title: "We are the most adaptive species", 
+        date: "", 
+        url: "we-are-the-most-adaptive-species.html", 
+        summary: "<p><em>Homo Sapiens</em> has adapted to live in almost every part of our globe. You can find us in both tropical and frigid climes, in valleys and on mountains, on tropical beaches and in the land of the midnight sun. </p>", 
+        content: " Homo Sapiens has adapted to live in almost every part of our globe You can find us in both tropical and frigid climes in valleys and on mountains on tropical beaches and in the land of the midnight sun"
+    }, 
+    { 
+        title: "Humans adapt via three mechanisms", 
+        date: "", 
+        url: "humans-adapt-via-three-mechanisms.html", 
+        summary: "<p>Humans are able to adapt to their environments using three different mechanisms. </p>\n\n<p>It is the availability of all three of these mechanisms that explains our uniquely adaptive nature. </p>", 
+        content: "Humans are able to adapt to their environments using three different mechanisms It is the availability of all three of these mechanisms that explains our uniquely adaptive nature"
+    }, 
+    { 
+        title: "We adapt via genetic evolution", 
+        date: "", 
+        url: "we-adapt-via-genetic-evolution.html", 
+        summary: "<p>As with all species of life on Earth, we use genetic evolution to adapt to varying environments. </p>\n\n<p>Genetic evolution, however, is somewhat slow, especially for long-lived organisms such as humans, and is also haphazard by nature. </p>", 
+        content: "As with all species of life on Earth we use genetic evolution to adapt to varying environments Genetic evolution however is somewhat slow especially for long lived organisms such as humans and is also haphazard by nature The blind watchmaker blind can create wonderful things but he operates pretty slowly and relies on trial and error blind https en wikipedia org wiki The Blind Watchmaker"
+    }, 
+    { 
+        title: "We adapt via cultural change", 
+        date: "", 
+        url: "we-adapt-via-cultural-change.html", 
+        summary: "<p>Humans create culture, and humans can change culture. </p>\n\n<p>So we might want to refer to this process of cultural adaptation as &#8220;cultural evolution.&#8221; </p>", 
+        content: "Humans create culture and humans can change culture So we might want to refer to this process of cultural adaptation as cultural evolution However we humans can use our imagination|imaginations to foresee although not always accurately the consequences of our changes so we have a leg up on the blind watchmaker Culture also has the advantage of being able to change much more rapidly than our genes and so it a much speedier adaptation mechanism than genetic evolution include quotebiblio Our species does represent a new evolutionary process"
+    }, 
+    { 
+        title: "We adapt via individual autonomy", 
+        date: "", 
+        url: "we-adapt-via-individual-autonomy.html", 
+        summary: "<p>Finally, we adapt to varying environments and situations through use of individual autonomy (which is also exercised by subgroups within groups). </p>\n\n<p>Some might refer to this as <em>free will</em>. </p>", 
+        content: "Finally we adapt to varying environments and situations through use of individual autonomy which is also exercised by subgroups within groups Some might refer to this as free will Differing cultures may allow encourage or discourage varying degrees of individual autonomy But all of us take advantage of some degree of autonomy And it is generally this means of adaptation that enables adaptation via cultural change since most changes in culture start with the exercise of autonomy by individuals include quotebiblio Life can be much broader"
+    }, 
+    { 
+        title: "Autonomy provides freedom to balance values", 
+        date: "", 
+        url: "autonomy-provides-freedom-to-balance-values.html", 
+        summary: "<p>Values, by design, allow individuals autonomy to determine how to best find an appropriate balance between competing or opposing values. </p>", 
+        content: "Values by design allow individuals autonomy to determine how to best find an appropriate balance between competing or opposing values"
+    }, 
+    { 
+        title: "Back Matter", 
+        date: "", 
+        url: "back-matter.html", 
+        summary: "", 
+        content: ""
+    }, 
+    { 
+        title: "Bibliography", 
+        date: "", 
+        url: "bibliography.html", 
+        summary: "<p>These are the authors, and their works, that I cite within the Things to Know, and whose words and ideas have helped to shape mine. </p>", 
+        content: "These are the authors and their works that I cite within the Things to Know and whose words and ideas have helped to shape mine biblio"
+    }, 
+    { 
+        title: "Harari, Yuval Noah", 
+        date: "", 
+        url: "harari-yuval-noah.html", 
+        summary: "", 
+        content: ""
+    }, 
+    { 
+        title: "Sapiens: A Brief History of Humankind", 
+        date: "Date, date, valid: true, type: DateValue, value: 2015", 
+        url: "sapiens-a-brief-history-of-humankind.html", 
+        summary: "", 
+        content: ""
+    }, 
+    { 
+        title: "Consistency is the playground of dull minds", 
+        date: "", 
+        url: "consistency-is-the-playground-of-dull-minds.html", 
+        summary: "<p>Just as medieval culture did not manage to square chivalry with Christianity, so the modern world fails to square liberty with equality. But this is no defect. Such contradictions are an inseparable part of every human culture. </p>", 
+        content: "Just as medieval culture did not manage to square chivalry with Christianity so the modern world fails to square liberty with equality But this is no defect Such contradictions are an inseparable part of every human culture In fact they are culture s engines responsible for the creativity and dynamism of our species Just as when two clashing musical notes played together force a piece of music forward so discord in our thoughts ideas and values compel us to think re evaluate and criticise Consistency is the playground of dull minds"
+    }, 
+    { 
+        title: "Huizinga, Johan", 
+        date: "", 
+        url: "huizinga-johan.html", 
+        summary: "", 
+        content: ""
+    }, 
+    { 
+        title: "Homo Ludens: A Study of the Play-Element in Culture", 
+        date: "Date, date, valid: true, type: DateValue, value: 1938", 
+        url: "homo-ludens-a-study-of-the-play-element-in-culture.html", 
+        summary: "", 
+        content: ""
+    }, 
+    { 
+        title: "Play is a thing on its own", 
+        date: "Date, date, valid: true, type: DateValue, value: 1938", 
+        url: "play-is-a-thing-on-its-own.html", 
+        summary: "<p>The incidence of play is not associated with any particular stage of civilization or view of the universe. Any thinking person can see at a glance that play is a thing on its own, even if his language possesses no general concept to express it. </p>", 
+        content: "The incidence of play is not associated with any particular stage of civilization or view of the universe Any thinking person can see at a glance that play is a thing on its own even if his language possesses no general concept to express it Play cannot be denied You can deny if you like nearly all abstractions justice beauty truth goodness mind God You can deny seriousness but not play"
+    }, 
+    { 
+        title: "Jobs, Steve", 
+        date: "", 
+        url: "jobs-steve.html", 
+        summary: "", 
+        content: ""
+    }, 
+    { 
+        title: "Steve Jobs Interview with Santa Clara Valley Historical Association", 
+        date: "Date, date, valid: true, type: DateValue, value: 1994", 
+        url: "steve-jobs-interview-with-santa-clara-valley-historical-association.html", 
+        summary: "", 
+        content: ""
+    }, 
+    { 
+        title: "Life can be much broader", 
+        date: "Date, date, valid: true, type: DateValue, value: 1994", 
+        url: "life-can-be-much-broader.html", 
+        summary: "<p>When you grow up you tend to get told that the world is the way it is and your life is just to live your life inside the world. Try not to bash into the walls too much. Try to have a nice family, have fun, save a little money. </p>", 
+        content: "When you grow up you tend to get told that the world is the way it is and your life is just to live your life inside the world Try not to bash into the walls too much Try to have a nice family have fun save a little money That s a very limited life Life can be much broader once you discover one simple fact Everything around you that you call life was made up by people that were no smarter than you and you can change it you can influence it you can build your own things that other people can use"
+    }, 
+    { 
+        title: "Johnson, Steven", 
+        date: "", 
+        url: "johnson-steven.html", 
+        summary: "", 
+        content: ""
+    }, 
+    { 
+        title: "Wonderland: How Play Made the Modern World", 
+        date: "Date, date, valid: true, type: DateValue, value: 2016", 
+        url: "wonderland-how-play-made-the-modern-world.html", 
+        summary: "", 
+        content: ""
+    }, 
+    { 
+        title: "This strange hankering for play and surprise", 
+        date: "Date, date, valid: true, type: DateValue, value: 2016", 
+        url: "this-strange-hankering-for-play-and-surprise.html", 
+        summary: "<p>That exploratory, expansive drive is what separates delight from demand: when we are in play mode, we are open to new surprises, while our base appetites focus the mind on the urgent needs of staying alive. </p>", 
+        content: "That exploratory expansive drive is what separates delight from demand when we are in play mode we are open to new surprises while our base appetites focus the mind on the urgent needs of staying alive Understanding that distinction is critical to understanding why play despite its seemingly frivolous veneer has led to so many important discoveries and innovations The question of why the Home sapiens brain possesses this strange hankering for play and surprise is a fascinating one"
+    }, 
+    { 
+        title: "Sagan, Carl and Druyan, Ann", 
+        date: "", 
+        url: "sagan-carl-and-druyan-ann.html", 
+        summary: "", 
+        content: ""
+    }, 
+    { 
+        title: "Shadows of Forgotten Ancestors: A Search for Who We Are", 
+        date: "Date, date, valid: true, type: DateValue, value: 1992", 
+        url: "shadows-of-forgotten-ancestors-a-search-for-who-we-are.html", 
+        summary: "", 
+        content: ""
+    }, 
+    { 
+        title: "Apes and Humans", 
+        date: "Date, date, valid: true, type: DateValue, value: 1993", 
+        url: "apes-and-humans.html", 
+        summary: "<p>Philosophers and scientists confidently offer up traits said to be uniquely human, and the apes casually knock them down &#8211; toppling the pretension that humans constitute some sort of biological aristocracy among the beings of Earth. </p>", 
+        content: "Philosophers and scientists confidently offer up traits said to be uniquely human and the apes casually knock them down toppling the pretension that humans constitute some sort of biological aristocracy among the beings of Earth Instead we are more like the nouveau riche incompletely accommodated to our recent exalted state insecure about who we are and trying to put as much distance as possible between us and our humble origins"
+    }, 
+    { 
+        title: "Chimps and Humans", 
+        date: "Date, date, valid: true, type: DateValue, value: 1993", 
+        url: "chimps-and-humans.html", 
+        summary: "<p>On the basis of all the evidence, the closest relative of the human proves to be the chimp. The closest relative of the chimp is the human. Not orangs, but people. Us. </p>", 
+        content: "On the basis of all the evidence the closest relative of the human proves to be the chimp The closest relative of the chimp is the human Not orangs but people Us Chimps and humans are nearer kin than are chimps and gorillas or any other kinds of ape not of the same species"
+    }, 
+    { 
+        title: "Shaw, George Bernard", 
+        date: "", 
+        url: "shaw-george-bernard.html", 
+        summary: "", 
+        content: ""
+    }, 
+    { 
+        title: "Back to Methuselah", 
+        date: "Date, date, valid: true, type: DateValue, value: 1922", 
+        url: "back-to-methuselah.html", 
+        summary: "", 
+        content: ""
+    }, 
+    { 
+        title: "I Dream Things That Never Were", 
+        date: "Date, date, valid: true, type: DateValue, value: 1921", 
+        url: "i-dream-things-that-never-were.html", 
+        summary: "<p>You see things; and you say, &#8216;Why?&#8217; But I dream things that never were; and I say, &#8216;Why not?&#8217; </p>", 
+        content: "You see things and you say Why But I dream things that never were and I say Why not"
+    }, 
+    { 
+        title: "Wilson, David Sloan", 
+        date: "", 
+        url: "wilson-david-sloan.html", 
+        summary: "", 
+        content: ""
+    }, 
+    { 
+        title: "This View of Life: Completing the Darwinian Revolution", 
+        date: "Date, date, valid: true, type: DateValue, value: 2019", 
+        url: "this-view-of-life-completing-the-darwinian-revolution.html", 
+        summary: "", 
+        content: ""
+    }, 
+    { 
+        title: "Our species does represent a new evolutionary process", 
+        date: "Date, date, valid: true, type: DateValue, value: 2019", 
+        url: "our-species-does-represent-a-new-evolutionary-process.html", 
+        summary: "<p>As we are increasingly coming to realize, our species does represent a new evolutionary process — cultural evolution — that far surpasses cultural traditions in other species. </p>", 
+        content: "As we are increasingly coming to realize our species does represent a new evolutionary process cultural evolution that far surpasses cultural traditions in other species This capacity for cultural evolution enabled our ancestors to spread over the globe inhabiting all climatic zones and dozens of ecological niches Then small scale societies tiny grains of thought coalesced into larger and larger societies over the past ten thousand years"
+    }, 
+    { 
+        title: "Index of Key Terms", 
+        date: "", 
+        url: "index-of-key-terms.html", 
+        summary: "", 
+        content: " index"
+    }, 
+    { 
+        title: "Search", 
+        date: "", 
+        url: "search.html", 
+        summary: "", 
+        content: " search https abouthumans net"
+    }, 
+    { 
+        title: "Colophon", 
+        date: "", 
+        url: "colophon.html", 
+        summary: "<p>The site is created using <a href=\"https://notenik.app\" class=\"ext-link\" target=\"_blank\" rel=\"noopener\">Notenik</a>. </p>\n\n<p>All source files, including content, templates and scripts, are maintained on <a href=\"https://github.com/hbowie/about-humans\" class=\"ext-link\" target=\"_blank\" rel=\"noopener\">GitHub</a>. </p>", 
+        content: "The site is created using Notenik notenik All source files including content templates and scripts are maintained on GitHub github github https github com hbowie about humans notenik https notenik app"
+    }, 
+    { 
+        title: "Hidden", 
+        date: "", 
+        url: "hidden.html", 
+        summary: "", 
+        content: ""
+    }, 
+    { 
+        title: "Page Header", 
+        date: "", 
+        url: "page-header.html", 
+        summary: "<p>Important Things to Know About Humans </p>", 
+        content: " header Important Things to Know About Humans"
+    }, 
+    { 
+        title: "Nav Bar", 
+        date: "", 
+        url: "nav-bar.html", 
+        summary: "<ul>\n<li><a href=\"table-of-contents.html\" class=\"wiki-link\">Contents</a> </li>\n<li><a href=\"index-of-key-terms.html\" class=\"wiki-link\">Index</a> </li>\n<li><a href=\"search.html\" class=\"wiki-link\">Search</a> </li>\n</ul>\n", 
+        content: " nav + Table of Contents|Contents + Index of Key Terms|Index + Search"
+    }, 
+    { 
+        title: "Page Footer", 
+        date: "", 
+        url: "page-footer.html", 
+        summary: "<p><p>Copyright © 2025 by <a href=\"https://hbowie.net/about.html\">Herb Bowie</a>, except where noted, and licensed under <a href=\"https://creativecommons.org/licenses/by-sa/4.0/\">CC BY-SA 4.0</a></p> </p>", 
+        content: " footer <p>Copyright © 2025 by <a href= https hbowie net about html >Herb Bowie< a> except where noted and licensed under <a href= https creativecommons org licenses by sa 4 0 >CC BY SA 4 0< a>< p>"
+    }, 
+]; 
+/**
+ * Based on Go Make Things blog post at:
+ * https://gomakethings.com/how-to-create-a-vanilla-js-search-page-for-a-static-website/
+ */
+(function (window, document, undefined) {
+
+    'use strict';
+
+    //
+    // Variables
+    //
+
+    let form = document.querySelector('#form-search');
+    let input = document.querySelector('#input-search');
+    let resultList = document.querySelector('#search-results');
+
+    //
+    // Methods
+    //
+
+    /**
+     * Create the HTML for each result
+     * @param  {Object} article The article
+     * @param  {Number} id      The result index
+     * @return {String}         The markup
+     */
+    let createHTML = function (article, id) {
+        let html =
+            '<div id="search-result-' + id + '">' +
+                '<h4>' +
+                    '<a href="' + article.url + '" class="nav-link">' +
+                        article.title +
+                    '</a>' +
+                '</h2>' +
+                article.summary + '<br>' +
+            '</div>';
+        return html;
+    };
+
+    /**
+     * Create the markup for results
+     * @param  {Array} results The results to display
+     * @return {String}        The results HTML
+     */
+    let createResultsHTML = function (results) {
+        let html = '<p>Found ' + results.length + ' matching pages</p>';
+        html += results.map(function (article, index) {
+            return createHTML(article, index);
+        }).join('');
+        return html;
+    };
+
+    /**
+     * Create the markup when no results are found
+     * @return {String} The markup
+     */
+    let createNoResultsHTML = function () {
+        return '<p>Sorry, no matches were found.</p>';
+    };
+
+    /**
+     * Search for matches
+     * @param  {String} query The term to search for
+     */
+    let search = function (query) {
+
+        // Variables
+        let reg = new RegExp(query, 'gi');
+        let priority1 = []
+        let priority2 = []
+
+        searchIndex.forEach(function (article) {
+            if (reg.test(article.title)) return priority1.push(article);
+            if (reg.test(article.content)) priority2.push(article);
+        });
+
+        let results = [].concat(priority1, priority2)
+
+        // Display the results
+        resultList.innerHTML = results.length < 1 ? createNoResultsHTML() : createResultsHTML(results);
+    };
+
+    /**
+     * Handle submit events
+     */
+    let submitHandler = function (event) {
+        event.preventDefault();
+        search(input.value);
+    };
+
+    //
+    // Inits & Event Listeners
+    //
+
+    // Make sure required content exists
+    if (!form || !input || !resultList || !searchIndex) return;
+
+    // Create a submit handler
+    form.addEventListener('submit', submitHandler);
+
+})(window, document);
+
+</script>
+
+
+
+<hr />
+<div>
+
+<p>Next: <a href="colophon.html" class="nav-link">Colophon</a></p></div>
+
+
+</main>
+
+<footer class="nnk-footer">
+<p><p>Copyright © 2025 by <a href="https://hbowie.net/about.html">Herb Bowie</a>, except where noted, and licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p> </p>
+
+</footer>
+</body>
+</html>
