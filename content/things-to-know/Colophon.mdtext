@@ -10,14 +10,19 @@ Timestamp: 20250918202506
 
 Date Added: 2025-09-18 13:25:06 -0700
 
-Date Modified: 2025-09-23 11:14:35 -0700
+Date Modified: 2025-09-25 10:05:56 -0700
 
 Body:
 
-The site is created using [Notenik][notenik].
+The text of this work is written and formatted using [Markdown](https://daringfireball.net/projects/markdown/).
 
-All source files, including content, templates and scripts, are maintained on [GitHub][github].
+Overall site organization and formatting is accomplished using [Notenik](https://notenik.app).
 
-[github]: https://github.com/hbowie/about-humans
+[Nova](https://nova.app) and [BBEdit](https://www.barebones.com/products/bbedit/index.html) are used for editing of text files. 
 
-[notenik]: https://notenik.app
+Fonts used are Century Supra and Heliotrope from [Matthew Butterick](https://mbtype.com).
+
+All elements of the website, other than the font files, are maintained on [GitHub](https://github.com/hbowie/about-humans).
+
+
+

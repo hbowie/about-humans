@@ -1,164 +1,87 @@
 /* The following CSS comes from the darkModeAdjustments 
    method of the DisplayPrefs class within Notenik. */
 :root {
-	color-scheme: light dark;
-	--background-color: #FFFFFF;
-	--text-color: #000000;
-	--link-color: Blue;
-	--link-hover-color: Blue;
-	--background-hover-color: #f0f0f0;
-	--link-visited-color: Purple;
-	--link-active-color: Red;
-	--background-active-color: #e0e0e0;
-	--code-color: #d81b60;
-	--preformatted-color: #444;
-	--accent-bg: #f5f7ff;
-	--border: #898EA4;
-	--highlight-color: Gainsboro;
-	--bg: #fff;
-	--accent-bg: #f5f7ff;
+    color-scheme: light dark;
+    --background-color: #FFFFFF;
+    --text-color: #000000;
+    --link-color: Blue;
+    --link-hover-color: Blue;
+    --background-hover-color: #f0f0f0;
+    --link-visited-color: Purple;
+    --link-active-color: Red;
+    --background-active-color: #e0e0e0;
+    --code-color: #d81b60;
+    --preformatted-color: #444;
+    --accent-bg: #f5f7ff;
+    --border: #898EA4;
+    --highlight-color: Gainsboro;
+    --bg: #fff;
+    --accent-bg: #f5f7ff;
 }
 a.ext-link::after {
-	content: "";
-	width: 0.9em;
-	height: 0.9em;
-	margin-left: 0.2em;
-	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z'/%3E%3Cpath fill-rule='evenodd' d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z'/%3E%3C/svg%3E");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: contain;
-	display: inline-block;
+    content: "";
+    width: 0.9em;
+    height: 0.9em;
+    margin-left: 0.2em;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z'/%3E%3Cpath fill-rule='evenodd' d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z'/%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
 }
 @media screen and (prefers-color-scheme: dark) { 
   :root {
-	--background-color: #000000;
-	--text-color: #F0F0F0;
-	--link-color: #93d5ff;
-	--link-hover-color: #94d8ff;
-	--background-hover-color: #282828;
-	--link-visited-color: #cab7ff;
-	--link-active-color: #94d8ff;
-	--background-active-color: #363636;
-	--code-color: #f06292;
-	--preformatted-color: #ccc;
-	--accent-bg: #2b2b2b;
-	--highlight-color: DimGray;
-	--bg: #212121;
-	--accent-bg: #2b2b2b;
+    --background-color: #000000;
+    --text-color: #F0F0F0;
+    --link-color: #93d5ff;
+    --link-hover-color: #94d8ff;
+    --background-hover-color: #282828;
+    --link-visited-color: #cab7ff;
+    --link-active-color: #94d8ff;
+    --background-active-color: #363636;
+    --code-color: #f06292;
+    --preformatted-color: #ccc;
+    --accent-bg: #2b2b2b;
+    --highlight-color: DimGray;
+    --bg: #212121;
+    --accent-bg: #2b2b2b;
   }
-	a.ext-link::after {
-		content: "";
-		width: 0.9em;
-		height: 0.9em;
-		margin-left: 0.2em;
-		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' stroke='%23F0F0F0' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z'/%3E%3Cpath fill-rule='evenodd' d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z'/%3E%3C/svg%3E");
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: contain;
-		display: inline-block;
-	}
+    a.ext-link::after {
+        content: "";
+        width: 0.9em;
+        height: 0.9em;
+        margin-left: 0.2em;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' stroke='%23F0F0F0' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z'/%3E%3Cpath fill-rule='evenodd' d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z'/%3E%3C/svg%3E");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: inline-block;
+    }
 }
 a {
-	color: var(--link-color);
+    color: var(--link-color);
 }
 a:focus {
-	color: var(--link-hover-color);
-	background: var(--background-hover-color);
+    color: var(--link-hover-color);
+    background: var(--background-hover-color);
 }
 a:hover {
-	color: var(--link-hover-color);
-	background: var(--background-hover-color);
+    color: var(--link-hover-color);
+    background: var(--background-hover-color);
 }
 a:active {
-	color: var(--link-active-color);
-	background: var(--background-active-color);
+    color: var(--link-active-color);
+    background: var(--background-active-color);
 }
 .search-results {
-	background-color: var(--highlight-color);
+    background-color: var(--highlight-color);
 }
-/* The following CSS comes from the darkModeAdjustments 
-   method of the DisplayPrefs class within Notenik. */
-:root {
-	color-scheme: light dark;
-	--background-color: #FFFFFF;
-	--text-color: #000000;
-	--link-color: Blue;
-	--link-hover-color: Blue;
-	--background-hover-color: #f0f0f0;
-	--link-visited-color: Purple;
-	--link-active-color: Red;
-	--background-active-color: #e0e0e0;
-	--code-color: #d81b60;
-	--preformatted-color: #444;
-	--accent-bg: #f5f7ff;
-	--border: #898EA4;
-	--highlight-color: Gainsboro;
-	--bg: #fff;
-	--accent-bg: #f5f7ff;
-}
-a.ext-link::after {
-	content: "";
-	width: 0.9em;
-	height: 0.9em;
-	margin-left: 0.2em;
-	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z'/%3E%3Cpath fill-rule='evenodd' d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z'/%3E%3C/svg%3E");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: contain;
-	display: inline-block;
-}
-@media screen and (prefers-color-scheme: dark) { 
-  :root {
-	--background-color: #000000;
-	--text-color: #F0F0F0;
-	--link-color: #93d5ff;
-	--link-hover-color: #94d8ff;
-	--background-hover-color: #282828;
-	--link-visited-color: #cab7ff;
-	--link-active-color: #94d8ff;
-	--background-active-color: #363636;
-	--code-color: #f06292;
-	--preformatted-color: #ccc;
-	--accent-bg: #2b2b2b;
-	--highlight-color: DimGray;
-	--bg: #212121;
-	--accent-bg: #2b2b2b;
-  }
-	a.ext-link::after {
-		content: "";
-		width: 0.9em;
-		height: 0.9em;
-		margin-left: 0.2em;
-		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' stroke='%23F0F0F0' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z'/%3E%3Cpath fill-rule='evenodd' d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z'/%3E%3C/svg%3E");
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: contain;
-		display: inline-block;
-	}
-}
-a {
-	color: var(--link-color);
-}
-a:focus {
-	color: var(--link-hover-color);
-	background: var(--background-hover-color);
-}
-a:hover {
-	color: var(--link-hover-color);
-	background: var(--background-hover-color);
-}
-a:active {
-	color: var(--link-active-color);
-	background: var(--background-active-color);
-}
-.search-results {
-	background-color: var(--highlight-color);
-}
+/* End of darkModeAdjustments code. */
 /* The following CSS comes from the displayCSS method of the
    DisplayPrefs class within Notenik.                        */
 :root {
-	--mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
-	--standard-border-radius: 5px;
+    --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+    --standard-border-radius: 5px;
 }
 body {
   tab-size: 4;
@@ -167,20 +90,18 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   line-height: 1.45;
-/* fontCSS insertion starts here */
-font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
-font-size: 15pt;
-/* fontCSS insertion ends here   */
+  font-family: "century_supra_b", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15pt;/
 }
 img { max-width: 100%; border: 4px solid gray; }
 /* body { max-width: 33em; margin: 0 auto; float: none; } */
 p {
-	margin-top: 0.2em;
-	margin-bottom: 0.7em;
+    margin-top: 0.2em;
+    margin-bottom: 0.7em;
 }
 body > footer {
-	margin-top: 4rem;
-	text-align: center;
+    margin-top: 4rem;
+    text-align: center;
 }
 /* Consolidate box styling */
 aside, pre, progress {
@@ -203,9 +124,9 @@ aside {
 /* Make aside full-width on mobile */
 @media only screen and (max-width: 720px) {
   aside {
-	width: 100%;
-	float: none;
-	margin-inline-start: 0;
+    width: 100%;
+    float: none;
+    margin-inline-start: 0;
   }
 }
 blockquote {
@@ -214,19 +135,19 @@ blockquote {
   padding-left: 1em;
 }
 .quote-from {
-	margin-block-start: 0.1rem;
-	margin-block-end: 0.5rem;
-	margin: 0.1rem 0 0.5rem 0;
-	padding: 0.25rem 2.6em;
-	line-height: 1.45;
-	position: relative;
+    margin-block-start: 0.1rem;
+    margin-block-end: 0.5rem;
+    margin: 0.1rem 0 0.5rem 0;
+    padding: 0.25rem 2.6em;
+    line-height: 1.45;
+    position: relative;
 }
 .quote-from:before {
-	display: block;
-	padding-left: 1.4em;
-	content: "\2014";
-	position: absolute;
-	left: 0;
+    display: block;
+    padding-left: 1.4em;
+    content: "\2014";
+    position: absolute;
+    left: 0;
 }
 figure {
   margin-left: 0.2em;
@@ -294,28 +215,28 @@ ol.notenik-biblio-list li {
   margin-bottom: 1em;
 }
 ul.outline-ul {
-	list-style-type: none;
+    list-style-type: none;
 }
 ul.outline-list {
-	list-style-type: none;
+    list-style-type: none;
 }
 ul.outline-ul-within-details {
-	list-style-type: none;
+    list-style-type: none;
 }
 li.outline-li-bullet {
-	list-style-type: disc;
-	list-style-position: inside;
+    list-style-type: disc;
+    list-style-position: inside;
 }
 
 details {
-	margin-left: 2.2em;
+    margin-left: 2.2em;
 }
 summary {
-	margin-left: -2.2em;
-	margin-bottom: 0;
+    margin-left: -2.2em;
+    margin-bottom: 0;
 }
 details > summary:first-of-type {
-	list-style-position: outside;
+    list-style-position: outside;
 }
 /* --------------------------------------------------
 
@@ -323,9 +244,9 @@ details > summary:first-of-type {
 
 * -------------------------------------------------- */
 figure.notenik-quote-attrib {
-	margin-left: 2em;
-	margin-right: 2em;
-	margin-bottom: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 2em;
 }
 figure.notenik-quote-attrib blockquote {
   border-left: none;
@@ -333,7 +254,7 @@ figure.notenik-quote-attrib blockquote {
   padding-left: 0;
 }
 figure.notenik-quote-attrib figcaption {
-	text-align: right;
+    text-align: right;
 }
 
 cite.notenik-cite-major {
@@ -343,9 +264,9 @@ cite.notenik-cite-minor {
   font-style: normal;
 }
 .notenik-aka {
-	font-style: italic;
-	text-align: center;
-	margin-top: 0;
+    font-style: italic;
+    text-align: center;
+    margin-top: 0;
 }
 table.notenik-calendar {
   table-layout: fixed;
@@ -368,107 +289,107 @@ p.notenik-calendar-day-contents {
 }
 
 a:visited {
-	color: var(--link-visited-color);
+    color: var(--link-visited-color);
 }
 a:active {
-	color: var(--link-active-color);
+    color: var(--link-active-color);
 }
 
 a.wiki-link {
-	text-decoration: none;
-	border-bottom: 1px dotted;
+    text-decoration: none;
+    border-bottom: 1px dotted;
 }
 
 a.hashtag {
-	text-decoration: none;
-	border-bottom: 1px dotted;
+    text-decoration: none;
+    border-bottom: 1px dotted;
 }
 
 a.ext-link {
-	text-decoration: none;
-	border-bottom: 1px dotted;
+    text-decoration: none;
+    border-bottom: 1px dotted;
 }
 
 a.nav-link:link {
-	text-decoration: none;
-	border-bottom: none;
+    text-decoration: none;
+    border-bottom: none;
 }
 
 nav ul li a.wiki-link {
-	text-decoration: none;
-	border-bottom: none;
+    text-decoration: none;
+    border-bottom: none;
 }
 
 footer.nnk-footer {
-	clear: both;
-	border-top: 1px dashed var(--text-color);
-	margin-top: 1em;
-	font-size: 0.8em;
-	font-weight: lighter;
-	text-align: right;
+    clear: both;
+    border-top: 1px dashed var(--text-color);
+    margin-top: 1em;
+    font-size: 0.8em;
+    font-weight: lighter;
+    text-align: right;
 }
 
 footer.nnk-footer p {
-	padding-top: 0.5em;
+    padding-top: 0.5em;
 }
 
 .float-left {
-	float: left;
+    float: left;
 }
 
 .float-right {
-	float: right;
+    float: right;
 }
 
 .heading-1-details {
-	margin-left: 2.2em;
+    margin-left: 2.2em;
 }
 .heading-2-details {
-	margin-left: 2.2em;
+    margin-left: 2.2em;
 }
 .heading-3-details {
-	margin-left: 2.2em;
+    margin-left: 2.2em;
 }
 .heading-4-details {
-	margin-left: 2.2em;
+    margin-left: 2.2em;
 }
 .heading-5-details {
-	margin-left: 2.2em;
+    margin-left: 2.2em;
 }
 .heading-6-details {
-	margin-left: 2.2em;
+    margin-left: 2.2em;
 }
 
 .heading-1-summary {
-	margin-left: -2.2em;
-	margin-bottom: 0.5em;
+    margin-left: -2.2em;
+    margin-bottom: 0.5em;
 }
 .heading-2-summary {
-	margin-left: -2.2em;
-	margin-bottom: 0.5em;
+    margin-left: -2.2em;
+    margin-bottom: 0.5em;
 }
 .heading-3-summary {
-	margin-left: -2.2em;
-	margin-bottom: 0.5em;
+    margin-left: -2.2em;
+    margin-bottom: 0.5em;
 }
 .heading-4-summary {
-	margin-left: -2.2em;
-	margin-bottom: 0.5em;
+    margin-left: -2.2em;
+    margin-bottom: 0.5em;
 }
 .heading-5-summary {
-	margin-left: -2.2em;
-	margin-bottom: 0.5em;
+    margin-left: -2.2em;
+    margin-bottom: 0.5em;
 }
 .heading-6-summary {
-	margin-left: -2.2em;
-	margin-bottom: 0.5em;
+    margin-left: -2.2em;
+    margin-bottom: 0.5em;
 }
 pre {
-	
+    
 }
 code {
-	font-family: var(--mono-font);
-	color: var(--code-color);
+    font-family: var(--mono-font);
+    color: var(--code-color);
 }
 pre {
   padding: 1rem 1.4rem;
@@ -532,11 +453,11 @@ body > header p {
 }
 
 header.nnk-header {
-	background-color: var(--background-color);
-	text-align: center;
-	border-bottom: none;
-	max-width: none;
-	padding: 0 0 0 0;
+    background-color: var(--background-color);
+    text-align: center;
+    border-bottom: none;
+    max-width: none;
+    padding: 0 0 0 0;
 }
 
 /* Format navigation */
@@ -589,97 +510,133 @@ header > nav a[aria-current="true"] {
 /* Reduce nav side on mobile */
 @media only screen and (max-width: 720px) {
   header > nav a {
-	border: none;
-	padding: 0;
-	text-decoration: underline;
-	line-height: 1;
+    border: none;
+    padding: 0;
+    text-decoration: underline;
+    line-height: 1;
   }
 }
 
 nav.nnk-nav {
-	float: right;
-	font-style: italic;
+    float: right;
+    font-style: italic;
 }
 
 nav.nnk-nav ul {
-	margin-top: 0;
+    margin-top: 0;
 }
 
 nav.nnk-nav ul li {
-	display: inline;
+    display: inline;
 }
 
 nav.nnk-nav ul li a {
-	text-decoration: none;
-	border-bottom: none;
+    text-decoration: none;
+    border-bottom: none;
 }
-/* Generated CSS for headings follows. */
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Avenir Next", Helvetica, Arial, sans-serif;
-	font-weight: 600;
-	margin-top: 0.7em;
-	margin-bottom: 0.2em;
-	font-style: normal;
+    font-family: "heliotrope_3", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    margin-top: 0.7em;
+    margin-bottom: 0.2em;
+    font-style: normal;
 }
 h1 {
-	text-align: center;
-	font-size: 2.0em;
+    text-align: center;
+    font-size: 2.0em;
 }
 h2 {
-	text-align: left;
-	font-size: 1.8em;
+    text-align: left;
+    font-size: 1.8em;
 }
 h3 {
-	text-align: left;
-	font-size: 1.6em;
+    text-align: left;
+    font-size: 1.6em;
 }
 h4 {
-	text-align: left;
-	font-size: 1.4em;
+    text-align: left;
+    font-size: 1.4em;
 }
 h5 {
-	text-align: left;
-	font-size: 1.2em;
+    text-align: left;
+    font-size: 1.2em;
 }
 h6 {
-	text-align: left;
-	font-size: 1.0em;
-}
-
-/* Generated CSS for headings follows. */
-h1, h2, h3, h4, h5, h6 {
-	font-family: "Avenir Next", Helvetica, Arial, sans-serif;
-	font-weight: 600;
-	margin-top: 0.7em;
-	margin-bottom: 0.2em;
-	font-style: normal;
-}
-h1 {
-	text-align: center;
-	font-size: 2.0em;
-}
-h2 {
-	text-align: left;
-	font-size: 1.8em;
-}
-h3 {
-	text-align: left;
-	font-size: 1.6em;
-}
-h4 {
-	text-align: left;
-	font-size: 1.4em;
-}
-h5 {
-	text-align: left;
-	font-size: 1.2em;
-}
-h6 {
-	text-align: left;
-	font-size: 1.0em;
+    text-align: left;
+    font-size: 1.0em;
 }
 
 img { max-width: 100%; border: 4px solid gray; }
 body { max-width: 33em; margin: 0 auto; float: none; }
 
+@font-face {
+font-family: century_supra_b;
+font-style: normal;
+font-weight: normal;
+font-stretch: normal;
+font-display: auto;
+src: url('../fonts/century_supra_b_regular.woff2') format('woff2');
+}
 
+@font-face {
+font-family: century_supra_b;
+font-style: italic;
+font-weight: normal;
+font-stretch: normal;
+font-display: auto;
+src: url('../fonts/century_supra_b_italic.woff2') format('woff2');
+}
+
+@font-face {
+font-family: century_supra_b;
+font-style: normal;
+font-weight: bold;
+font-stretch: normal;
+font-display: auto;
+src: url('../fonts/century_supra_b_bold.woff2') format('woff2');
+}
+
+@font-face {
+font-family: century_supra_b;
+font-style: italic;
+font-weight: bold;
+font-stretch: normal;
+font-display: auto;
+src: url('../fonts/century_supra_b_bold_italic.woff2') format('woff2');
+}
+
+@font-face {
+font-family: heliotrope_3;
+font-style: normal;
+font-weight: normal;
+font-stretch: normal;
+font-display: auto;
+src: url('../fonts/heliotrope_3_regular.woff2') format('woff2');
+}
+
+@font-face {
+font-family: heliotrope_3;
+font-style: italic;
+font-weight: normal;
+font-stretch: normal;
+font-display: auto;
+src: url('../fonts/heliotrope_3_italic.woff2') format('woff2');
+}
+
+@font-face {
+font-family: heliotrope_3;
+font-style: normal;
+font-weight: bold;
+font-stretch: normal;
+font-display: auto;
+src: url('../fonts/heliotrope_3_bold.woff2') format('woff2');
+}
+
+@font-face {
+font-family: heliotrope_3;
+font-style: italic;
+font-weight: bold;
+font-stretch: normal;
+font-display: auto;
+src: url('../fonts/heliotrope_3_bold_italic.woff2') format('woff2');
+}

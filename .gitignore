@@ -1,3 +1,5 @@
 .DS_Store
 /- project-INFO.nnk
 /about-humans.bbprojectd
+/local.webloc
+*.woff2
