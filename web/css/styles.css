@@ -7,7 +7,7 @@
     --link-color: Blue;
     --link-hover-color: Blue;
     --background-hover-color: #f0f0f0;
-    --link-visited-color: Purple;
+    --link-visited-color: Blue;
     --link-active-color: Red;
     --background-active-color: #e0e0e0;
     --code-color: #d81b60;
@@ -33,10 +33,10 @@ a.ext-link::after {
   :root {
     --background-color: #000000;
     --text-color: #F0F0F0;
-    --link-color: #93d5ff;
+    --link-color: #a4dbff;
     --link-hover-color: #94d8ff;
     --background-hover-color: #282828;
-    --link-visited-color: #cab7ff;
+    --link-visited-color: #93d5ff;
     --link-active-color: #94d8ff;
     --background-active-color: #363636;
     --code-color: #f06292;
@@ -85,7 +85,7 @@ a:active {
 }
 body {
   tab-size: 4;
-  margin: 1em;
+  margin: 1em 1em 1em 1.1em;
   max-width: 50em; 
   background-color: var(--background-color);
   color: var(--text-color);
@@ -566,6 +566,8 @@ h6 {
     font-size: 1.0em;
 }
 
+/* CSS Modifications for the About Humans website start here. */
+
 img { max-width: 100%; border: 4px solid gray; }
 body { max-width: 33em; margin: 0 auto; float: none; }
 
@@ -639,4 +641,29 @@ font-weight: bold;
 font-stretch: normal;
 font-display: auto;
 src: url('../fonts/heliotrope_3_bold_italic.woff2') format('woff2');
+}
+
+a.nav-link:link {
+    text-decoration: none;
+    border-bottom: none;
+    color: var(--text-color);
+}
+
+a.nav-link:visited {
+    text-decoration: none;
+    border-bottom: none;
+    color: var(--text-color);
+}
+
+.nnk-nav .wiki-link {
+  text-decoration: none;
+  border-bottom: none;
+  color: var(--text-color);
+}
+
+.nnk-footer a:link {
+  text-decoration: none;
+  border-bottom: none;
+  color: var(--text-color);
+  font-weight: 300;
 }

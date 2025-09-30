@@ -1,6 +1,6 @@
 Title:  Colophon
 
-Seq:    3.5
+Seq:    3.6
 
 Level:  3 - Topic
 
@@ -10,7 +10,7 @@ Timestamp: 20250918202506
 
 Date Added: 2025-09-18 13:25:06 -0700
 
-Date Modified: 2025-09-25 10:05:56 -0700
+Date Modified: 2025-09-26 09:54:40 -0700
 
 Body:
 
@@ -23,6 +23,3 @@ Overall site organization and formatting is accomplished using [Notenik](https:/
 Fonts used are Century Supra and Heliotrope from [Matthew Butterick](https://mbtype.com).
 
 All elements of the website, other than the font files, are maintained on [GitHub](https://github.com/hbowie/about-humans).
-
-
-
