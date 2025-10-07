@@ -256,6 +256,15 @@ figure.notenik-quote-attrib blockquote {
 figure.notenik-quote-attrib figcaption {
     text-align: right;
 }
+figcaption {
+  text-align: right;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+figcaption a.ext-link {
+  text-decoration: none;
+  border-bottom: none;
+}
 
 cite.notenik-cite-major {
   font-style: italic;

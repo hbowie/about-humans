@@ -1,10 +1,10 @@
 Title:  Each group must fulfill a purpose
 
-Long Title: Each group must have a purpose, and must fulfill that purpose. 
+Long Title: Each group must have a purpose, and must fulfill that purpose.
 
 AKA:    purpose
 
-Seq:    2.3
+Seq:    2.4
 
 Level:  3 - Topic
 
@@ -14,7 +14,7 @@ Timestamp: 20250930162101
 
 Date Added: 2025-09-30 09:21:01 -0700
 
-Date Modified: 2025-09-30 09:39:05 -0700
+Date Modified: 2025-10-06 14:47:57 -0700
 
 Body:
 
@@ -24,10 +24,12 @@ A group's purpose need not be singular, although one purpose must generally be p
 
 {:outline-headings}
 
+#### *Words from Others on this Topic*
+
+{:include-quotebiblio:Your company’s purpose is its north star}
+
 #### *Relevant Reference Models*
 
-See the [[Shared Identity and Purpose - CDP]] element within the [[Core Design Principles for the Efficacy of Groups]]. 
++ See the [[Shared Identity and Purpose - CDP]] element within the [[Core Design Principles for the Efficacy of Groups]]. 
 
-See the [[Purpose - Drive]] element within the [[Motivational Factors for Complex Work]].
-
-
++ See the [[Purpose - Drive]] element within the [[Motivational Factors for Complex Work]].

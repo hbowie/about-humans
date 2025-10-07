@@ -4,7 +4,7 @@ AKA:    nesting, hierarchy
 
 Index:  nesting; hierarchy; 
 
-Seq:    2.16
+Seq:    2.21
 
 Level:  3 - Topic
 
@@ -14,7 +14,7 @@ Timestamp: 20250917232535
 
 Date Added: 2025-09-17 16:25:35 -0700
 
-Date Modified: 2025-09-30 09:19:02 -0700
+Date Modified: 2025-10-07 10:30:12 -0700
 
 Body:
 
@@ -25,3 +25,7 @@ When groups are nested in this manner, the lower-level groups that are members o
 For example subgroups are assigned [[roles]] within the larger group, and such subgroups may also exhibit [[specialization]].
 
 When multiple levels of groups are arranged in this fashion, the overall structure is often referred to as a *hierarchy*.
+
+#### *Relevant Reference Models*
+
++ See the [[Polycentric Governance - CDP]] element within the [[Core Design Principles for the Efficacy of Groups]].
