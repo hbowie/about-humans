@@ -16,7 +16,7 @@ Timestamp: 20250930162101
 
 Date Added: 2025-09-30 09:21:01 -0700
 
-Date Modified: 2025-10-14 17:17:14 -0700
+Date Modified: 2025-10-19 11:19:19 -0700
 
 Body:
 
@@ -24,16 +24,16 @@ Every group must have a purpose that is understood and shared by its members, an
 
 A group's purpose need not be singular, although one purpose must generally be primary, in order to maintain the group's coherence. 
 
-{:outline-headings}
+----
 
-#### *Words from Others on this Topic*
+##### Words from Others on this Topic
 
 {:include-quotebiblio:Your company’s purpose is its north star}
 
-#### *Relevant Reference Models*
+##### Relevant Reference Models
 
-+ See the [[Shared Identity and Purpose - CDP]] element within the [[Core Design Principles for the Efficacy of Groups]]. 
-
-+ See the [[Purpose - Drive]] element within the [[Motivational Factors for Complex Work]].
-
-+ See the [[Begin with the end in mind]] element of [[The 7 Habits of Highly Effective People]].
+| Element | Model |
+| ---- | ---- |
+| [[Shared Identity and Purpose - CDP]] | [[Core Design Principles for the Efficacy of Groups]] |
+| [[Purpose - Drive]] | [[Motivational Factors for Complex Work]] |
+| [[Begin with the end in mind]] | [[The 7 Habits of Highly Effective People]] |

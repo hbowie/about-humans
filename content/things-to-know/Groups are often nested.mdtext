@@ -1,10 +1,10 @@
 Title:  Groups are often nested
 
-AKA:    nesting, hierarchy, nest groups
+AKA:    nesting, hierarchy, nested groups
 
 Index:  nesting; hierarchy; 
 
-Seq:    2.23
+Seq:    2.24
 
 Level:  3 - Topic
 
@@ -14,7 +14,7 @@ Timestamp: 20250917232535
 
 Date Added: 2025-09-17 16:25:35 -0700
 
-Date Modified: 2025-10-14 14:43:50 -0700
+Date Modified: 2025-10-19 13:28:46 -0700
 
 Body:
 
@@ -26,6 +26,8 @@ For example subgroups are assigned [[roles]] within the larger group, and such s
 
 When multiple levels of groups are arranged in this fashion, the overall structure is often referred to as a *hierarchy*.
 
-#### *Relevant Reference Models*
+##### Relevant Reference Models
 
-+ See the [[Polycentric Governance - CDP]] element within the [[Core Design Principles for the Efficacy of Groups]].
+| Element | Model |
+| ---- | ---- |
+| [[Polycentric Governance - CDP]] | [[Core Design Principles for the Efficacy of Groups]] |

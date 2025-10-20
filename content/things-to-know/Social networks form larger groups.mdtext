@@ -2,11 +2,11 @@ Title:  Social networks form larger groups
 
 Long Title: Friends and social networks form larger groups.
 
-AKA:    friends, social networks
+AKA:    friends, social networks, camps, camp
 
 Index:  friends; social networks; Dunbar's number; camps; groups; 
 
-Seq:    2.37
+Seq:    2.39
 
 Level:  3 - Topic
 
@@ -16,7 +16,7 @@ Timestamp: 20251012213956
 
 Date Added: 2025-10-12 14:39:56 -0700
 
-Date Modified: 2025-10-14 17:26:24 -0700
+Date Modified: 2025-10-19 12:03:15 -0700
 
 Body:
 
@@ -38,14 +38,15 @@ In modern society, though, each individual's "Dunbar group" (if I may be permitt
 
 Groups larger than Dunbar's number generally require more restrictive rules, laws, and enforced norms to maintain a stable, cohesive group, since it is no longer possible for everyone to know everyone else as individuals within larger groups.
 
-{:outline-headings}
+----
 
-#### *Words from Others on this Topic*
+##### Words from Others on this Topic
 
 {:include-quotebiblio:Friendship is a fundamental category}
 
-#### *Relevant Reference Models*
+##### Relevant Reference Models
 
-See the [[Friendship - SS|Friendship]] element within [[The Social Suite]].
-
-See the [[Social networks - SS|Social networks]] element within [[The Social Suite]].
+| Element | Model |
+| ---- | ---- |
+| [[Friendship - SS]] | [[The Social Suite]] |
+| [[Social networks - SS]] | [[The Social Suite]] |
