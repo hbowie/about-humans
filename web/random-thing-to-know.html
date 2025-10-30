@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Random Thing to Know</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+</head>
+<body>
+
+<header class="nnk-header">
+<p><a href="important-things-to-know-about-humans.html" class="wiki-link">Important Things to Know About Humans</a> </p>
+
+</header>
+
+<nav class="nnk-nav">
+<ul>
+<li>
+<a href="table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li>
+<a href="index-of-key-terms.html" class="wiki-link">Index</a> </li>
+<li>
+<a href="search.html" class="wiki-link">Search</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<h3 id="randomthingtoknow" style="clear:both">Random Thing to Know</h3>
+<div id="random-note">
+</div>
+<script>
+var fileNames = new Array();
+var ix = 0;
+fileNames[ix] = "we-are-part-of-nature.html";
+ix++;
+fileNames[ix] = "we-are-complex-beasts.html";
+ix++;
+fileNames[ix] = "we-strive-to-balance-competing-concerns.html";
+ix++;
+fileNames[ix] = "we-experience-resource-scarcity.html";
+ix++;
+fileNames[ix] = "we-live-in-cooperative-groups.html";
+ix++;
+fileNames[ix] = "each-group-fulfills-a-purpose.html";
+ix++;
+fileNames[ix] = "each-individual-is-unique.html";
+ix++;
+fileNames[ix] = "culture-provides-a-groups-operating-system.html";
+ix++;
+fileNames[ix] = "we-trust-fellow-group-members.html";
+ix++;
+fileNames[ix] = "we-communicate-via-sophisticated-languages.html";
+ix++;
+fileNames[ix] = "written-language-is-especially-valuable.html";
+ix++;
+fileNames[ix] = "we-have-powerful-imaginations.html";
+ix++;
+fileNames[ix] = "we-are-easily-bored.html";
+ix++;
+fileNames[ix] = "we-crave-play-exploration-and-innovation.html";
+ix++;
+fileNames[ix] = "we-pursue-growth-and-development.html";
+ix++;
+fileNames[ix] = "we-figure-things-out.html";
+ix++;
+fileNames[ix] = "we-make-things-for-one-another.html";
+ix++;
+fileNames[ix] = "we-invent-new-things.html";
+ix++;
+fileNames[ix] = "we-perform-tests.html";
+ix++;
+fileNames[ix] = "we-retain-what-works.html";
+ix++;
+fileNames[ix] = "we-think-and-care-big-picture-and-long-term.html";
+ix++;
+fileNames[ix] = "our-attention-is-a-valuable-resource.html";
+ix++;
+fileNames[ix] = "shallow-attention-alerts-us-to-danger.html";
+ix++;
+fileNames[ix] = "deep-attention-satisfies-and-delivers.html";
+ix++;
+fileNames[ix] = "groups-define-roles-for-their-members.html";
+ix++;
+fileNames[ix] = "roles-often-provide-for-specialization.html";
+ix++;
+fileNames[ix] = "groups-are-often-nested.html";
+ix++;
+fileNames[ix] = "values-form-one-element-of-a-groups-culture.html";
+ix++;
+fileNames[ix] = "values-are-also-nested.html";
+ix++;
+fileNames[ix] = "values-are-not-absolutes.html";
+ix++;
+fileNames[ix] = "we-are-the-most-adaptive-species.html";
+ix++;
+fileNames[ix] = "our-species-evolves-via-genetic-evolution.html";
+ix++;
+fileNames[ix] = "groups-adapt-via-cultural-change.html";
+ix++;
+fileNames[ix] = "individuals-adapt-via-autonomy.html";
+ix++;
+fileNames[ix] = "autonomy-provides-freedom-to-balance-values.html";
+ix++;
+fileNames[ix] = "we-compete-with-one-another.html";
+ix++;
+fileNames[ix] = "we-use-critical-thinking-to-tackle-hard-problems.html";
+ix++;
+fileNames[ix] = "we-practice-and-expect-fair-play.html";
+ix++;
+fileNames[ix] = "we-share-stories.html";
+ix++;
+fileNames[ix] = "we-make-art-to-communicate-with-others.html";
+ix++;
+fileNames[ix] = "groups-use-a-variety-of-organizating-structures.html";
+ix++;
+fileNames[ix] = "family-is-the-foundational-paradigm.html";
+ix++;
+fileNames[ix] = "friends-and-colleagues-expand-the-circle.html";
+ix++;
+fileNames[ix] = "tribes-organize-even-larger-groups.html";
+ix++;
+fileNames[ix] = "written-culture-allow-groups-to-expand.html";
+ix++;
+fileNames[ix] = "experts-form-peer-groups.html";
+ix++;
+fileNames[ix] = "multicultural-societies-embrace-diverse-subgroups.html";
+ix++;
+fileNames[ix] = "we-juggle-groups-and-structures.html";
+ix++;
+fileNames[ix] = "we-form-preferences-for-particular-structures.html";
+ix++;
+fileNames[ix] = "we-each-manage-four-interrelated-realms.html";
+ix++;
+fileNames[ix] = "we-forge-identities-that-provide-meaning.html";
+ix++;
+fileNames[ix] = "gods-and-religions-are-human-constructs.html";
+ix++;
+fileNames[ix] = "first-and-last-there-is-wonder.html";
+ix++;
+var max = ix;
+
+var now = new Date();
+var seed = now.getTime() % 0xffffffff;
+let results = document.querySelector('#random-note');
+
+randomNote();
+
+function rand(n) {
+  seed = (0x015a4e35 * seed) % 0x7fffffff;
+  return (seed >> 16) % n;
+}
+
+function randomNote() {
+  var rq = rand(max);
+  if (rq < 0) {
+    rq = 0;
+  }
+  if (rq >= max) {
+    rq = max - 1;
+  }
+  var fileName = fileNames[rq];
+  let html = '<p>Click to go to <a href="' + fileName + '">random page</a>.</p>';
+  results.innerHTML = html;
+}
+
+
+</script>
+
+
+
+
+<hr />
+<div>
+
+<p>Next: 1. <a href="we-are-part-of-nature.html" class="nav-link">We are part of nature </a></p></div>
+
+
+</main>
+
+<footer class="nnk-footer">
+<p>Copyright © 2025 by <a href="https://hbowie.net/about.html">Herb Bowie</a>, except where noted, and licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> </p>
+
+</footer>
+</body>
+</html>

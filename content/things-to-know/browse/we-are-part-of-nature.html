@@ -5,8 +5,15 @@
 <title>We are part of nature</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <style>
-/* The following CSS comes from the darkModeAdjustments 
-   method of the DisplayPrefs class within Notenik. */
+/* --------------------------------------------------
+
+  Light/DarK Styling and other variables
+
+* -------------------------------------------------- */
+:root {
+    --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+    --standard-border-radius: 5px;
+}
 :root {
     color-scheme: light dark;
     --background-color: #FFFFFF;
@@ -23,7 +30,6 @@
     --border: #898EA4;
     --highlight-color: Gainsboro;
     --bg: #fff;
-    --accent-bg: #f5f7ff;
 }
 a.ext-link::after {
     content: "";
@@ -51,7 +57,6 @@ a.ext-link::after {
     --accent-bg: #2b2b2b;
     --highlight-color: DimGray;
     --bg: #212121;
-    --accent-bg: #2b2b2b;
   }
     a.ext-link::after {
         content: "";
@@ -65,6 +70,87 @@ a.ext-link::after {
         display: inline-block;
     }
 }
+/* --------------------------------------------------
+
+  Font Choices
+
+* -------------------------------------------------- */
+body {
+  font-family: "Century Supra A", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15pt;
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Hermes Maia 3", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+code {
+    font-family: var(--mono-font);
+    color: var(--code-color);
+}
+/* --------------------------------------------------
+
+  Non-font Styling for body, paragraphs, horizontal rules
+  and headings
+
+* -------------------------------------------------- */
+body {
+  tab-size: 4;
+  margin: 1em 1em 1em 1.1em;
+  max-width: 50em; 
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.45;
+}
+p {
+    margin-top: 0.2em;
+    margin-bottom: 0.7em;
+}
+hr {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0.7em;
+    margin-bottom: 0.2em;
+}
+h1 {
+    text-align: center;
+    font-size: 2.0em;
+    font-variant-caps: small-caps;
+}
+h2 {
+    text-align: left;
+    font-size: 1.8em;
+}
+h3 {
+    text-align: left;
+    font-size: 1.6em;
+    margin-bottom: 1em;
+}
+h4 {
+    text-align: left;
+    font-size: 1.4em;
+}
+h5 {
+    text-align: left;
+    font-size: 1.2em;
+}
+h6 {
+    text-align: left;
+    font-size: 1.0em;
+}
+
+/* --------------------------------------------------
+
+  Link Styling
+
+* -------------------------------------------------- */
+
 a {
     color: var(--link-color);
 }
@@ -80,33 +166,154 @@ a:active {
     color: var(--link-active-color);
     background: var(--background-active-color);
 }
+a:visited {
+    color: var(--link-visited-color);
+}
+
+a.wiki-link {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+
+a.hashtag {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+
+a.ext-link {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+
+p.quote-from a {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+
+a.nav-link:link {
+    text-decoration: none;
+    border-bottom: none;
+}
+
+nav ul li a.wiki-link {
+    text-decoration: none;
+    border-bottom: none;
+}
+
+footer.nnk-footer a {
+    text-decoration: none;
+    border-bottom: none;
+    color: var(--text-color);
+}
+
+/* --------------------------------------------------
+
+  Quote styling
+
+* -------------------------------------------------- */
+/*
+blockquote {
+  border-left: 0.4em dotted #999; 
+  border-left: none;
+  margin-left: 1em;
+  padding-left: 1em;
+} */
+
+blockquote {
+    margin: 0.25em 0;
+    padding: 0.35em 40px;
+    line-height: 1.45;
+    position: relative;
+    /* color: #383838; */
+}
+
+blockquote:before {
+    display: block;
+    padding-left: 10px;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    color: var(--highlight-color);
+}
+
+blockquote.attribution-following {
+	margin-bottom: 0;
+}
+.quote-from {
+    margin-block-start: 0.1rem;
+    margin-block-end: 0.5rem;
+    margin: 0rem 0 1.5em 0;
+    padding: 0.25rem 4.6em;
+    font-size: 0.9em;
+    line-height: 1.45;
+    position: relative;
+}
+.quote-from:before {
+    display: block;
+    padding-left: 3.4em;
+    content: "\2014";
+    position: absolute;
+    left: 0;
+}
+figure.notenik-quote-attrib {
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 2em;
+}
+figure.notenik-quote-attrib blockquote {
+  border-left: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+figure.notenik-quote-attrib figcaption {
+    text-align: right;
+}
+
+cite.notenik-cite-major {
+  font-style: italic;
+}
+cite.notenik-cite-minor {
+  font-style: normal;
+}
+
+/* --------------------------------------------------
+
+  Footer styling
+
+* -------------------------------------------------- */
+
+footer.nnk-footer {
+    clear: both;
+    border-top: 1px dashed var(--text-color);
+    margin-top: 1em;
+    font-size: 0.8em;
+    font-weight: lighter;
+    text-align: center;
+}
+
+footer.nnk-footer p {
+    padding-top: 0.5em;
+}
+
+/* --------------------------------------------------
+
+  ???
+
+* -------------------------------------------------- */
+
 .search-results {
     background-color: var(--highlight-color);
 }
 /* End of darkModeAdjustments code. */
 /* The following CSS comes from the displayCSS method of the
    DisplayPrefs class within Notenik.                        */
-:root {
-    --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
-    --standard-border-radius: 5px;
-}
-body {
-  tab-size: 4;
-  margin: 1em;
-  max-width: 50em; 
-  background-color: var(--background-color);
-  color: var(--text-color);
-  line-height: 1.45;/* fontCSS insertion starts here */
-font-family: "Century Supra B", "Helvetica Neue", Helvetica, Arial, sans-serif;
-font-size: 15pt;
-/* fontCSS insertion ends here   */
-}
+
+
 img { max-width: 100%; border: 4px solid gray; }
 /* body { max-width: 33em; margin: 0 auto; float: none; } */
-p {
-    margin-top: 0.2em;
-    margin-bottom: 0.7em;
-}
+
 body > footer {
     margin-top: 4rem;
     text-align: center;
@@ -137,26 +344,7 @@ aside {
     margin-inline-start: 0;
   }
 }
-blockquote {
-  border-left: 0.4em solid #999;
-  margin-left: 0;
-  padding-left: 1em;
-}
-.quote-from {
-    margin-block-start: 0.1rem;
-    margin-block-end: 0.5rem;
-    margin: 0.1rem 0 0.5rem 0;
-    padding: 0.25rem 2.6em;
-    line-height: 1.45;
-    position: relative;
-}
-.quote-from:before {
-    display: block;
-    padding-left: 1.4em;
-    content: "\2014";
-    position: absolute;
-    left: 0;
-}
+
 figure {
   margin-left: 0.2em;
   padding-left: 0.2em;
@@ -174,6 +362,11 @@ th, td {
 img {
   max-width: 100%;
   height: auto;
+}
+p.nnk-tags {
+		font-style: italic;
+		width: 100%;
+		text-align: right;
 }
 
 /* --------------------------------------------------
@@ -251,26 +444,7 @@ details > summary:first-of-type {
   Other stuff
 
 * -------------------------------------------------- */
-figure.notenik-quote-attrib {
-    margin-left: 2em;
-    margin-right: 2em;
-    margin-bottom: 2em;
-}
-figure.notenik-quote-attrib blockquote {
-  border-left: none;
-  margin-left: 0;
-  padding-left: 0;
-}
-figure.notenik-quote-attrib figcaption {
-    text-align: right;
-}
 
-cite.notenik-cite-major {
-  font-style: italic;
-}
-cite.notenik-cite-minor {
-  font-style: normal;
-}
 .notenik-aka {
     font-style: italic;
     text-align: center;
@@ -296,50 +470,9 @@ p.notenik-calendar-day-contents {
   margin-bottom: 0;
 }
 
-a:visited {
-    color: var(--link-visited-color);
-}
-a:active {
-    color: var(--link-active-color);
-}
 
-a.wiki-link {
-    text-decoration: none;
-    border-bottom: 1px dotted;
-}
 
-a.hashtag {
-    text-decoration: none;
-    border-bottom: 1px dotted;
-}
 
-a.ext-link {
-    text-decoration: none;
-    border-bottom: 1px dotted;
-}
-
-a.nav-link:link {
-    text-decoration: none;
-    border-bottom: none;
-}
-
-nav ul li a.wiki-link {
-    text-decoration: none;
-    border-bottom: none;
-}
-
-footer.nnk-footer {
-    clear: both;
-    border-top: 1px dashed var(--text-color);
-    margin-top: 1em;
-    font-size: 0.8em;
-    font-weight: lighter;
-    text-align: right;
-}
-
-footer.nnk-footer p {
-    padding-top: 0.5em;
-}
 
 .float-left {
     float: left;
@@ -395,10 +528,7 @@ footer.nnk-footer p {
 pre {
     
 }
-code {
-    font-family: var(--mono-font);
-    color: var(--code-color);
-}
+
 pre {
   padding: 1rem 1.4rem;
   max-width: 100%;
@@ -541,38 +671,8 @@ nav.nnk-nav ul li {
 nav.nnk-nav ul li a {
     text-decoration: none;
     border-bottom: none;
-}/* Generated CSS for headings follows. */
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Heliotrope 3", Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    margin-top: 0.7em;
-    margin-bottom: 0.2em;
-    font-style: normal;
 }
-h1 {
-    text-align: center;
-    font-size: 2.0em;
-}
-h2 {
-    text-align: left;
-    font-size: 1.8em;
-}
-h3 {
-    text-align: left;
-    font-size: 1.6em;
-}
-h4 {
-    text-align: left;
-    font-size: 1.4em;
-}
-h5 {
-    text-align: left;
-    font-size: 1.2em;
-}
-h6 {
-    text-align: left;
-    font-size: 1.0em;
-}
+
 
 </style>
 </head>
@@ -594,8 +694,8 @@ h6 {
 </nav>
 
 <main>
-<p> <a href="https://ntnk.app/thingstoknow" class="nav-link">Things to Know</a>&#160;&#8593;</p><h3 id="wearepartofnature">1. We are part of nature, not something separate from it.</h3>
-<p><em><a href="https://en.wikipedia.org/wiki/Human" class="ext-link" target="_blank" rel="noopener">Homo Sapiens</a></em> is a very special species (more about that later), but we must always remember that we humans are, in some important sense, just one species among many in the family of living things that are coexisting on planet Earth. </p>
+<p><a href="https://ntnk.app/importantthingstoknowabouthumans" class="nav-link">Important Things to Know About Humans </a>&#160;&#8593;</p><h3 id="wearepartofnature" style="clear:both">1. We are part of nature, not something separate from it.</h3>
+<p class="nnk-tags"><a href="notenik://expand?path=/Users/hbowie/Sites/about-humans/content/things-to-know&tag=nature" style="text-decoration: none">nature</a></p><p><em><a href="https://en.wikipedia.org/wiki/Human" class="ext-link" target="_blank" rel="noopener">Homo Sapiens</a></em> is a very special species (more about that later), but we must always remember that we humans are, in some important sense, just one species among many in the family of living things that are coexisting on planet Earth. </p>
 
 <p>Among other things, this means that we appear in our current form thanks to the long and gradual process of <a href="https://en.wikipedia.org/wiki/Evolution" class="ext-link" target="_blank" rel="noopener">evolution</a>. </p>
 
@@ -603,13 +703,33 @@ h6 {
 
 <section id="section-for-words-from-others-on-this-topic">
 
-<details class="heading-4-details">
+<h5 id="words-from-others-on-this-topic">Words from Others on this Topic</h5>
 
-<summary id="words-from-others-on-this-topic" class="heading-4-summary">
-<em>Words from Others on this Topic</em></summary>
+<blockquote class="attribution-following"><p>On the basis of all the evidence, the closest relative of the human proves to be the chimp. The closest relative of the chimp is the human. Not orangs, but people. Us. Chimps and humans are nearer kin than are chimps and gorillas or any other kinds of ape not of the same species. </p></blockquote><p class="quote-from"><a href="https://ntnk.app/sagancarlanddruyanann">Sagan, Carl, Druyan and Ann</a>, 1992, from the Book <a href="https://ntnk.app/shadowsofforgottenancestorsasearchforwhoweare"><cite>Shadows of Forgotten Ancestors: A Search for Who We Are</cite></a></p>
 
-<blockquote><p>On the basis of all the evidence, the closest relative of the human proves to be the chimp. The closest relative of the chimp is the human. Not orangs, but people. Us. Chimps and humans are nearer kin than are chimps and gorillas or any other kinds of ape not of the same species. </p></blockquote><p class="quote-from"><a href="https://ntnk.app/sagancarlanddruyanann">Sagan, Carl, Druyan and Ann</a>, 1992, from the Book <a href="https://ntnk.app/shadowsofforgottenancestorsasearchforwhoweare"><cite>Shadows of Forgotten Ancestors: A Search for Who We Are</cite></a></p>
-</details>
+<blockquote class="attribution-following"><p>I wanted to teach people to listen to the pulse of nature, to partake of the wholeness of life and not forget, under the pressure of their petty destinies, that we are not gods and have not created ourselves but are children of the earth, part of the cosmos. </p></blockquote><p class="quote-from"><a href="https://ntnk.app/hessehermann">Hermann Hesse</a>, 1904, from the Book <a href="https://ntnk.app/petercamenzind"><cite>Peter Camenzind</cite></a></p>
+
+<hr />
+
+</section>
+
+<section id="section-for-relevant-reference-models">
+
+<h5 id="relevant-reference-models">Relevant Reference Models</h5>
+<table>
+<tr>
+<th>
+ Element </th>
+<th>
+ Model </th>
+ </tr>
+<tr>
+<td>
+ <a href="https://ntnk.app/humansareanintegralpartofnature" class="wiki-link">Humans are an integral part of nature</a> </td>
+<td>
+ <a href="https://ntnk.app/humanistmanifestoiii" class="wiki-link">Humanist Manifesto III</a> </td>
+</tr>
+</table>
 
 </section>
 
@@ -617,13 +737,13 @@ h6 {
 <hr />
 <div>
 
-<p>Next: 2. <a href="https://ntnk.app/weliveincooperativegroups" class="nav-link">We live in cooperative groups</a></p></div>
+<p>Next: 2. <a href="https://ntnk.app/wearecomplexbeasts" class="nav-link">We are complex beasts </a></p></div>
 
 
 </main>
 
 <footer class="nnk-footer">
-<p><p>Copyright © 2025 by <a href="https://hbowie.net/about.html">Herb Bowie</a>, except where noted, and licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p> </p>
+<p>Copyright © 2025 by <a href="https://hbowie.net/about.html">Herb Bowie</a>, except where noted, and licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> </p>
 
 </footer>
 </body>

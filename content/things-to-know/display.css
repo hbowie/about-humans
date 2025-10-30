@@ -23,7 +23,6 @@
     --border: #898EA4;
     --highlight-color: Gainsboro;
     --bg: #fff;
-    --accent-bg: #f5f7ff;
 }
 a.ext-link::after {
     content: "";
@@ -51,7 +50,6 @@ a.ext-link::after {
     --accent-bg: #2b2b2b;
     --highlight-color: DimGray;
     --bg: #212121;
-    --accent-bg: #2b2b2b;
   }
     a.ext-link::after {
         content: "";
@@ -195,10 +193,25 @@ nav ul li a.wiki-link {
     border-bottom: none;
 }
 
-footer.nnk-footer a {
+.nnk-header .wiki-link {
+	text-decoration: none;
+	border-bottom: none; 
+}
+
+.nnk-footer a:link {
     text-decoration: none;
     border-bottom: none;
     color: var(--text-color);
+}
+
+a.implicit {
+	text-decoration: none;
+	border: none;
+}
+a.implicit:hover {
+	color: var(--link-hover-color);
+	text-decoration: none;
+	border-bottom: 1px dotted var(--link-hover-color);
 }
 
 /* --------------------------------------------------
@@ -206,13 +219,33 @@ footer.nnk-footer a {
   Quote styling
 
 * -------------------------------------------------- */
-
+/*
 blockquote {
-  /* border-left: 0.4em dotted #999; */
+  border-left: 0.4em dotted #999; 
   border-left: none;
   margin-left: 1em;
   padding-left: 1em;
+} */
+
+blockquote {
+    margin: 0.25em 0;
+    padding: 0.35em 40px;
+    line-height: 1.45;
+    position: relative;
+    /* color: #383838; */
 }
+
+blockquote:before {
+    display: block;
+    padding-left: 10px;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    color: var(--highlight-color);
+}
+
 blockquote.attribution-following {
 	margin-bottom: 0;
 }
@@ -338,6 +371,15 @@ img {
   max-width: 100%;
   height: auto;
 }
+p.nnk-tags-repl-nav-up {
+		font-style: italic;
+}
+p.nnk-tags {
+		font-style: italic;
+		width: 100%;
+		text-align: right;
+		clear: both;
+}
 
 /* --------------------------------------------------
 
@@ -409,6 +451,40 @@ summary {
 details > summary:first-of-type {
     list-style-position: outside;
 }
+
+/* --------------------------------------------------
+
+	Tables
+
+* -------------------------------------------------- */
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+
+caption {
+	border: 0;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-top: 0.4em;
+	margin-bottom: 0.2em;
+	text-align: center;
+}
+
+th {
+	border: 1px var(--highlight-color) solid;
+	text-align: left;
+	padding: 5px;
+}
+
+td {
+	border: 1px var(--highlight-color) solid;
+	text-align: left;
+	vertical-align: top;
+	padding: 5px;
+}
+
 /* --------------------------------------------------
 
   Other stuff
@@ -439,10 +515,6 @@ p.notenik-calendar-day-contents {
   margin-top: 0;
   margin-bottom: 0;
 }
-
-
-
-
 
 .float-left {
     float: left;

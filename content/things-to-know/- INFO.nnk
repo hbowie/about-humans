@@ -12,7 +12,7 @@ Sort Blank Dates Last: true
 
 Other Fields Allowed: false
 
-Last Index Selected: 3
+Last Index Selected: 0
 
 Mirror Auto Index: false
 
@@ -21,6 +21,8 @@ Display Body Label: false
 Minimum Body Edit View Height: 5.0
 
 Title Display Option: level
+
+Tags Display: repl-nav-up
 
 Display Mode: streamlined
 
@@ -50,9 +52,9 @@ Note File Format: nnk
 
 Hash Tags: notenik-field
 
-Window Numbers: 1176.0;3.0;1310.0;1409.0;479.0;
+Window Numbers: 1175.0;0.0;1252.0;1409.0;500.0;
 
-Column Widths: tags: 50, 100, 1200; seq: 30, 88, 250; author: 100, 200, 1500; statusdigit: 20, 30, 50; rank: 50, 80, 250; date: 80, 120, 500; x: 12, 20, 50; datemod: 100, 180, 250; klass: 60, 80, 150; title: 200, 356, 1500; dateadded: 100, 180, 250; 
+Column Widths: x: 12, 20, 50; statusdigit: 20, 30, 50; seq: 30, 88, 250; title: 200, 478, 1500; date: 80, 120, 500; tags: 50, 100, 1200; rank: 50, 80, 250; dateadded: 100, 180, 250; klass: 60, 128, 150; datemod: 100, 180, 250; author: 100, 200, 1500; 
 
 footer Note ID: pagefooter
 
@@ -60,5 +62,9 @@ header Note ID: pageheader
 
 nav Note ID: navbar
 
-Note Picker Action: Copy and Paste Include Command
+tagscloud Note ID: themes
+
+tagsoutline Note ID: themes
+
+Note Picker Action: Copy and Paste Wikilink
 

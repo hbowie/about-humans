@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Cited Authors</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+/* --------------------------------------------------
+
+  Light/DarK Styling and other variables
+
+* -------------------------------------------------- */
+:root {
+    --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+    --standard-border-radius: 5px;
+}
+:root {
+    color-scheme: light dark;
+    --background-color: #FFFFFF;
+    --text-color: #000000;
+    --link-color: Blue;
+    --link-hover-color: Blue;
+    --background-hover-color: #f0f0f0;
+    --link-visited-color: Purple;
+    --link-active-color: Red;
+    --background-active-color: #e0e0e0;
+    --code-color: #d81b60;
+    --preformatted-color: #444;
+    --accent-bg: #f5f7ff;
+    --border: #898EA4;
+    --highlight-color: Gainsboro;
+    --bg: #fff;
+}
+a.ext-link::after {
+    content: "";
+    width: 0.9em;
+    height: 0.9em;
+    margin-left: 0.2em;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z'/%3E%3Cpath fill-rule='evenodd' d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z'/%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+@media screen and (prefers-color-scheme: dark) { 
+  :root {
+    --background-color: #000000;
+    --text-color: #F0F0F0;
+    --link-color: #93d5ff;
+    --link-hover-color: #94d8ff;
+    --background-hover-color: #282828;
+    --link-visited-color: #cab7ff;
+    --link-active-color: #94d8ff;
+    --background-active-color: #363636;
+    --code-color: #f06292;
+    --preformatted-color: #ccc;
+    --accent-bg: #2b2b2b;
+    --highlight-color: DimGray;
+    --bg: #212121;
+  }
+    a.ext-link::after {
+        content: "";
+        width: 0.9em;
+        height: 0.9em;
+        margin-left: 0.2em;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' stroke='%23F0F0F0' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z'/%3E%3Cpath fill-rule='evenodd' d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z'/%3E%3C/svg%3E");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: inline-block;
+    }
+}
+/* --------------------------------------------------
+
+  Font Choices
+
+* -------------------------------------------------- */
+body {
+  font-family: "Century Supra A", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15pt;
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Hermes Maia 3", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+code {
+    font-family: var(--mono-font);
+    color: var(--code-color);
+}
+/* --------------------------------------------------
+
+  Non-font Styling for body, paragraphs, horizontal rules
+  and headings
+
+* -------------------------------------------------- */
+body {
+  tab-size: 4;
+  margin: 1em 1em 1em 1.1em;
+  max-width: 50em; 
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.45;
+}
+p {
+    margin-top: 0.2em;
+    margin-bottom: 0.7em;
+}
+hr {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0.7em;
+    margin-bottom: 0.2em;
+}
+h1 {
+    text-align: center;
+    font-size: 2.0em;
+    font-variant-caps: small-caps;
+}
+h2 {
+    text-align: left;
+    font-size: 1.8em;
+}
+h3 {
+    text-align: left;
+    font-size: 1.6em;
+    margin-bottom: 1em;
+}
+h4 {
+    text-align: left;
+    font-size: 1.4em;
+}
+h5 {
+    text-align: left;
+    font-size: 1.2em;
+}
+h6 {
+    text-align: left;
+    font-size: 1.0em;
+}
+
+/* --------------------------------------------------
+
+  Link Styling
+
+* -------------------------------------------------- */
+
+a {
+    color: var(--link-color);
+}
+a:focus {
+    color: var(--link-hover-color);
+    background: var(--background-hover-color);
+}
+a:hover {
+    color: var(--link-hover-color);
+    background: var(--background-hover-color);
+}
+a:active {
+    color: var(--link-active-color);
+    background: var(--background-active-color);
+}
+a:visited {
+    color: var(--link-visited-color);
+}
+
+a.wiki-link {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+
+a.hashtag {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+
+a.ext-link {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+
+p.quote-from a {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+
+a.nav-link:link {
+    text-decoration: none;
+    border-bottom: none;
+}
+
+nav ul li a.wiki-link {
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.nnk-header .wiki-link {
+	text-decoration: none;
+	border-bottom: none; 
+}
+
+.nnk-footer a:link {
+    text-decoration: none;
+    border-bottom: none;
+    color: var(--text-color);
+}
+
+a.implicit {
+	text-decoration: none;
+	border: none;
+}
+a.implicit:hover {
+	color: var(--link-hover-color);
+	text-decoration: none;
+	border-bottom: 1px dotted var(--link-hover-color);
+}
+
+/* --------------------------------------------------
+
+  Quote styling
+
+* -------------------------------------------------- */
+/*
+blockquote {
+  border-left: 0.4em dotted #999; 
+  border-left: none;
+  margin-left: 1em;
+  padding-left: 1em;
+} */
+
+blockquote {
+    margin: 0.25em 0;
+    padding: 0.35em 40px;
+    line-height: 1.45;
+    position: relative;
+    /* color: #383838; */
+}
+
+blockquote:before {
+    display: block;
+    padding-left: 10px;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    color: var(--highlight-color);
+}
+
+blockquote.attribution-following {
+	margin-bottom: 0;
+}
+.quote-from {
+    margin-block-start: 0.1rem;
+    margin-block-end: 0.5rem;
+    margin: 0rem 0 1.5em 0;
+    padding: 0.25rem 4.6em;
+    font-size: 0.9em;
+    line-height: 1.45;
+    position: relative;
+}
+.quote-from:before {
+    display: block;
+    padding-left: 3.4em;
+    content: "\2014";
+    position: absolute;
+    left: 0;
+}
+figure.notenik-quote-attrib {
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 2em;
+}
+figure.notenik-quote-attrib blockquote {
+  border-left: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+figure.notenik-quote-attrib figcaption {
+    text-align: right;
+}
+
+cite.notenik-cite-major {
+  font-style: italic;
+}
+cite.notenik-cite-minor {
+  font-style: normal;
+}
+
+/* --------------------------------------------------
+
+  Footer styling
+
+* -------------------------------------------------- */
+
+footer.nnk-footer {
+    clear: both;
+    border-top: 1px dashed var(--text-color);
+    margin-top: 1em;
+    font-size: 0.8em;
+    font-weight: lighter;
+    text-align: center;
+}
+
+footer.nnk-footer p {
+    padding-top: 0.5em;
+}
+
+/* --------------------------------------------------
+
+  ???
+
+* -------------------------------------------------- */
+
+.search-results {
+    background-color: var(--highlight-color);
+}
+/* End of darkModeAdjustments code. */
+/* The following CSS comes from the displayCSS method of the
+   DisplayPrefs class within Notenik.                        */
+
+
+img { max-width: 100%; border: 4px solid gray; }
+/* body { max-width: 33em; margin: 0 auto; float: none; } */
+
+body > footer {
+    margin-top: 4rem;
+    text-align: center;
+}
+/* Consolidate box styling */
+aside, pre, progress {
+  background-color: var(--accent-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--standard-border-radius);
+  margin-bottom: 1rem;
+}
+aside {
+  font-size: 1rem;
+  width: 30%;
+  padding: 0 15px;
+  margin-inline-start: 15px;
+  float: right;
+}
+*[dir="rtl"] aside {
+  float: left;
+}
+
+/* Make aside full-width on mobile */
+@media only screen and (max-width: 720px) {
+  aside {
+    width: 100%;
+    float: none;
+    margin-inline-start: 0;
+  }
+}
+
+figure {
+  margin-left: 0.2em;
+  padding-left: 0.2em;
+}
+table, th, td {
+  border: 2px solid gray;
+}
+table {
+  border-collapse: collapse;
+  margin-bottom: 0.7em;
+}
+th, td {
+  padding: 6px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+p.nnk-tags-repl-nav-up {
+		font-style: italic;
+}
+p.nnk-tags {
+		font-style: italic;
+		width: 100%;
+		text-align: right;
+		clear: both;
+}
+
+/* --------------------------------------------------
+
+  Lists
+
+* -------------------------------------------------- */
+
+li { margin-top: 0.2em; margin-bottom: 0.2em; }
+ul.checklist { list-style-type: none; }
+ul.tags-list { list-style-type: none; }
+ul.tags-cloud {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  line-height: 2.5rem;
+}
+ul.tags-cloud a {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  border-radius: 15px;
+  background-color: var(--highlight-color);
+  padding: 2px 12px 2px 12px;
+  margin: 10px 10px 10px 10px;
+  min-width: 40px;
+  text-align: center;
+}
+ul.notenik-toc {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+ol.notenik-biblio-list {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+ol.notenik-biblio-list li {
+  margin-left: 3em;
+  text-indent: -3em;
+  margin-bottom: 1em;
+}
+ul.outline-ul {
+    list-style-type: none;
+}
+ul.outline-list {
+    list-style-type: none;
+}
+ul.outline-ul-within-details {
+    list-style-type: none;
+}
+li.outline-li-bullet {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+details {
+    margin-left: 2.2em;
+}
+summary {
+    margin-left: -2.2em;
+    margin-bottom: 0;
+}
+details > summary:first-of-type {
+    list-style-position: outside;
+}
+
+/* --------------------------------------------------
+
+	Tables
+
+* -------------------------------------------------- */
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+
+caption {
+	border: 0;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-top: 0.4em;
+	margin-bottom: 0.2em;
+	text-align: center;
+}
+
+th {
+	border: 1px var(--highlight-color) solid;
+	text-align: left;
+	padding: 5px;
+}
+
+td {
+	border: 1px var(--highlight-color) solid;
+	text-align: left;
+	vertical-align: top;
+	padding: 5px;
+}
+
+/* --------------------------------------------------
+
+  Other stuff
+
+* -------------------------------------------------- */
+
+.notenik-aka {
+    font-style: italic;
+    text-align: center;
+    margin-top: 0;
+}
+table.notenik-calendar {
+  table-layout: fixed;
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+td.notenik-calendar-day-data {
+  vertical-align: top;
+}
+p.notenik-calendar-day-of-month {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: right;
+  font-size: 1.2em;
+}
+p.notenik-calendar-day-contents {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.heading-1-details {
+    margin-left: 2.2em;
+}
+.heading-2-details {
+    margin-left: 2.2em;
+}
+.heading-3-details {
+    margin-left: 2.2em;
+}
+.heading-4-details {
+    margin-left: 2.2em;
+}
+.heading-5-details {
+    margin-left: 2.2em;
+}
+.heading-6-details {
+    margin-left: 2.2em;
+}
+
+.heading-1-summary {
+    margin-left: -2.2em;
+    margin-bottom: 0.5em;
+}
+.heading-2-summary {
+    margin-left: -2.2em;
+    margin-bottom: 0.5em;
+}
+.heading-3-summary {
+    margin-left: -2.2em;
+    margin-bottom: 0.5em;
+}
+.heading-4-summary {
+    margin-left: -2.2em;
+    margin-bottom: 0.5em;
+}
+.heading-5-summary {
+    margin-left: -2.2em;
+    margin-bottom: 0.5em;
+}
+.heading-6-summary {
+    margin-left: -2.2em;
+    margin-bottom: 0.5em;
+}
+pre {
+    
+}
+
+pre {
+  padding: 1rem 1.4rem;
+  max-width: 100%;
+  overflow-x: auto;
+  color: var(--preformatted-color);
+}
+
+/* Fix embedded code within pre */
+pre code {
+  color: var(--preformatted-color);
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Classes for notices */
+.notice {
+  background: var(--accent-bg);
+  border: 2px solid var(--border);
+  border-radius: var(--standard-border-radius);
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+
+article, fieldset, dialog {
+  border: 1px solid var(--border);
+  padding: 1rem;
+  border-radius: var(--standard-border-radius);
+  margin-bottom: 1rem;
+}
+
+article h2:first-child,
+section h2:first-child,
+article h3:first-child,
+section h3:first-child {
+  margin-top: 1rem;
+}
+
+/* Make the header bg full width, but the content inline with body */
+body > header {
+  background-color: var(--accent-bg);
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+  padding: 0 0.5rem 2rem 0.5rem;
+  grid-column: 1 / -1;
+}
+
+body > header > *:only-child {
+  margin-block-start: 2rem;
+}
+
+body > header h1 {
+  max-width: 1200px;
+  margin: 1rem auto;
+}
+
+body > header p {
+  max-width: 40rem;
+  margin: 1rem auto;
+}
+
+header.nnk-header {
+    background-color: var(--background-color);
+    text-align: center;
+    border-bottom: none;
+    max-width: none;
+    padding: 0 0 0 0;
+}
+
+/* Format navigation */
+header > nav {
+  font-size: 1rem;
+  line-height: 2;
+  padding: 1rem 0 0 0;
+}
+
+/* Use flexbox to allow items to wrap, as needed */
+header > nav ul,
+header > nav ol {
+  align-content: space-around;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* List items are inline elements, make them behave more like blocks */
+header > nav ul li,
+header > nav ol li {
+  display: inline-block;
+}
+
+header > nav a,
+header > nav a:visited {
+  margin: 0 0.5rem 1rem 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: var(--standard-border-radius);
+  color: var(--text);
+  display: inline-block;
+  padding: 0.1rem 1rem;
+  text-decoration: none;
+}
+
+header > nav a:hover,
+header > nav a.current,
+header > nav a[aria-current="page"],
+header > nav a[aria-current="true"] {
+  border-color: var(--accent);
+  color: var(--accent);
+  cursor: pointer;
+}
+
+/* Reduce nav side on mobile */
+@media only screen and (max-width: 720px) {
+  header > nav a {
+    border: none;
+    padding: 0;
+    text-decoration: underline;
+    line-height: 1;
+  }
+}
+
+nav.nnk-nav {
+    float: right;
+    font-style: italic;
+}
+
+nav.nnk-nav ul {
+    margin-top: 0;
+}
+
+nav.nnk-nav ul li {
+    display: inline;
+}
+
+nav.nnk-nav ul li a {
+    text-decoration: none;
+    border-bottom: none;
+}
+
+
+</style>
+</head>
+<body>
+
+<header class="nnk-header">
+<p><a href="https://ntnk.app/importantthingstoknowabouthumans" class="wiki-link">Important Things to Know About Humans</a> </p>
+
+</header>
+
+<nav class="nnk-nav">
+<ul>
+<li>
+<a href="https://ntnk.app/tableofcontents" class="wiki-link">Contents</a> </li>
+<li>
+<a href="https://ntnk.app/indexofkeyterms" class="wiki-link">Index</a> </li>
+<li>
+<a href="https://ntnk.app/search" class="wiki-link">Search</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<h3 id="citedauthors" style="clear:both">Cited Authors</h3>
+<script>
+function sortTable(tableID, n) {
+  console.log(`js function of sortTable called with table id of ${tableID} and column index of ${n}`)
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  var firstElement = "";
+  var nextElement = "";
+  var firstLowered = "";
+  var nextLowered = "";
+  var firstNumber = 0;
+  var nextNumber = 0;
+  var firstValue = 0;
+  var nextValue = 0;
+  table = document.getElementById(tableID);
+  switching = true;
+  // Set the sorting direction to ascending:
+  dir = "asc";
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // Start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /* Loop through all table rows (except the
+    first, which contains table headers): */
+    for (i = 1; i < (rows.length - 1); i++) {
+      // Start by saying there should be no switching:
+      shouldSwitch = false;
+      /* Get the two elements you want to compare,
+      one from current row and one from the next: */
+      firstElement = rows[i].getElementsByTagName("TD")[n];
+      console.log(`  - first element is ${firstElement}`)
+      nextElement = rows[i + 1].getElementsByTagName("TD")[n];
+      console.log(`  - next element is ${nextElement}`)
+      firstLowered = firstElement.innerHTML.toLowerCase();
+      console.log(`  - first lowered is ${firstLowered}`)
+      nextLowered = nextElement.innerHTML.toLowerCase();
+      console.log(`  - next lowered is ${nextLowered}`)
+      firstNumber = Number(firstLowered);
+      nextNumber = Number(nextLowered);
+      if (isNaN(firstLowered) || isNaN(nextLowered)) {
+        x = firstLowered;
+        y = nextLowered;
+      } else {
+        console.log('  - these appear to be numbers!')
+        x = firstNumber;
+        y = nextNumber;
+      }
+      
+      /* Check if the two rows should switch place,
+      based on the direction, asc or desc: */
+      if (dir == "asc") {
+        if (x > y) {
+          // If so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x < y) {
+          // If so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      console.log("  - swapping")
+      /* If a switch has been marked, make the switch
+      and mark that a switch has been done: */
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      // Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /* If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again. */
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+<table id="authors-table">
+<colgroup>
+<col style="width:25%">
+<col style="width:50%">
+<col style="width:25%">
+</colgroup>
+<tr>
+<th onclick="sortTable('authors-table', 0)">
+Last Name</th>
+<th onclick="sortTable('authors-table', 1)">
+Author Name</th>
+<th onclick="sortTable('authors-table', 2)">
+Years Lived</th>
+</tr>
+<tr>
+<td>
+Adams</td>
+<td>
+<a href="https://ntnk.app/adamsjohn" title="American statesman, attorney, diplomat, writer, and Founding Father who served as the second president of the United States" class="implicit">John Adams</a></td>
+<td>
+1735-1826</td>
+</tr>
+<tr>
+<td>
+Aikin</td>
+<td>
+<a href="https://ntnk.app/aikinscottfandtalisserobertb" title="Associate Professor of Philosophy at Vanderbilt University in Nashville, Tennessee." class="implicit">Aikin, Scott F., Talisse and Robert B.</a></td>
+<td>
+1972?-</td>
+</tr>
+<tr>
+<td>
+Aristotle</td>
+<td>
+<a href="https://ntnk.app/aristotle" title="Greek philosopher" class="implicit">Aristotle</a></td>
+<td>
+0384-0322 BC</td>
+</tr>
+<tr>
+<td>
+Baldwin</td>
+<td>
+<a href="https://ntnk.app/baldwinjames" title="American novelist, playwright, essayist, poet and activist" class="implicit">James Baldwin</a></td>
+<td>
+1924-1987</td>
+</tr>
+<tr>
+<td>
+Baynes</td>
+<td>
+<a href="https://ntnk.app/baynescary" title="American Jungian psychologist and translator" class="implicit">Cary Baynes</a></td>
+<td>
+1883-1977</td>
+</tr>
+<tr>
+<td>
+Bezos</td>
+<td>
+<a href="https://ntnk.app/bezosjeff" title="American internet entrepreneur, industrialist, media proprietor, and investor" class="implicit">Jeff Bezos</a></td>
+<td>
+1964-</td>
+</tr>
+<tr>
+<td>
+Blake</td>
+<td>
+<a href="https://ntnk.app/blakewilliam" title="English poet, painter, and printmaker" class="implicit">William Blake</a></td>
+<td>
+1757-1827</td>
+</tr>
+<tr>
+<td>
+Bohr</td>
+<td>
+<a href="https://ntnk.app/bohrniels" title="Danish physicist" class="implicit">Niels Bohr</a></td>
+<td>
+1885-1962</td>
+</tr>
+<tr>
+<td>
+Braun</td>
+<td>
+<a href="https://ntnk.app/braunwernhervon" title="German–American aerospace engineer and space architect" class="implicit">Wernher von Braun</a></td>
+<td>
+1912-1977</td>
+</tr>
+<tr>
+<td>
+Brooks</td>
+<td>
+<a href="https://ntnk.app/brooksdavid" title="Canadian-born American book author and political and cultural commentator" class="implicit">David Brooks</a></td>
+<td>
+1961-</td>
+</tr>
+<tr>
+<td>
+Brower</td>
+<td>
+<a href="https://ntnk.app/browerdavid" title="Prominent environmentalist and the founder of many environmental organizations" class="implicit">David Brower</a></td>
+<td>
+1912-2000</td>
+</tr>
+<tr>
+<td>
+Brown</td>
+<td>
+<a href="https://ntnk.app/brownwilliamjmccormickhayswandthomasscottw" title="AntiPattern Evangelist at Albion International" class="implicit">Brown, William J., McCormick, Hays W., Thomas and Scott W.</a></td>
+<td>
+1955?-</td>
+</tr>
+<tr>
+<td>
+Chabon</td>
+<td>
+<a href="https://ntnk.app/chabonmichael" title="American novelist, screenwriter, columnist and short story writer" class="implicit">Michael Chabon</a></td>
+<td>
+1963-</td>
+</tr>
+<tr>
+<td>
+Chandler</td>
+<td>
+<a href="https://ntnk.app/chandlerraymond" title="American-British novelist and screenwriter" class="implicit">Raymond Chandler</a></td>
+<td>
+1888-1959</td>
+</tr>
+<tr>
+<td>
+Chesterton</td>
+<td>
+<a href="https://ntnk.app/chestertongk" title="English writer, philosopher, lay theologian, and literary and art critic" class="implicit">G. K. Chesterton</a></td>
+<td>
+1874-1936</td>
+</tr>
+<tr>
+<td>
+Christakis</td>
+<td>
+<a href="https://ntnk.app/christakisnicholas" title="Greek-American sociologist and physician" class="implicit">Nicholas Christakis</a></td>
+<td>
+1962-</td>
+</tr>
+<tr>
+<td>
+Christian</td>
+<td>
+<a href="https://ntnk.app/christiandavid" title="historian teaching the discipline of Big History" class="implicit">David Christian</a></td>
+<td>
+1946-</td>
+</tr>
+<tr>
+<td>
+Covey</td>
+<td>
+<a href="https://ntnk.app/coveystephen" title="American educator, author, businessman, and speaker" class="implicit">Stephen Covey</a></td>
+<td>
+1932-2012</td>
+</tr>
+<tr>
+<td>
+Cowen</td>
+<td>
+<a href="https://ntnk.app/cowentyler" title="American economist, columnist and blogger" class="implicit">Tyler Cowen</a></td>
+<td>
+1962-</td>
+</tr>
+<tr>
+<td>
+Cross</td>
+<td>
+<a href="https://ntnk.app/crossamanda" title="American academic at Columbia University, a prolific feminist author of academic studies, and a mystery author" class="implicit">Amanda Cross</a></td>
+<td>
+1926-2003</td>
+</tr>
+<tr>
+<td>
+Durant</td>
+<td>
+<a href="https://ntnk.app/durantwill" title="American historian and philosopher" class="implicit">Will Durant</a></td>
+<td>
+1885-1981</td>
+</tr>
+<tr>
+<td>
+Dymond</td>
+<td>
+<a href="https://ntnk.app/dymondken" title="software process consultant" class="implicit">Ken Dymond</a></td>
+<td>
+1955?-</td>
+</tr>
+<tr>
+<td>
+Einstein</td>
+<td>
+<a href="https://ntnk.app/einsteinalbert" title="German-born theoretical physicist" class="implicit">Albert Einstein</a></td>
+<td>
+1879-1955</td>
+</tr>
+<tr>
+<td>
+Fink</td>
+<td>
+<a href="https://ntnk.app/finklarry" title="American billionaire businessman, chairman and CEO of BlackRock" class="implicit">Larry Fink</a></td>
+<td>
+1952-</td>
+</tr>
+<tr>
+<td>
+Forster</td>
+<td>
+<a href="https://ntnk.app/forsterem" title="English fiction writer, essayist and librettist" class="implicit">E. M. Forster</a></td>
+<td>
+1879-1970</td>
+</tr>
+<tr>
+<td>
+Frankl</td>
+<td>
+<a href="https://ntnk.app/franklvictor" title="Austrian Holocaust survivor, neurologist, psychiatrist and author" class="implicit">Victor Frankl</a></td>
+<td>
+1905-1997</td>
+</tr>
+<tr>
+<td>
+Freinacht</td>
+<td>
+<a href="https://ntnk.app/freinachthanzi" title="Political philosopher, historian and sociologist" class="implicit">Hanzi Freinacht</a></td>
+<td>
+1960?-</td>
+</tr>
+<tr>
+<td>
+Graves</td>
+<td>
+<a href="https://ntnk.app/gravesclarew" title="American professor of psychology" class="implicit">Clare W. Graves</a></td>
+<td>
+1914-1986</td>
+</tr>
+<tr>
+<td>
+Harari</td>
+<td>
+<a href="https://ntnk.app/harariyuvalnoah" title="Israeli public intellectual, historian and professor" class="implicit">Yuval Noah Harari</a></td>
+<td>
+1976-</td>
+</tr>
+<tr>
+<td>
+Hare</td>
+<td>
+<a href="https://ntnk.app/harebrianandwoodsvanesa" title="Brian is a professor of evolutionary anthropology" class="implicit">Hare, Brian, Woods and Vanesa</a></td>
+<td>
+1976-</td>
+</tr>
+<tr>
+<td>
+Hesse</td>
+<td>
+<a href="https://ntnk.app/hessehermann" title="German-Swiss poet, novelist, and painter" class="implicit">Hermann Hesse</a></td>
+<td>
+1877-1962</td>
+</tr>
+<tr>
+<td>
+Huizinga</td>
+<td>
+<a href="https://ntnk.app/huizingajohan" title="Dutch historian" class="implicit">Johan Huizinga</a></td>
+<td>
+1872-1945</td>
+</tr>
+<tr>
+<td>
+Hwang</td>
+<td>
+<a href="https://ntnk.app/hwangvictor" title="Tech CEO and author" class="implicit">Victor Hwang</a></td>
+<td>
+1980?-</td>
+</tr>
+<tr>
+<td>
+Nation</td>
+<td>
+<a href="https://ntnk.app/iroquoisnation" class="implicit">Iroquois Nation</a></td>
+<td>
+1850?-</td>
+</tr>
+<tr>
+<td>
+Jobs</td>
+<td>
+<a href="https://ntnk.app/jobssteve" title="American business magnate, industrial designer, investor, and media proprietor" class="implicit">Steve Jobs</a></td>
+<td>
+1955-2011</td>
+</tr>
+<tr>
+<td>
+Johnson</td>
+<td>
+<a href="https://ntnk.app/johnsonsteven" title="American popular science and history author, TV and podcast host, and software creator." class="implicit">Steven Johnson</a></td>
+<td>
+1968-</td>
+</tr>
+<tr>
+<td>
+Jung</td>
+<td>
+<a href="https://ntnk.app/jungcarl" title="Swiss psychiatrist and psychoanalyst who founded analytical psychology" class="implicit">Carl Jung</a></td>
+<td>
+1875-1961</td>
+</tr>
+<tr>
+<td>
+Kay</td>
+<td>
+<a href="https://ntnk.app/kayalan" title="American computer scientist" class="implicit">Alan Kay</a></td>
+<td>
+1940-</td>
+</tr>
+<tr>
+<td>
+Kelvin</td>
+<td>
+<a href="https://ntnk.app/kelvinlord" title="British mathematical physicist and engineer" class="implicit">Lord Kelvin</a></td>
+<td>
+1898-1963</td>
+</tr>
+<tr>
+<td>
+Lightman</td>
+<td>
+<a href="https://ntnk.app/lightmanalan" title="American physicist, writer, and social entrepreneur" class="implicit">Alan Lightman</a></td>
+<td>
+1948-</td>
+</tr>
+<tr>
+<td>
+Lincoln</td>
+<td>
+<a href="https://ntnk.app/lincolnabraham" title="American statesman and lawyer and 16th president of the United States" class="implicit">Abraham Lincoln</a></td>
+<td>
+1809-1865</td>
+</tr>
+<tr>
+<td>
+Luce</td>
+<td>
+<a href="https://ntnk.app/luceedward" title="English journalist and chief US commentator for the *Financial Times*" class="implicit">Edward Luce</a></td>
+<td>
+1968-</td>
+</tr>
+<tr>
+<td>
+Mencken</td>
+<td>
+<a href="https://ntnk.app/menckenhl" title="AAmerican journalist, essayist, satirist, cultural critic, and scholar of American English" class="implicit">H. L. Mencken</a></td>
+<td>
+1880-1956</td>
+</tr>
+<tr>
+<td>
+Miller</td>
+<td>
+<a href="https://ntnk.app/millerhenry" title="American writer and artist" class="implicit">Henry Miller</a></td>
+<td>
+1891-1980</td>
+</tr>
+<tr>
+<td>
+Morris</td>
+<td>
+<a href="https://ntnk.app/morrismichael" title="Cultural psychologist at Columbia University" class="implicit">Michael Morris</a></td>
+<td>
+1961?</td>
+</tr>
+<tr>
+<td>
+Mosley</td>
+<td>
+<a href="https://ntnk.app/mosleywalter" title="American author, most widely recognized for his crime fiction" class="implicit">Walter Mosley</a></td>
+<td>
+1952-</td>
+</tr>
+<tr>
+<td>
+Ng</td>
+<td>
+<a href="https://ntnk.app/ngceleste" title="American writer and novelist" class="implicit">Celeste Ng</a></td>
+<td>
+1980-</td>
+</tr>
+<tr>
+<td>
+Ostrom</td>
+<td>
+<a href="https://ntnk.app/ostromelinor" title="American political scientist and political economist" class="implicit">Elinor Ostrom</a></td>
+<td>
+1933-2012</td>
+</tr>
+<tr>
+<td>
+Obama</td>
+<td>
+<a href="https://ntnk.app/obamabarack" title="American politician and attorney who served as the 44th president of the United States from 2009 to 2017" class="implicit">Barack Obama</a></td>
+<td>
+1961-</td>
+</tr>
+<tr>
+<td>
+Pink</td>
+<td>
+<a href="https://ntnk.app/pinkdanielh" title="American non-fiction writer who has authored seven New York Times bestsellers" class="implicit">Daniel H. Pink</a></td>
+<td>
+1964-</td>
+</tr>
+<tr>
+<td>
+Rogers</td>
+<td>
+<a href="https://ntnk.app/rogersjohn" title="American screenwriter" class="implicit">John Rogers</a></td>
+<td>
+1996-</td>
+</tr>
+<tr>
+<td>
+Sagan</td>
+<td>
+<a href="https://ntnk.app/sagancarlanddruyanann" title="American astronomer, planetary scientist, cosmologist, astrophysicist, astrobiologist, author, and science communicator; American writer, producer, and director." class="implicit">Sagan, Carl, Druyan and Ann</a></td>
+<td>
+1934-1996</td>
+</tr>
+<tr>
+<td>
+Samson</td>
+<td>
+<a href="https://ntnk.app/samsondavidr" title="Associate Professor of Evolutionary Anthropology" class="implicit">David R. Samson</a></td>
+<td>
+1989?-</td>
+</tr>
+<tr>
+<td>
+Santayana</td>
+<td>
+<a href="https://ntnk.app/santayanageorge" title="Philosopher, essayist, poet, and novelist" class="implicit">George Santayana</a></td>
+<td>
+1863-1952</td>
+</tr>
+<tr>
+<td>
+Sayers</td>
+<td>
+<a href="https://ntnk.app/sayersdorothyl" title="English crime novelist, playwright, translator and critic" class="implicit">Dorothy L. Sayers</a></td>
+<td>
+1893-1957</td>
+</tr>
+<tr>
+<td>
+Scorsese</td>
+<td>
+<a href="https://ntnk.app/scorsesemartin" title="American film director, producer, screenwriter, and actor" class="implicit">Martin Scorsese</a></td>
+<td>
+1942-</td>
+</tr>
+<tr>
+<td>
+Shaw</td>
+<td>
+<a href="https://ntnk.app/shawgeorgebernard" title="Irish playwright, critic, polemicist and political activist" class="implicit">George Bernard Shaw</a></td>
+<td>
+1856-1950</td>
+</tr>
+<tr>
+<td>
+Snowden</td>
+<td>
+<a href="https://ntnk.app/snowdendave" title="Welsh management consultant and researcher in the field of knowledge management and the application of complexity science" class="implicit">Dave Snowden</a></td>
+<td>
+1954-</td>
+</tr>
+<tr>
+<td>
+Spinoza</td>
+<td>
+<a href="https://ntnk.app/spinozabaruch" title="One of the foremost and seminal thinkers of the Enlightenment, modern biblical criticism, and 17th-century Rationalism" class="implicit">Baruch Spinoza</a></td>
+<td>
+1632-1677</td>
+</tr>
+<tr>
+<td>
+Taine</td>
+<td>
+<a href="https://ntnk.app/tainehippolyte" title="French historian, critic and philosopher." class="implicit">Hippolyte Taine</a></td>
+<td>
+1828-1893</td>
+</tr>
+<tr>
+<td>
+Trueblood</td>
+<td>
+<a href="https://ntnk.app/truebloodelton" title="noted 20th-century American Quaker author and theologian" class="implicit">Elton Trueblood</a></td>
+<td>
+1900-1994</td>
+</tr>
+<tr>
+<td>
+Vonnegut</td>
+<td>
+<a href="https://ntnk.app/vonnegutkurt" title="American writer" class="implicit">Kurt Vonnegut</a></td>
+<td>
+1922-2007</td>
+</tr>
+<tr>
+<td>
+Wallace</td>
+<td>
+<a href="https://ntnk.app/wallacedavidfoster" title="American author of novels, short stories and essays" class="implicit">David Foster Wallace</a></td>
+<td>
+1962-2008</td>
+</tr>
+<tr>
+<td>
+Wilber</td>
+<td>
+<a href="https://ntnk.app/wilberken" title="American philosopher and author" class="implicit">Ken Wilber</a></td>
+<td>
+1949-</td>
+</tr>
+<tr>
+<td>
+Wilson</td>
+<td>
+<a href="https://ntnk.app/wilsondavidsloan" title="American evolutionary biologist" class="implicit">David Sloan Wilson</a></td>
+<td>
+1949-</td>
+</tr>
+<tr>
+<td>
+Zeiders</td>
+<td>
+<a href="https://ntnk.app/zeidersed" title="Senior Pastor at St. Paul's United Methodist Church, State College, Pennsylvania" class="implicit">Ed Zeiders</a></td>
+<td>
+1950?-</td>
+</tr>
+</table>
+
+
+
+<hr />
+<div>
+
+<p>Next: <a href="https://ntnk.app/referencemodels" class="nav-link">Reference Models </a></p></div>
+
+
+</main>
+
+<footer class="nnk-footer">
+<p>Copyright © 2025 by <a href="https://hbowie.net/about.html">Herb Bowie</a>, except where noted, and licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> </p>
+
+</footer>
+</body>
+</html>
