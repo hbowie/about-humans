@@ -51,7 +51,7 @@ a.ext-link::after {
     --highlight-color: DimGray;
     --bg: #212121;
   }
-    a.ext-link::after {
+    a.ext-link::after {file:///Users/hbowie/Fonts/MB%20Type%20Library%20230211/WOFF2%20font%20files%20(best%20for%20web)/Century%20Supra%20B/sample.html
         content: "";
         width: 0.9em;
         height: 0.9em;
@@ -69,14 +69,14 @@ a.ext-link::after {
 
 * -------------------------------------------------- */
 body {
-  font-family: "Century Supra A", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Century Supra B", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15pt;
   font-weight: normal;
   font-style: normal;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Hermes Maia 3", Helvetica, Arial, sans-serif;
+    font-family: "Heliotrope 3", Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -114,7 +114,6 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     text-align: center;
     font-size: 2.0em;
-    font-variant-caps: small-caps;
 }
 h2 {
     text-align: left;
@@ -184,6 +183,11 @@ p.quote-from a {
 }
 
 a.nav-link:link {
+    text-decoration: none;
+    border-bottom: none;
+}
+
+a.nav-link:visited {
     text-decoration: none;
     border-bottom: none;
 }

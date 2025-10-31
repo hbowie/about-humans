@@ -18,7 +18,7 @@
 <li>
 <a href="table-of-contents.html" class="wiki-link">Contents</a> </li>
 <li>
-<a href="index-of-key-terms.html" class="wiki-link">Index</a> </li>
+<a href="index-of-names-and-topics.html" class="wiki-link">Index</a> </li>
 <li>
 <a href="search.html" class="wiki-link">Search</a> </li>
 </ul>
@@ -36,7 +36,6 @@
 
 <script>
 function sortTable(tableID, n) {
-  console.log(`js function of sortTable called with table id of ${tableID} and column index of ${n}`)
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
   var firstElement = "";
   var nextElement = "";
@@ -64,20 +63,15 @@ function sortTable(tableID, n) {
       /* Get the two elements you want to compare,
       one from current row and one from the next: */
       firstElement = rows[i].getElementsByTagName("TD")[n];
-      console.log(`  - first element is ${firstElement}`)
       nextElement = rows[i + 1].getElementsByTagName("TD")[n];
-      console.log(`  - next element is ${nextElement}`)
       firstLowered = firstElement.innerText.trim().toLowerCase();
-      console.log(`  - first lowered is ${firstLowered}`)
       nextLowered = nextElement.innerText.trim().toLowerCase();
-      console.log(`  - next lowered is ${nextLowered}`)
       firstNumber = Number(firstLowered);
       nextNumber = Number(nextLowered);
       if (isNaN(firstLowered) || isNaN(nextLowered)) {
         x = firstLowered;
         y = nextLowered;
       } else {
-        console.log('  - these appear to be numbers!')
         x = firstNumber;
         y = nextNumber;
       }
@@ -99,7 +93,6 @@ function sortTable(tableID, n) {
       }
     }
     if (shouldSwitch) {
-      console.log("  - swapping")
       /* If a switch has been marked, make the switch
       and mark that a switch has been done: */
       rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);

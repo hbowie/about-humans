@@ -69,14 +69,14 @@ a.ext-link::after {
 
 * -------------------------------------------------- */
 body {
-  font-family: "century_supra_a", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "century_supra_b", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15pt;
   font-weight: normal;
   font-style: normal;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "hermes_maia_3", Helvetica, Arial, sans-serif;
+  font-family: "heliotrope_3", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -187,22 +187,24 @@ a.nav-link:link {
     border-bottom: none;
 }
 
+p.quote-from a {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+
 a.nav-link:link {
     text-decoration: none;
     border-bottom: none;
-    color: var(--text-color);
 }
 
 a.nav-link:visited {
     text-decoration: none;
     border-bottom: none;
-    color: var(--text-color);
 }
 
 .nnk-nav .wiki-link {
   text-decoration: none;
   border-bottom: none;
-  color: var(--text-color);
 }
 
 .nnk-footer a:link {
@@ -289,6 +291,36 @@ figure.notenik-quote-attrib figcaption {
     text-align: right;
 }
 
+/* --------------------------------------------------
+
+  Footer styling
+
+* -------------------------------------------------- */
+
+body > footer {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+footer.nnk-footer {
+    clear: both;
+    border-top: 1px dashed var(--text-color);
+    margin-top: 1em;
+    font-size: 0.8em;
+    font-weight: lighter;
+    text-align: center;
+}
+
+footer.nnk-footer p {
+    padding-top: 0.5em;
+}
+
+/* --------------------------------------------------
+
+  ???
+
+* -------------------------------------------------- */
+
 .search-results {
     background-color: var(--highlight-color);
 }
@@ -297,10 +329,7 @@ figure.notenik-quote-attrib figcaption {
 img { max-width: 100%; border: 4px solid gray; }
 /* body { max-width: 33em; margin: 0 auto; float: none; } */
 
-body > footer {
-    margin-top: 4rem;
-    text-align: center;
-}
+
 /* Consolidate box styling */
 aside, pre, progress {
   background-color: var(--accent-bg);
@@ -512,18 +541,7 @@ nav ul li a.wiki-link {
     border-bottom: none;
 }
 
-footer.nnk-footer {
-    clear: both;
-    border-top: 1px dashed var(--text-color);
-    margin-top: 1em;
-    font-size: 0.8em;
-    font-weight: lighter;
-    text-align: right;
-}
 
-footer.nnk-footer p {
-    padding-top: 0.5em;
-}
 
 .float-left {
     float: left;
