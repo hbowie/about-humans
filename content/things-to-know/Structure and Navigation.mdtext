@@ -1,6 +1,6 @@
 Title:  Structure and Navigation
 
-Seq:    1.4
+Seq:    3.1
 
 Level:  3 - Topic
 
@@ -10,30 +10,55 @@ Timestamp: 20251030231620
 
 Date Added: 2025-10-30 16:16:20 -0700
 
-Date Modified: 2025-10-30 17:22:32 -0700
+Date Modified: 2025-11-05 09:26:11 -0800
 
 Body:
 
+#### A Web-Based Book
+
 *Important Things to Know About Humans* is a web-based book. 
 
-It is like a traditional book, in the sense that it is meant to cover a subject of enduring interest in some depth, and is presented primarily in a linear fashion, without advertising interruptions. It also has many of the traditional elements of a book, such as a [[Table of Contents]]. a [[Bibliography]], and an [[Index of Names and Topics|Index]].
+It is like a traditional book, in the sense that it is meant to cover a subject of enduring interest in some depth, and is presented primarily in a linear fashion, without advertising interruptions. It also has many of the traditional elements of a book, such as a [[Table of Contents]], a [[Bibliography]], and an [[Index of Names and Topics|Index]].
 
 However it is also web-based, which means:
 
 + Anyone with access to the web can read the book whenever they like, at no cost, and with no restrictions;
 + It can be improved and updated as needed, without any printing costs, quickly and expeditiously offering all readers the latest version; 
 + Each page has its own web address, and so can be easily referenced;
-+ Hyperlinks allow the reader to easily hop around within the book, as well as to other web resources outside of the book;
++ Hyperlinks allow the reader to hop around within the book, as well as to other web resources outside of the book;
 + A [[Search]] feature is available;
 + There is also a page that can be used to jump to a [[Random Thing to Know]]. 
+
+#### Navigation
 
 There are a few navigational features that might benefit from some brief description:
 
 + The title of the book appears at the top of every page, and you can always click on this to take you back to the title page;
 + For pages that are organized hierarchically (as in the [[Bibliography]] or the [[Reference Models]] section), you will find the title of the parent page just below the book title and to the left, and clicking here will take you to that parent page; 
 + Just below the book title and to the right you will find links to the Table of Contents, the Index, and the Search page, so these are always within easy reach;
-+ At the bottom of each page you will find a link to take you to the next page, in the normal reading sequence. 
++ At the bottom of each page you will find a link to take you to the next page, in the normal reading sequence;
++ There is no special link to take you back to the previous page, but that is only because your web browser should already have a back button, or arrow, that can perform this function. 
 
+#### Components
 
+This book relies heavily on quotations from other authors that I have collected over a number of decades. I've found these to be useful and memorable ways of summarizing key points. These are all included in the extensive [[Bibliography]], as well as being cited inline in the appropriate chapters. In all cases, I recommend that readers consult the source materials for more depth on subjects of interest. 
 
+I also cite things that I call [[Reference Models]], which I have also been collecting over the years. These models all have a number of elements within them, and I refer to the models and their elements where appropriate. 
 
+You may also find it interesting to refer to the included table of [[Cited Authors]], to get some idea of the breadth of sources cited. 
+
+#### Ways to Use these Things to Know
+
+Of course I would like to think that you might sit down and read this whole book straight through, from front to back. 
+
+On the other hand, I recognize that this book now consists of over fifty little chapters and that many of them are related to one another, with links going back and forth, should you choose to pursue them. 
+
+So yes, even though the chapters are short, it is a lot. 
+
+So another equally valid way to use this book would be to look through the [[Table of Contents]] and go directly to any chapter that sounds intriguing. 
+
+You might also consult the [[Index of Names and Topics|Index]] to explore topics of interest. 
+
+You might even want to read a [[Random Thing to Know]] every once in a while, partaking a sip at a time. 
+
+Whatever your reading experience, I'd love to [hear from you](mailto:feedback@abouthumans.net) about how it went!

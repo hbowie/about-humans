@@ -4,9 +4,11 @@ Tags:   groups
 
 AKA:    nesting, hierarchy, nested groups
 
-Index:  nesting; hierarchy; 
+Topics Index: nesting; hierarchy; 
 
-Seq:    2.27
+Names Index: Core Design Principles for the Efficacy of Groups; 
+
+Seq:    2.26
 
 Level:  3 - Topic
 
@@ -16,7 +18,7 @@ Timestamp: 20250917232535
 
 Date Added: 2025-09-17 16:25:35 -0700
 
-Date Modified: 2025-10-28 13:59:53 -0700
+Date Modified: 2025-11-06 14:12:35 -0800
 
 Body:
 
@@ -30,6 +32,5 @@ When multiple levels of groups are arranged in this fashion, the overall structu
 
 ##### Relevant Reference Models
 
-| Element | Model |
-| ---- | ---- |
-| [[Polycentric Governance - CDP]] | [[Core Design Principles for the Efficacy of Groups]] |
++  [[Core Design Principles for the Efficacy of Groups]] 
+	- [[Polycentric Governance - CDP]]

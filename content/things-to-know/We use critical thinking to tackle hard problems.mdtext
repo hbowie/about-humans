@@ -6,9 +6,11 @@ Long Title: We use critical thinking to tackle hard problems.
 
 AKA:    critical thinking
 
-Index:  critical thinking; 
+Topics Index: critical thinking; nirvana antipattern; 
 
-Seq:    2.37
+Names Index: Mencken, H. L.; Obama, Barack; Brown, William J.; Aikin, Scott F.; Cynefin Framework; Allingham, Margaret; 
+
+Seq:    2.36
 
 Level:  3 - Topic
 
@@ -18,7 +20,7 @@ Timestamp: 20251024222705
 
 Date Added: 2025-10-24 15:27:05 -0700
 
-Date Modified: 2025-10-28 13:59:53 -0700
+Date Modified: 2025-11-06 14:19:42 -0800
 
 Body:
 
@@ -37,6 +39,8 @@ In order to come up with the best possible solutions to such problems, we genera
 
 {:include-quotebiblio:Easy solutions}
 
+{:include-quotebiblio:Muddled thinking and self-deception}
+
 {:include-quotebiblio:No perfect answer}
 
 {:include-quotebiblio:The Nirvana Antipattern}
@@ -45,6 +49,8 @@ In order to come up with the best possible solutions to such problems, we genera
 
 ##### Relevant Reference Models
 
-| Element | Model |
-| -------- | -------- |
-| [[Confusion Domain]], [[Complex Domain]], [[Complicated Domain]], [[Chaotic Domain]] | [[Cynefin Framework Model]] |
++ [[Cynefin Framework Model|Cynefin Framework ]]
+	- [[Confusion Domain]]
+	- [[Complex Domain]]
+	- [[Complicated Domain]]
+	- [[Chaotic Domain]]
