@@ -95,8 +95,11 @@ code {
 
 body {
   tab-size: 4;
-  margin: 1em 1em 1em 1.1em;
-  max-width: 50em; 
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: max(1.0rem, ((100% - 33em) / 2));
+  margin-right: max(1.0rem, ((100% - 33em) / 2));
+  max-width: 33em; 
   background-color: var(--background-color);
   color: var(--text-color);
   line-height: 1.45;
@@ -327,8 +330,6 @@ footer.nnk-footer p {
 
 
 img { max-width: 100%; border: 4px solid gray; }
-/* body { max-width: 33em; margin: 0 auto; float: none; } */
-
 
 /* Consolidate box styling */
 aside, pre, progress {
@@ -746,7 +747,6 @@ nav.nnk-nav ul li a {
 /* CSS Modifications for the About Humans website start here. */
 
 img { max-width: 100%; border: 4px solid gray; }
-body { max-width: 33em; margin: 0 auto; float: none; }
 
 /* --------------------------------------------------
 

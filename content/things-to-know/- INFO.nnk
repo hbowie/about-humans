@@ -12,7 +12,7 @@ Sort Blank Dates Last: true
 
 Other Fields Allowed: false
 
-Last Index Selected: 0
+Last Index Selected: 44
 
 Mirror Auto Index: false
 
@@ -24,7 +24,7 @@ Title Display Option: level
 
 Tags Display: no-display
 
-Display Mode: normal
+Display Mode: streamlined
 
 Outline Tab: 1
 
@@ -52,9 +52,9 @@ Note File Format: nnk
 
 Hash Tags: notenik-field
 
-Window Numbers: 50.0;0.0;1209.0;902.0;499.0;
+Window Numbers: 1327.0;0.0;1233.0;1371.0;499.0;
 
-Column Widths: rank: 50, 80, 250; title: 200, 478, 1500; tags: 50, 100, 1200; seq: 30, 88, 250; dateadded: 100, 180, 250; klass: 60, 128, 150; date: 80, 120, 500; x: 12, 20, 50; author: 100, 200, 1500; statusdigit: 20, 30, 50; datemod: 100, 180, 250; 
+Column Widths: datemod: 100, 180, 250; author: 100, 200, 1500; x: 12, 20, 50; rank: 50, 80, 250; seq: 30, 88, 250; tags: 50, 100, 1200; date: 80, 120, 500; statusdigit: 20, 30, 50; dateadded: 100, 180, 250; title: 200, 478, 1500; klass: 60, 128, 150; 
 
 footer Note ID: pagefooter
 
@@ -66,5 +66,5 @@ tagscloud Note ID: themes
 
 tagsoutline Note ID: themes
 
-Note Picker Action: Copy and Paste Wikilink
+Note Picker Action: Copy and Paste Include Command
 
