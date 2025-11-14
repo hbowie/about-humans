@@ -10,7 +10,7 @@ Timestamp: 20251030231620
 
 Date Added: 2025-10-30 16:16:20 -0700
 
-Date Modified: 2025-11-05 09:26:11 -0800
+Date Modified: 2025-11-14 11:50:35 -0800
 
 Body:
 
@@ -24,7 +24,7 @@ However it is also web-based, which means:
 
 + Anyone with access to the web can read the book whenever they like, at no cost, and with no restrictions;
 + It can be improved and updated as needed, without any printing costs, quickly and expeditiously offering all readers the latest version; 
-+ Each page has its own web address, and so can be easily referenced;
++ Each page has its own meaningful web address, and so can be easily referenced;
 + Hyperlinks allow the reader to hop around within the book, as well as to other web resources outside of the book;
 + A [[Search]] feature is available;
 + There is also a page that can be used to jump to a [[Random Thing to Know]]. 
@@ -35,7 +35,7 @@ There are a few navigational features that might benefit from some brief descrip
 
 + The title of the book appears at the top of every page, and you can always click on this to take you back to the title page;
 + For pages that are organized hierarchically (as in the [[Bibliography]] or the [[Reference Models]] section), you will find the title of the parent page just below the book title and to the left, and clicking here will take you to that parent page; 
-+ Just below the book title and to the right you will find links to the Table of Contents, the Index, and the Search page, so these are always within easy reach;
++ Just below the book title and to the right you will find links to the Table of Contents, the Index of Topics and the Index of Names, so these are always within easy reach;
 + At the bottom of each page you will find a link to take you to the next page, in the normal reading sequence;
 + There is no special link to take you back to the previous page, but that is only because your web browser should already have a back button, or arrow, that can perform this function. 
 

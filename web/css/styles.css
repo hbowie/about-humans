@@ -11,6 +11,7 @@
     color-scheme: light dark;
     --background-color: #FFFFFF;
     --text-color: #000000;
+    --heading-color: #000000;
     --link-color: Blue;
     --link-hover-color: Blue;
     --background-hover-color: #f0f0f0;
@@ -39,6 +40,7 @@ a.ext-link::after {
   :root {
     --background-color: #000000;
     --text-color: #F0F0F0;
+    --heading-color: #F0F0F0;
     --link-color: #a4dbff;
     --link-hover-color: #94d8ff;
     --background-hover-color: #282828;
