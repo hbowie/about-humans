@@ -1,6 +1,6 @@
-Title: content / things-to-know
+Title: About Humans / things-to-know
 
-Title Set by User: false
+Title Set by User: true
 
 Link: /Users/hbowie/Sites/about-humans/content/things-to-know
 
@@ -12,7 +12,7 @@ Sort Blank Dates Last: true
 
 Other Fields Allowed: false
 
-Last Index Selected: 8
+Last Index Selected: 26
 
 Mirror Auto Index: false
 
@@ -52,9 +52,9 @@ Note File Format: nnk
 
 Hash Tags: notenik-field
 
-Window Numbers: 224.0;78.0;1233.0;1217.0;499.0;
+Window Numbers: 1310.0;0.0;1233.0;1403.0;499.0;
 
-Column Widths: title: 200, 478, 1500; klass: 60, 128, 150; seq: 30, 88, 250; x: 12, 20, 50; rank: 50, 80, 250; dateadded: 100, 180, 250; date: 80, 120, 500; tags: 50, 100, 1200; datemod: 100, 180, 250; statusdigit: 20, 30, 50; author: 100, 200, 1500; 
+Column Widths: date: 80, 120, 500; author: 100, 200, 1500; statusdigit: 20, 30, 50; x: 12, 20, 50; dateadded: 100, 180, 250; rank: 50, 80, 250; title: 200, 478, 1500; datemod: 100, 180, 250; seq: 30, 88, 250; klass: 60, 128, 150; tags: 50, 100, 1200; 
 
 footer Note ID: pagefooter
 

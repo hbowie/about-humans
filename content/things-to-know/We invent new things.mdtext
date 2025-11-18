@@ -6,9 +6,9 @@ Long Title: We invent new things.
 
 AKA:    inventions
 
-Topics Index: invention; innovation; 
+Topics Index: invention; innovation; heroes; design; trade-offs; balance; 
 
-Names Index: Lincoln, Abraham; Kay, Alan; 
+Names Index: Lincoln, Abraham; Kay, Alan; The Tribal Instincts; 
 
 Seq:    2.17
 
@@ -20,11 +20,17 @@ Timestamp: 20251002181116
 
 Date Added: 2025-10-02 11:11:16 -0700
 
-Date Modified: 2025-11-06 14:06:42 -0800
+Date Modified: 2025-11-17 11:23:36 -0800
 
 Body:
 
 We humans design and build things that never before existed. [[We figure things out]], and apply that knowledge to creating things that operate in new ways, and perform new functions in aid of humanity. 
+
+Design is a fundamental element of invention, applying purpose and values to technology and resources in order to organize materials and activities to fashion our tools, our environments, and even our societies and ourselves.
+
+Design is the process of finding out what works and what doesn’t, and also making judgments about how to best balance often competing concerns to create the best possible outcomes. We can and do and must apply design to products and services, to the built environments in which we work and play and live, to our institutions and social norms, and even to our ecosystems. What this means is that we don’t just accept things as they are, but consider how they could be improved, and then set out to improve them. It also means that we humans, singly and often collectively, take responsibility for the way these things work (and the ways in which they fail), and do our best to better them.
+
+A fundamental part of the design process is the consideration of trade-offs between competing concerns, and finding appropriate balance points. As just one example, when designing new models of modern smart phones, there are trade-offs to be made between weight and battery life. 
 
 ----
 
@@ -33,3 +39,8 @@ We humans design and build things that never before existed. [[We figure things 
 {:include-quotebiblio:Discoveries and Inventions}
 
 {:include-quotebiblio:The best way to predict the future is to invent it}
+
+##### Relevant Reference Models
+
++ [[The Tribal Instincts]]
+	- [[The Hero Instinct]]
