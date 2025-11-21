@@ -10,11 +10,13 @@ Names Index: <index>
 
 Tags: <tags>
 
-Seq: <seq: A.n.n.n.n.|x|xn.|xn.n|xn.n.n|xn.n.n.n>
+Seq: <seq: I.n.a.i.|I.|xn.|I.n.a|I.n.a.i.|I.n.a.i.n>
+
+Display Seq: <displayseq: XXX._>
 
 Level: <level: 1 - Book Title; 2 - Section; 3 - Topic; 4 - Subtopic; 5 - Detail; 6 - Subdetail; >
 
-Class: <class: application, author, back, biblio, cover, def, exclude, front, intro, model, model-element, quote, subtopic, text, title, title-page, topic, topic-with-image, work >
+Class: <class: application, author, back, biblio, cover, def, exclude, front, intro, model, model-element, quote, subtopic, text, text-section, title, title-page, topic, topic-with-image, work >
 
 Link: <link>
 

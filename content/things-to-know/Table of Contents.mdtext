@@ -1,8 +1,8 @@
 Title:  Table of Contents
 
-Seq:    1.1
+Seq:    0.1
 
-Level:  3 - Topic
+Level:  2 - Section
 
 Class:  front
 
@@ -10,9 +10,9 @@ Timestamp: 20250921175046
 
 Date Added: 2025-09-21 10:50:46 -0700
 
-Date Modified: 2025-10-20 13:51:56 -0700
+Date Modified: 2025-11-21 11:15:48 -0800
 
 Body:
 
-{:collection-toc:3-3}
-
+{:outline-bullets}
+{:collection-toc:2-3}

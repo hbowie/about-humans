@@ -1,8 +1,8 @@
 Title:  Introduction
 
-Seq:    1.3
+Seq:    0.3
 
-Level:  3 - Topic
+Level:  2 - Section
 
 Class:  intro
 
@@ -10,7 +10,7 @@ Timestamp: 20250915162531
 
 Date Added: 2025-09-15 09:25:31 -0700
 
-Date Modified: 2025-10-31 11:06:39 -0700
+Date Modified: 2025-11-21 11:16:10 -0800
 
 Body:
 
@@ -30,4 +30,4 @@ I've tried to arrange these points into some sort of logical sequence, so that m
 
 If you'd like to read more about the [[Structure and Navigation]] of this web-based book, then you can follow that link now. 
 
-Or, if you'd rather, you can [[We are part of nature|dive right in]]!
+Or, if you'd rather, you can [[The Basics|dive right in]]!
