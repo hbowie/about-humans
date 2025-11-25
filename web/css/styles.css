@@ -449,10 +449,10 @@ li.outline-li-bullet {
 }
 
 details {
-    margin-left: 2.2em;
+    margin-left: 1em;
 }
 summary {
-    margin-left: -2.2em;
+    margin-left: -1em;
     margin-bottom: 0;
 }
 details > summary:first-of-type {
