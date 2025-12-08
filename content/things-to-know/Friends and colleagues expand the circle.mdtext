@@ -4,7 +4,7 @@ Tags:   groups
 
 Long Title: Friends, coworkers and acquaintances expand the circle.
 
-AKA:    friends, social networks, camps, camp
+AKA:    friends, social networks, camps, camp, village
 
 Topics Index: friends; social networks; Dunbar's number; camps; groups; villages; 
 
@@ -22,10 +22,12 @@ Timestamp: 20251012213956
 
 Date Added: 2025-10-12 14:39:56 -0700
 
-Date Modified: 2025-12-04 12:10:31 -0800
+Date Modified: 2025-12-08 10:51:27 -0800
 
 Inclusions: Friendship is a fundamental category
+Inclusions: Friendship - SS
 Inclusions: Life is more like settling a series of villages
+Inclusions: Social networks - SS
 
 Body:
 
@@ -57,8 +59,11 @@ This organizational paradigm encourages loyalty to friends and colleagues, based
 
 {:include-quotebiblio:Life is more like settling a series of villages}
 
+----
+
 ##### Relevant Reference Models
 
-+ [[The Social Suite]]
-	- [[Friendship - SS]] 
-	- [[Social networks - SS]]
+{:include-ref:Friendship - SS}
+
+{:include-ref:Social networks - SS}
+

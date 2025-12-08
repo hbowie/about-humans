@@ -22,8 +22,9 @@ Timestamp: 20251024222705
 
 Date Added: 2025-10-24 15:27:05 -0700
 
-Date Modified: 2025-12-04 12:10:31 -0800
+Date Modified: 2025-12-08 10:59:22 -0800
 
+Inclusions: Cynefin Framework Model
 Inclusions: Easy solutions
 Inclusions: Muddled thinking and self-deception
 Inclusions: The Myth of Simple Truths quote
@@ -59,8 +60,4 @@ In order to come up with the best possible solutions to such problems, we genera
 
 ##### Relevant Reference Models
 
-+ [[Cynefin Framework Model|Cynefin Framework ]]
-	- [[Confusion Domain]]
-	- [[Complex Domain]]
-	- [[Complicated Domain]]
-	- [[Chaotic Domain]]
+{:include-ref:Cynefin Framework Model }

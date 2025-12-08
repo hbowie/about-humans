@@ -4,7 +4,7 @@ Tags:   groups, language, law
 
 Long Title: Written culture allow groups to expand over time and space.
 
-AKA:    scripture, rule of law
+AKA:    scripture, rule of law, religion, traditional order
 
 Topics Index: rule of law; written language; bureaucracy; developmental levels; 
 
@@ -22,9 +22,10 @@ Timestamp: 20251019203804
 
 Date Added: 2025-10-19 13:38:04 -0700
 
-Date Modified: 2025-12-04 12:10:31 -0800
+Date Modified: 2025-12-08 10:54:19 -0800
 
 Inclusions: The modern horrors of bureaucracy
+Inclusions: Traditional Level of Development
 
 Body:
 
@@ -46,7 +47,8 @@ These sorts of groups believe in the rule of law.
 
 {:include-quotebiblio:The modern horrors of bureaucracy}
 
+----
+
 ##### Relevant Reference Models
 
-+ [[Developmental Levels]]
-	- [[Traditional Level of Development]]
+{:include-ref:Traditional Level of Development}

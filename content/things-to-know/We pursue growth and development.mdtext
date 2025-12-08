@@ -22,8 +22,11 @@ Timestamp: 20250928220447
 
 Date Added: 2025-09-28 15:04:47 -0700
 
-Date Modified: 2025-12-04 12:10:31 -0800
+Date Modified: 2025-12-08 10:33:41 -0800
 
+Inclusions: Competence - SDT
+Inclusions: The Hero Instinct
+Inclusions: Mastery - Drive
 Inclusions: People ask me to predict the future
 Inclusions: We have hands that must work
 
@@ -43,9 +46,8 @@ We want to learn new things, to develop new skills and abilities, and to further
 
 ##### Relevant Reference Models
 
-+ [[Motivational Factors for Complex Work]]
-	- [[Mastery - Drive]]
-+ [[Self-Determination Theory]]
-	- [[Competence - SDT]]
-+ [[The Tribal Instincts]]
-	- [[The Hero Instinct]]
+{:include-ref:Mastery - Drive}
+
+{:include-ref:Competence - SDT}
+
+{:include-ref:The Hero Instinct}

@@ -22,8 +22,9 @@ Timestamp: 20251002180845
 
 Date Added: 2025-10-02 11:08:45 -0700
 
-Date Modified: 2025-12-04 12:10:31 -0800
+Date Modified: 2025-12-08 10:27:25 -0800
 
+Inclusions: Knowledge is derived by observation, experimentation, and rational analysis
 Inclusions: One Test Result
 
 Body:
@@ -38,7 +39,8 @@ Testing and experimentation are important elements of the [scientific method](ht
 
 {:include-quotebiblio:One Test Result}
 
+----
+
 ##### Relevant Reference Models
 
-+ [[Humanist Manifesto III]] 
-	- [[Knowledge is derived by observation, experimentation, and rational analysis]]
+{:include-ref:Knowledge is derived by observation, experimentation, and rational analysis}

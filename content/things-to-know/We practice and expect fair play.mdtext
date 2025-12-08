@@ -22,9 +22,12 @@ Timestamp: 20251014184553
 
 Date Added: 2025-10-14 11:45:53 -0700
 
-Date Modified: 2025-12-04 12:10:31 -0800
+Date Modified: 2025-12-08 10:58:16 -0800
 
 Inclusions: Any love for justice
+Inclusions: Core Design Principles for the Efficacy of Groups
+Inclusions: The Four-Way Test
+Inclusions: Think win-win
 
 Body:
 
@@ -49,8 +52,10 @@ Fair play includes the following:
 
 ##### Relevant Reference Models
 
-+ [[Core Design Principles for the Efficacy of Groups]]
-	- elements 2 – 6
-+ [[The Four-Way Test]] 
-+ [[The 7 Habits of Highly Effective People]] 
-	- [[Think win-win]]
+{:include-ref:Core Design Principles for the Efficacy of Groups}
+
++ elements 2 – 6
+
+{:include-ref:The Four-Way Test}
+
+{:include-ref:Think win-win}

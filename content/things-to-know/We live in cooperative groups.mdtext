@@ -22,12 +22,15 @@ Timestamp: 20250916173418
 
 Date Added: 2025-09-16 10:34:18 -0700
 
-Date Modified: 2025-12-04 12:10:31 -0800
+Date Modified: 2025-12-08 10:15:07 -0800
 
 Inclusions: A beast or a god
 Inclusions: Cooperative communication
+Inclusions: Humans are social by nature
 Inclusions: The moment we cease to hold each other
 Inclusions: People love connecting with other people
+Inclusions: Relatedness - SDT
+Inclusions: Synergize
 
 Body:
 
@@ -63,11 +66,13 @@ Even when there is no one else around, and we are enjoying a quiet moment to our
 
 {:include-quotebiblio:The moment we cease to hold each other}
 
+----
+
 ##### Relevant Reference Models
 
-+ [[Self-Determination Theory]] 
-	- [[Relatedness - SDT]] 
-+ [[The 7 Habits of Highly Effective People]]
-	- [[Synergize]] 
-+ [[Humanist Manifesto III]] 
-	- [[Humans are social by nature]]
+{:include-ref:Relatedness - SDT}
+
+{:include-ref:Synergize}
+
+{:include-ref:Humans are social by nature}
+

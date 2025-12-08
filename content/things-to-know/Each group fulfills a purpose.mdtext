@@ -22,8 +22,11 @@ Timestamp: 20250930162101
 
 Date Added: 2025-09-30 09:21:01 -0700
 
-Date Modified: 2025-12-04 12:10:31 -0800
+Date Modified: 2025-12-08 10:46:17 -0800
 
+Inclusions: Begin with the end in mind
+Inclusions: Purpose - Drive
+Inclusions: Shared Identity and Purpose - CDP
 Inclusions: Your company’s purpose is its north star
 
 Body:
@@ -38,11 +41,12 @@ A group's purpose need not be singular, although one purpose must generally be p
 
 {:include-quotebiblio:Your company’s purpose is its north star}
 
+----
+
 ##### Relevant Reference Models
 
-+ [[Core Design Principles for the Efficacy of Groups]] 
-	- [[Shared Identity and Purpose - CDP]] 
-+ [[Motivational Factors for Complex Work]] 
-	- [[Purpose - Drive]] 
-+ [[The 7 Habits of Highly Effective People]]
-	- [[Begin with the end in mind]]
+{:include-ref:Shared Identity and Purpose - CDP}
+
+{:include-ref:Purpose - Drive}
+
+{:include-ref:Begin with the end in mind}

@@ -22,10 +22,11 @@ Timestamp: 20251008223538
 
 Date Added: 2025-10-08 15:35:38 -0700
 
-Date Modified: 2025-12-04 12:10:31 -0800
+Date Modified: 2025-12-08 10:36:49 -0800
 
 Inclusions: Between-group selection became the primary evolutionary force
 Inclusions: Conflict of interests and beliefs was inescapable
+Inclusions: The Hero Instinct
 Inclusions: Life is competition
 
 Body:
@@ -56,7 +57,8 @@ However much we wish to live cooperatively with one another, the drive to compet
 
 {:include-quotebiblio:Between-group selection became the primary evolutionary force}
 
+----
+
 ##### Relevant Reference Models
 
-+ [[The Tribal Instincts]]
-	- [[The Hero Instinct]]
+{:include-ref:The Hero Instinct}

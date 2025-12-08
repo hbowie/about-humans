@@ -22,7 +22,9 @@ Timestamp: 20251007173055
 
 Date Added: 2025-10-07 10:30:55 -0700
 
-Date Modified: 2025-12-01 15:00:50 -0800
+Date Modified: 2025-12-08 10:34:25 -0800
+
+Inclusions: Knowledge is derived by observation, experimentation, and rational analysis
 
 Body:
 
@@ -32,5 +34,4 @@ Using observation,  [[language]] and [[imagination]] we construct models and the
 
 ##### Relevant Reference Models
 
-+ [[Humanist Manifesto III]]
-	- [[Knowledge is derived by observation, experimentation, and rational analysis]]
+{:include-ref:Knowledge is derived by observation, experimentation, and rational analysis}

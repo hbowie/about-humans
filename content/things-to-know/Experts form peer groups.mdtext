@@ -4,6 +4,8 @@ Tags:   science
 
 Long Title: Experts form peer groups.
 
+AKA:    academy
+
 Topics Index: science; peer groups; developmental levels; specialization; written language; 
 
 Names Index: Kelvin, Lord; 
@@ -20,8 +22,9 @@ Timestamp: 20251019224436
 
 Date Added: 2025-10-19 15:44:36 -0700
 
-Date Modified: 2025-12-04 12:10:31 -0800
+Date Modified: 2025-12-08 10:54:52 -0800
 
+Inclusions: Modern Level of Development
 Inclusions: When you can measure what you are speaking about
 
 Body:
@@ -49,7 +52,8 @@ This organizational paradigm encourages loyalty to shared truth, and to precise 
 
 {:include-quotebiblio:When you can measure what you are speaking about}
 
+----
+
 ##### Relevant Reference Models
 
-+ [[Developmental Levels]]
-	- [[Modern Level of Development]]
+{:include-ref:Modern Level of Development}

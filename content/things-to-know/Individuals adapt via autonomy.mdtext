@@ -22,9 +22,15 @@ Timestamp: 20250918013320
 
 Date Added: 2025-09-17 18:33:20 -0700
 
-Date Modified: 2025-12-04 12:10:31 -0800
+Date Modified: 2025-12-08 10:38:58 -0800
 
+Inclusions: Autonomy - Drive
+Inclusions: Autonomy - SDT
+Inclusions: Be proactive
+Inclusions: The Hero Instinct
 Inclusions: Life can be much broader
+Inclusions: Local Autonomy - CDP
+Inclusions: Mild hierarchy - SS
 Inclusions: Thralls to group instincts
 Inclusions: Wriggling
 
@@ -54,17 +60,19 @@ And it is generally this third means of adaptation that enables the second — a
 
 {:include-quotebiblio:Life can be much broader}
 
+----
+
 ##### Relevant Reference Models
 
-+ [[Core Design Principles for the Efficacy of Groups]]
-	- [[Local Autonomy - CDP]] 
-+ [[Motivational Factors for Complex Work]] 
-	- [[Autonomy - Drive]] 
-+ [[Self-Determination Theory]]
-	- [[Autonomy - SDT]] | 
-+  [[The 7 Habits of Highly Effective People]] 
-	- [[Be proactive]] 
-+ [[The Social Suite]]
-	- [[Mild hierarchy - SS]]
-+ [[The Tribal Instincts]]
-	- [[The Hero Instinct]]
+{:include-ref:Local Autonomy - CDP}
+
+{:include-ref:Autonomy - Drive}
+
+{:include-ref:Autonomy - SDT}
+
+{:include-ref:Be proactive}
+
+{:include-ref:Mild hierarchy - SS}
+
+{:include-ref:The Hero Instinct}
+
