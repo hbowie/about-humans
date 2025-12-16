@@ -8,11 +8,11 @@ AKA:    critical thinking
 
 Topics Index: critical thinking; nirvana antipattern; 
 
-Names Index: Mencken, H. L.; Obama, Barack; Brown, William J.; Aikin, Scott F.; Cynefin Framework; Allingham, Margaret; 
+Names Index: Mencken, H. L.; Obama, Barack; Brown, William J.; Aikin, Scott F.; Cynefin Framework; Allingham, Margaret; Galbraith, John Kenneth; 
 
 Seq:    8.8
 
-Display Seq: 59
+Display Seq: 60
 
 Level:  3 - Topic
 
@@ -22,8 +22,9 @@ Timestamp: 20251024222705
 
 Date Added: 2025-10-24 15:27:05 -0700
 
-Date Modified: 2025-12-15 15:20:40 -0800
+Date Modified: 2025-12-16 14:23:16 -0800
 
+Inclusions: Conventional views
 Inclusions: Cynefin Framework Model
 Inclusions: Easy solutions
 Inclusions: Muddled thinking and self-deception
@@ -47,6 +48,8 @@ In order to come up with the best possible solutions to such problems, we genera
 ##### Words from Others on this Topic
 
 {:include-quotebiblio:Easy solutions}
+
+{:include-quotebiblio:Conventional views}
 
 {:include-quotebiblio:Muddled thinking and self-deception}
 

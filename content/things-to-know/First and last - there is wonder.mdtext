@@ -10,7 +10,7 @@ Names Index: Chesterton, G. K.; Blake, William; Chabon, Michael; Descartes, Ren�
 
 Seq:    8.12
 
-Display Seq: 63
+Display Seq: 64
 
 Level:  3 - Topic
 
@@ -20,9 +20,10 @@ Timestamp: 20251023194844
 
 Date Added: 2025-10-23 12:48:44 -0700
 
-Date Modified: 2025-12-15 15:20:40 -0800
+Date Modified: 2025-12-16 14:17:46 -0800
 
 Inclusions: A mind is blown
+Inclusions: Nature made a mockery of information technology
 Inclusions: This dazed and dramatic ignorance
 Inclusions: To see a world in a grain of sand
 Inclusions: Wonderment is the first passion of all
@@ -53,5 +54,7 @@ Because the cosmos — including we humans who occupy one small corner of it —
 {:include-quotebiblio:A mind is blown}
 
 {:include-quotebiblio:Wonderment is the first passion of all}
+
+{:include-quotebiblio:Nature made a mockery of information technology}
 
 {:include-quotebiblio:This dazed and dramatic ignorance}
