@@ -12,7 +12,7 @@ Names Index: Mosley, Walter; Forster, E. M.; Jobs, Steve; Core Design Principles
 
 Seq:    5.4
 
-Display Seq: 32
+Display Seq: 33
 
 Level:  3 - Topic
 
@@ -22,13 +22,12 @@ Timestamp: 20250918013320
 
 Date Added: 2025-09-17 18:33:20 -0700
 
-Date Modified: 2025-12-08 10:38:58 -0800
+Date Modified: 2025-12-15 15:20:40 -0800
 
 Inclusions: Autonomy - Drive
 Inclusions: Autonomy - SDT
 Inclusions: Be proactive
 Inclusions: The Hero Instinct
-Inclusions: Life can be much broader
 Inclusions: Local Autonomy - CDP
 Inclusions: Mild hierarchy - SS
 Inclusions: Thralls to group instincts
@@ -58,8 +57,6 @@ And it is generally this third means of adaptation that enables the second — a
 
 {:include-quotebiblio:Wriggling}
 
-{:include-quotebiblio:Life can be much broader}
-
 ----
 
 ##### Relevant Reference Models
@@ -75,4 +72,3 @@ And it is generally this third means of adaptation that enables the second — a
 {:include-ref:Mild hierarchy - SS}
 
 {:include-ref:The Hero Instinct}
-

@@ -6,13 +6,13 @@ Long Title: Friends, coworkers and acquaintances expand the circle.
 
 AKA:    friends, social networks, camps, camp, village
 
-Topics Index: friends; social networks; Dunbar's number; camps; groups; villages; 
+Topics Index: friends; social networks; Dunbar's number; camps; groups; villages; teams; 
 
-Names Index: Dunbar's number; Christakis, Nicholas; The Social Suite; Brooks, David; Dunbar, Robin; 
+Names Index: Dunbar's number; Christakis, Nicholas; The Social Suite; Brooks, David; Dunbar, Robin; Wilson, David Sloan; 
 
 Seq:    7.7
 
-Display Seq: 43
+Display Seq: 45
 
 Level:  3 - Topic
 
@@ -22,11 +22,12 @@ Timestamp: 20251012213956
 
 Date Added: 2025-10-12 14:39:56 -0700
 
-Date Modified: 2025-12-08 10:51:27 -0800
+Date Modified: 2025-12-15 15:20:40 -0800
 
 Inclusions: Friendship is a fundamental category
 Inclusions: Friendship - SS
 Inclusions: Life is more like settling a series of villages
+Inclusions: Small groups are a fundamental unit of human social organization
 Inclusions: Social networks - SS
 
 Body:
@@ -57,6 +58,8 @@ This organizational paradigm encourages loyalty to friends and colleagues, based
 
 {:include-quotebiblio:Friendship is a fundamental category}
 
+{:include-quotebiblio:Small groups are a fundamental unit of human social organization}
+
 {:include-quotebiblio:Life is more like settling a series of villages}
 
 ----
@@ -66,4 +69,3 @@ This organizational paradigm encourages loyalty to friends and colleagues, based
 {:include-ref:Friendship - SS}
 
 {:include-ref:Social networks - SS}
-

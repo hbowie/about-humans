@@ -18,7 +18,7 @@ Level: <level: 1 - Book Title; 2 - Section; 3 - Topic; 4 - Subtopic; 5 - Detail;
 
 Class: <class: application, author, back, biblio, cover, def, exclude, front, intro, model, model-element, quote, subtopic, text, text-section, title, title-page, topic, topic-with-image, work >
 
-Link: <link>
+Link: <link: x|s|s|x|x >
 
 Image Name: <imagename>
 
@@ -28,7 +28,7 @@ Image Caption:
 
 Image Credit: 
 
-Image Credit Link: <link>
+Image Credit Link: <link: x|s|s|x|x >
 
 Attribution: <attribution>
 

@@ -6,9 +6,11 @@ AKA:    education
 
 Topics Index: education; 
 
-Seq:    8.7
+Names Index: Durant, Will; Jefferson, Thomas; Putnam, Robert; Bok, Derek; Baldwin, James; 
 
-Display Seq: 57
+Seq:    8.10
+
+Display Seq: 61
 
 Level:  3 - Topic
 
@@ -18,10 +20,11 @@ Timestamp: 20251106003252
 
 Date Added: 2025-11-05 16:32:52 -0800
 
-Date Modified: 2025-12-08 10:59:55 -0800
+Date Modified: 2025-12-15 15:31:48 -0800
 
 Inclusions: Cost of Education
 Inclusions: Education demands a certain daring
+Inclusions: The full fruitage of instruction
 Inclusions: Investing in other people's children
 Inclusions: Preach a crusade against ignorance
 Inclusions: Social learning and teaching - SS
@@ -43,6 +46,8 @@ Such education starts with the [[family]], but larger groups generally contribut
 {:include-quotebiblio:Investing in other people's children}
 
 {:include-quotebiblio:Cost of Education}
+
+{:include-quotebiblio:The full fruitage of instruction}
 
 {:include-quotebiblio:Education demands a certain daring}
 
