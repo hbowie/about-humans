@@ -1,6 +1,7 @@
 Title ID	Timestamp
-essentialwritingsofralphwaldoemerson	20251216184009
-bibliography	20250915162453
-crackup	20251216184009
 foolishconsistency	20251216184009
+essentialwritingsofralphwaldoemerson	20251216184009
+crackup	20251216184009
+bibliography	20250915162453
 everybodycriesaunionisabsolutelynecessary	20251216184009
+freedomtoenactotherformsofsocialexistence	20251216184009
