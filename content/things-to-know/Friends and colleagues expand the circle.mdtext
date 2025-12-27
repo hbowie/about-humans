@@ -22,8 +22,9 @@ Timestamp: 20251012213956
 
 Date Added: 2025-10-12 14:39:56 -0700
 
-Date Modified: 2025-12-16 13:00:03 -0800
+Date Modified: 2025-12-26 15:45:25 -0800
 
+Inclusions: Equals
 Inclusions: Friendship is a fundamental category
 Inclusions: Friendship - SS
 Inclusions: Life is more like settling a series of villages
@@ -59,6 +60,8 @@ This organizational paradigm encourages loyalty to friends and colleagues, based
 {:include-quotebiblio:Friendship is a fundamental category}
 
 {:include-quotebiblio:Small groups are a fundamental unit of human social organization}
+
+{:include-quotebiblio:Equals}
 
 {:include-quotebiblio:Life is more like settling a series of villages}
 

@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<title>Important Things to Know About Humans</title>
+<title>About Humans: Cited Authors</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="This table lists all of the authors I cite within this work. 
+
+The table is sortable. Click on a column heading to sort by that column" />
 <style>
 /* --------------------------------------------------
 
@@ -829,22 +832,1135 @@ nav.nnk-nav ul li a {
 </head>
 <body>
 
+<header class="nnk-header">
+<p><a href="https://ntnk.app/importantthingstoknowabouthumans" class="wiki-link">Important Things to Know About Humans</a> </p>
+
+</header>
+
+<nav class="nnk-nav">
+<ul>
+<li>
+<a href="https://ntnk.app/tableofcontents" class="wiki-link">Contents</a> </li>
+<li>
+<a href="https://ntnk.app/indexoftopics" class="wiki-link">Topics</a> </li>
+<li>
+<a href="https://ntnk.app/citedauthors" class="wiki-link">Names</a> </li>
+<li>
+<a href="https://ntnk.app/randomthingtoknow" class="wiki-link">Random</a> </li>
+</ul>
+
+
+</nav>
+
 <main>
-<h1 id="importantthingstoknowabouthumans" style="clear:both">Important Things to Know<br />About Humans</h1>
-<img src="files/Important Things to Know About Humans | istock.jpg" alt="profile of human head surrounded by many symbols" title="profile of human head surrounded by many symbols" class="notenik-image" /><p class="byline">A web book by <a href="https://hbowie.net/about.html" class="ext-link" target="_blank" rel="author noopener">Herb Bowie</a></p>
+<p><a href="https://ntnk.app/backmatter" class="nav-link">Back Matter </a>&#160;&#8593;</p><h3 id="citedauthors" style="clear:both">Cited Authors</h3>
+<p>This table lists all of the authors I cite within this work. </p>
 
-<p>Last revised on December 18th, 2025. </p>
+<p>The table is sortable. Click on a column heading to sort by that column. Click a second time to reverse the sort. </p>
 
-<p>A book by, for and about humans. </p>
+<p>Hover over an author name for brief info about the cited author. Click on an author name to be taken to that author&#8217;s page in the <a href="https://ntnk.app/bibliography" class="wiki-link">Bibliography</a>. </p>
 
-<p>In which the author undertakes the incredible folly of trying to catalog all the most important points to keep in mind about our frustrating, incredible species. </p>
+<script>
+function sortTable(tableID, n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  var firstElement = "";
+  var nextElement = "";
+  var firstLowered = "";
+  var nextLowered = "";
+  var firstNumber = 0;
+  var nextNumber = 0;
+  var firstValue = 0;
+  var nextValue = 0;
+  table = document.getElementById(tableID);
+  switching = true;
+  // Set the sorting direction to ascending:
+  dir = "asc";
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // Start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /* Loop through all table rows (except the
+    first, which contains table headers): */
+    for (i = 1; i < (rows.length - 1); i++) {
+      // Start by saying there should be no switching:
+      shouldSwitch = false;
+      /* Get the two elements you want to compare,
+      one from current row and one from the next: */
+      firstElement = rows[i].getElementsByTagName("TD")[n];
+      nextElement = rows[i + 1].getElementsByTagName("TD")[n];
+      firstLowered = firstElement.innerText.trim().toLowerCase();
+      nextLowered = nextElement.innerText.trim().toLowerCase();
+      firstNumber = Number(firstLowered);
+      nextNumber = Number(nextLowered);
+      if (isNaN(firstLowered) || isNaN(nextLowered)) {
+        x = firstLowered;
+        y = nextLowered;
+      } else {
+        x = firstNumber;
+        y = nextNumber;
+      }
+      
+      /* Check if the two rows should switch place,
+      based on the direction, asc or desc: */
+      if (dir == "asc") {
+        if (x > y) {
+          // If so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x < y) {
+          // If so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark that a switch has been done: */
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      // Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /* If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again. */
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
 
-<p>Read on to find your favorites! </p>
+
+</script>
+
+<table id="authors-table">
+<colgroup>
+<col style="width:25%">
+<col style="width:50%">
+<col style="width:25%">
+</colgroup>
+<tr>
+<th onclick="sortTable('authors-table', 0)">
+Last Name</th>
+<th onclick="sortTable('authors-table', 1)">
+Author Name</th>
+<th onclick="sortTable('authors-table', 2)">
+Years Lived</th>
+</tr>
+<tr>
+<td>
+Abrams</td>
+<td>
+<a href="https://ntnk.app/abramsfrankw" title="American industrialist" class="implicit">Frank W. Abrams</a></td>
+<td>
+1889-1976</td>
+</tr>
+<tr>
+<td>
+Adams</td>
+<td>
+<a href="https://ntnk.app/adamsjohn" title="American statesman, attorney, diplomat, writer, and Founding Father who served as the second president of the United States" class="implicit">John Adams</a></td>
+<td>
+1735-1826</td>
+</tr>
+<tr>
+<td>
+Aikin</td>
+<td>
+<a href="https://ntnk.app/aikinscottfandtalisserobertb" title="Associate Professor of Philosophy at Vanderbilt University in Nashville, Tennessee." class="implicit">Aikin, Scott F., Talisse and Robert B.</a></td>
+<td>
+1972?-</td>
+</tr>
+<tr>
+<td>
+Aleksandrov</td>
+<td>
+<a href="https://ntnk.app/aleksandrovaleksandr" title="r Soviet cosmonaut and twice Hero of the Soviet Union" class="implicit">Aleksandr Aleksandrov</a></td>
+<td>
+1943-</td>
+</tr>
+<tr>
+<td>
+Alexander</td>
+<td>
+<a href="https://ntnk.app/alexanderchristopher" title="Austrian-born British-American architect and design theorist" class="implicit">Christopher Alexander</a></td>
+<td>
+1936-2022</td>
+</tr>
+<tr>
+<td>
+Allingham</td>
+<td>
+<a href="https://ntnk.app/allinghammargery" title="English mystery novelist" class="implicit">Margery Allingham</a></td>
+<td>
+1904-1966</td>
+</tr>
+<tr>
+<td>
+Aristotle</td>
+<td>
+<a href="https://ntnk.app/aristotle" title="Greek philosopher" class="implicit">Aristotle</a></td>
+<td>
+0384-0322 BC</td>
+</tr>
+<tr>
+<td>
+Asimov</td>
+<td>
+<a href="https://ntnk.app/asimovisaac" title="American writer and professor of biochemistry at Boston University" class="implicit">Isaac Asimov</a></td>
+<td>
+1920-1992</td>
+</tr>
+<tr>
+<td>
+Baldwin</td>
+<td>
+<a href="https://ntnk.app/baldwinjames" title="American novelist, playwright, essayist, poet and activist" class="implicit">James Baldwin</a></td>
+<td>
+1924-1987</td>
+</tr>
+<tr>
+<td>
+Baynes</td>
+<td>
+<a href="https://ntnk.app/baynescary" title="American Jungian psychologist and translator" class="implicit">Cary Baynes</a></td>
+<td>
+1883-1977</td>
+</tr>
+<tr>
+<td>
+Bender</td>
+<td>
+<a href="https://ntnk.app/benderlauretta" title="American child neuropsychiatrist" class="implicit">Lauretta Bender</a></td>
+<td>
+1897-1987</td>
+</tr>
+<tr>
+<td>
+Bernstein</td>
+<td>
+<a href="https://ntnk.app/bernsteinleonard" title="American conductor, composer, pianist, music educator, author, and humanitarian" class="implicit">Leonard Bernstein</a></td>
+<td>
+1918-1980</td>
+</tr>
+<tr>
+<td>
+Bezos</td>
+<td>
+<a href="https://ntnk.app/bezosjeff" title="American internet entrepreneur, industrialist, media proprietor, and investor" class="implicit">Jeff Bezos</a></td>
+<td>
+1964-</td>
+</tr>
+<tr>
+<td>
+Blake</td>
+<td>
+<a href="https://ntnk.app/blakewilliam" title="English poet, painter, and printmaker" class="implicit">William Blake</a></td>
+<td>
+1757-1827</td>
+</tr>
+<tr>
+<td>
+Bloom</td>
+<td>
+<a href="https://ntnk.app/bloompaul" title="Canadian-American psychologist" class="implicit">Paul Bloom</a></td>
+<td>
+1963-</td>
+</tr>
+<tr>
+<td>
+Bohr</td>
+<td>
+<a href="https://ntnk.app/bohrniels" title="Danish physicist" class="implicit">Niels Bohr</a></td>
+<td>
+1885-1962</td>
+</tr>
+<tr>
+<td>
+Bok</td>
+<td>
+<a href="https://ntnk.app/bokderek" title="American lawyer and educator, and former president of Harvard University" class="implicit">Derek Bok</a></td>
+<td>
+1930-</td>
+</tr>
+<tr>
+<td>
+Bradbury</td>
+<td>
+<a href="https://ntnk.app/bradburyray" title="American author and screenwriter" class="implicit">Ray Bradbury</a></td>
+<td>
+1920-2012</td>
+</tr>
+<tr>
+<td>
+Braun</td>
+<td>
+<a href="https://ntnk.app/braunwernhervon" title="German–American aerospace engineer and space architect" class="implicit">Wernher von Braun</a></td>
+<td>
+1912-1977</td>
+</tr>
+<tr>
+<td>
+Brecht</td>
+<td>
+<a href="https://ntnk.app/brechtbertolt" title="German theatre practitioner, playwright, and poet" class="implicit">Bertolt Brecht</a></td>
+<td>
+1898-1956</td>
+</tr>
+<tr>
+<td>
+Bridges</td>
+<td>
+<a href="https://ntnk.app/bridgesjeff" title="American actor, singer, and producer" class="implicit">Jeff Bridges</a></td>
+<td>
+1949-</td>
+</tr>
+<tr>
+<td>
+Brooks</td>
+<td>
+<a href="https://ntnk.app/brooksdavid" title="Canadian-born American book author and political and cultural commentator" class="implicit">David Brooks</a></td>
+<td>
+1961-</td>
+</tr>
+<tr>
+<td>
+Brower</td>
+<td>
+<a href="https://ntnk.app/browerdavid" title="Prominent environmentalist and the founder of many environmental organizations" class="implicit">David Brower</a></td>
+<td>
+1912-2000</td>
+</tr>
+<tr>
+<td>
+Brown</td>
+<td>
+<a href="https://ntnk.app/brownbrené" title="American professor, author, and podcast host" class="implicit">Brené Brown</a></td>
+<td>
+1965-</td>
+</tr>
+<tr>
+<td>
+Brown</td>
+<td>
+<a href="https://ntnk.app/brownwilliamjmccormickhayswandthomasscottw" title="AntiPattern Evangelist at Albion International" class="implicit">Brown, William J., McCormick, Hays W., Thomas and Scott W.</a></td>
+<td>
+1955?-</td>
+</tr>
+<tr>
+<td>
+Buffett</td>
+<td>
+<a href="https://ntnk.app/buffettjimmy" title="American singer-songwriter, author, and businessman" class="implicit">Jimmy Buffett</a></td>
+<td>
+1946-2023</td>
+</tr>
+<tr>
+<td>
+Buffett</td>
+<td>
+<a href="https://ntnk.app/buffettwarren" title="American investor and philanthropist" class="implicit">Warren Buffett</a></td>
+<td>
+1930-</td>
+</tr>
+<tr>
+<td>
+Burgess</td>
+<td>
+<a href="https://ntnk.app/burgessanthony" title="English writer and composer" class="implicit">Anthony Burgess</a></td>
+<td>
+1917-1993</td>
+</tr>
+<tr>
+<td>
+Camus</td>
+<td>
+<a href="https://ntnk.app/camusalbert" title="French philosopher, novelist, author, dramatist, journalist, world federalist,[3] and political activist" class="implicit">Albert Camus</a></td>
+<td>
+1913-1960</td>
+</tr>
+<tr>
+<td>
+Capra</td>
+<td>
+<a href="https://ntnk.app/caprafrank" title="Italian-American film director, producer, and screenwriter" class="implicit">Frank Capra</a></td>
+<td>
+1897-1991</td>
+</tr>
+<tr>
+<td>
+Carson</td>
+<td>
+<a href="https://ntnk.app/carsonrachel" title="American marine biologist, writer, and conservationist" class="implicit">Rachel Carson</a></td>
+<td>
+1907-1964</td>
+</tr>
+<tr>
+<td>
+Cave</td>
+<td>
+<a href="https://ntnk.app/cavenick" title="Australian musician who fronts the rock band Nick Cave and the Bad Seeds" class="implicit">Nick Cave</a></td>
+<td>
+1957-</td>
+</tr>
+<tr>
+<td>
+Chabon</td>
+<td>
+<a href="https://ntnk.app/chabonmichael" title="American novelist, screenwriter, columnist and short story writer" class="implicit">Michael Chabon</a></td>
+<td>
+1963-</td>
+</tr>
+<tr>
+<td>
+Chandler</td>
+<td>
+<a href="https://ntnk.app/chandlerraymond" title="American-British novelist and screenwriter" class="implicit">Raymond Chandler</a></td>
+<td>
+1888-1959</td>
+</tr>
+<tr>
+<td>
+Chesterton</td>
+<td>
+<a href="https://ntnk.app/chestertongk" title="English writer, philosopher, lay theologian, and literary and art critic" class="implicit">G. K. Chesterton</a></td>
+<td>
+1874-1936</td>
+</tr>
+<tr>
+<td>
+Christakis</td>
+<td>
+<a href="https://ntnk.app/christakisnicholas" title="Greek-American sociologist and physician" class="implicit">Nicholas Christakis</a></td>
+<td>
+1962-</td>
+</tr>
+<tr>
+<td>
+Christian</td>
+<td>
+<a href="https://ntnk.app/christiandavid" title="historian teaching the discipline of Big History" class="implicit">David Christian</a></td>
+<td>
+1946-</td>
+</tr>
+<tr>
+<td>
+Coan</td>
+<td>
+<a href="https://ntnk.app/coanjim" title="American affective neuroscientist, clinical psychologist, writer, and psychology professor at the University of Virginia" class="implicit">Jim Coan</a></td>
+<td>
+1969-</td>
+</tr>
+<tr>
+<td>
+Covey</td>
+<td>
+<a href="https://ntnk.app/coveystephen" title="American educator, author, businessman, and speaker" class="implicit">Stephen Covey</a></td>
+<td>
+1932-2012</td>
+</tr>
+<tr>
+<td>
+Cowen</td>
+<td>
+<a href="https://ntnk.app/cowentyler" title="American economist, columnist and blogger" class="implicit">Tyler Cowen</a></td>
+<td>
+1962-</td>
+</tr>
+<tr>
+<td>
+Cross</td>
+<td>
+<a href="https://ntnk.app/crossamanda" title="American academic at Columbia University, a prolific feminist author of academic studies, and a mystery author" class="implicit">Amanda Cross</a></td>
+<td>
+1926-2003</td>
+</tr>
+<tr>
+<td>
+Dalai Lama</td>
+<td>
+<a href="https://ntnk.app/dalailama14th" title="the highest spiritual leader and head of Tibetan Buddhism" class="implicit">Dalai Lama and 14th</a></td>
+<td>
+1940-</td>
+</tr>
+<tr>
+<td>
+Darnton</td>
+<td>
+<a href="https://ntnk.app/darntonrobert" title="American cultural historian and academic librarian" class="implicit">Robert Darnton</a></td>
+<td>
+1939-</td>
+</tr>
+<tr>
+<td>
+Descartes</td>
+<td>
+<a href="https://ntnk.app/descartesrené" title="French philosopher, scientist, and mathematician" class="implicit">René Descartes</a></td>
+<td>
+1596-1650</td>
+</tr>
+<tr>
+<td>
+Durant</td>
+<td>
+<a href="https://ntnk.app/durantwill" title="American historian and philosopher" class="implicit">Will Durant</a></td>
+<td>
+1885-1981</td>
+</tr>
+<tr>
+<td>
+Dymond</td>
+<td>
+<a href="https://ntnk.app/dymondken" title="software process consultant" class="implicit">Ken Dymond</a></td>
+<td>
+1955?-</td>
+</tr>
+<tr>
+<td>
+Einstein</td>
+<td>
+<a href="https://ntnk.app/einsteinalbert" title="German-born theoretical physicist" class="implicit">Albert Einstein</a></td>
+<td>
+1879-1955</td>
+</tr>
+<tr>
+<td>
+Emerson</td>
+<td>
+<a href="https://ntnk.app/emersonralphwaldo" title="American essayist, lecturer, philosopher, abolitionist and poet who led the transcendentalist movement of the mid-19th century" class="implicit">Ralph Waldo Emerson</a></td>
+<td>
+1803-1882</td>
+</tr>
+<tr>
+<td>
+Enger</td>
+<td>
+<a href="https://ntnk.app/engerleif" title="American author" class="implicit">Leif Enger</a></td>
+<td>
+1961-</td>
+</tr>
+<tr>
+<td>
+Fawcett</td>
+<td>
+<a href="https://ntnk.app/fawcettedmund" title="British political journalist and author" class="implicit">Edmund Fawcett</a></td>
+<td>
+1945?-</td>
+</tr>
+<tr>
+<td>
+Ferlinghetti</td>
+<td>
+<a href="https://ntnk.app/ferlinghettilawrence" title="American poet, painter, social activist, and co-founder of City Lights Booksellers & Publishers" class="implicit">Lawrence Ferlinghetti</a></td>
+<td>
+1919-2021</td>
+</tr>
+<tr>
+<td>
+Fink</td>
+<td>
+<a href="https://ntnk.app/finklarry" title="American billionaire businessman, chairman and CEO of BlackRock" class="implicit">Larry Fink</a></td>
+<td>
+1952-</td>
+</tr>
+<tr>
+<td>
+Fitzgerald</td>
+<td>
+<a href="https://ntnk.app/fitzgeraldfscott" title="American novelist, essayist, and short story writer" class="implicit">F. Scott Fitzgerald</a></td>
+<td>
+1896-1940</td>
+</tr>
+<tr>
+<td>
+Ford</td>
+<td>
+<a href="https://ntnk.app/fordhenry" title="American industrialist and business magnate" class="implicit">Henry Ford</a></td>
+<td>
+1863-1947</td>
+</tr>
+<tr>
+<td>
+Forster</td>
+<td>
+<a href="https://ntnk.app/forsterem" title="English fiction writer, essayist and librettist" class="implicit">E. M. Forster</a></td>
+<td>
+1879-1970</td>
+</tr>
+<tr>
+<td>
+Foucault</td>
+<td>
+<a href="https://ntnk.app/foucaultmichel" title="French historian of ideas and philosopher, who was also an author, literary critic, political activist, and teacher" class="implicit">Michel Foucault</a></td>
+<td>
+1926-1984</td>
+</tr>
+<tr>
+<td>
+Frankl</td>
+<td>
+<a href="https://ntnk.app/franklvictor" title="Austrian Holocaust survivor, neurologist, psychiatrist and author" class="implicit">Victor Frankl</a></td>
+<td>
+1905-1997</td>
+</tr>
+<tr>
+<td>
+Franklin</td>
+<td>
+<a href="https://ntnk.app/franklinbenjamin" title="American polymath who was active as a writer, scientist, inventor, statesman, diplomat, printer, publisher, and political philosopher." class="implicit">Benjamin Franklin</a></td>
+<td>
+1706-1774</td>
+</tr>
+<tr>
+<td>
+Franzen</td>
+<td>
+<a href="https://ntnk.app/franzenjonathan" title="American novelist and essayist" class="implicit">Jonathan Franzen</a></td>
+<td>
+1959-</td>
+</tr>
+<tr>
+<td>
+Frei</td>
+<td>
+<a href="https://ntnk.app/freifrancesx" title="Professor of Technology and Operations" class="implicit">Frances X. Frei</a></td>
+<td>
+1960?-</td>
+</tr>
+<tr>
+<td>
+Freinacht</td>
+<td>
+<a href="https://ntnk.app/freinachthanzi" title="Political philosopher, historian and sociologist" class="implicit">Hanzi Freinacht</a></td>
+<td>
+1960?-</td>
+</tr>
+<tr>
+<td>
+Galbraith</td>
+<td>
+<a href="https://ntnk.app/galbraithjohnkenneth" title="Canadian-American economist, diplomat, public official, and intellectual" class="implicit">John Kenneth Galbraith</a></td>
+<td>
+1908-2006</td>
+</tr>
+<tr>
+<td>
+Ginsberg</td>
+<td>
+<a href="https://ntnk.app/ginsbergallen" title="American poet and writer" class="implicit">Allen Ginsberg</a></td>
+<td>
+1926-1997</td>
+</tr>
+<tr>
+<td>
+Gopnik</td>
+<td>
+<a href="https://ntnk.app/gopnikadam" title="American writer and essayist" class="implicit">Adam Gopnik</a></td>
+<td>
+1955-</td>
+</tr>
+<tr>
+<td>
+Graeber</td>
+<td>
+<a href="https://ntnk.app/graeberdavidandwengrowdavid" title="American anthropologist and left-wing anarchist social and political activist" class="implicit">Graeber, David, Wengrow and David</a></td>
+<td>
+1961-2020</td>
+</tr>
+<tr>
+<td>
+Graves</td>
+<td>
+<a href="https://ntnk.app/gravesclarew" title="American professor of psychology" class="implicit">Clare W. Graves</a></td>
+<td>
+1914-1986</td>
+</tr>
+<tr>
+<td>
+Haldane</td>
+<td>
+<a href="https://ntnk.app/haldanejbs" title="British-Indian scientist" class="implicit">J. B. S. Haldane</a></td>
+<td>
+1892-1964</td>
+</tr>
+<tr>
+<td>
+Harari</td>
+<td>
+<a href="https://ntnk.app/harariyuvalnoah" title="Israeli public intellectual, historian and professor" class="implicit">Yuval Noah Harari</a></td>
+<td>
+1976-</td>
+</tr>
+<tr>
+<td>
+Hare</td>
+<td>
+<a href="https://ntnk.app/harebrianandwoodsvanessa" title="Brian is a professor of evolutionary anthropology" class="implicit">Hare, Brian, Woods and Vanessa</a></td>
+<td>
+1976-</td>
+</tr>
+<tr>
+<td>
+Hesse</td>
+<td>
+<a href="https://ntnk.app/hessehermann" title="German-Swiss poet, novelist, and painter" class="implicit">Hermann Hesse</a></td>
+<td>
+1877-1962</td>
+</tr>
+<tr>
+<td>
+Hoffer</td>
+<td>
+<a href="https://ntnk.app/hoffereric" title="American moral and social philosopher" class="implicit">Eric Hoffer</a></td>
+<td>
+1902-1983</td>
+</tr>
+<tr>
+<td>
+Huizinga</td>
+<td>
+<a href="https://ntnk.app/huizingajohan" title="Dutch historian" class="implicit">Johan Huizinga</a></td>
+<td>
+1872-1945</td>
+</tr>
+<tr>
+<td>
+Hwang</td>
+<td>
+<a href="https://ntnk.app/hwangvictor" title="Tech CEO and author" class="implicit">Victor Hwang</a></td>
+<td>
+1980?-</td>
+</tr>
+<tr>
+<td>
+Nation</td>
+<td>
+<a href="https://ntnk.app/iroquoisnation" class="implicit">Iroquois Nation</a></td>
+<td>
+1850?-</td>
+</tr>
+<tr>
+<td>
+Jefferson</td>
+<td>
+<a href="https://ntnk.app/jeffersonthomas" title="American statesman, diplomat, lawyer, architect, philosopher, and Founding Father who served as the third president of the United States from 1801 to 1809" class="implicit">Thomas Jefferson</a></td>
+<td>
+1743-1826</td>
+</tr>
+<tr>
+<td>
+Jobs</td>
+<td>
+<a href="https://ntnk.app/jobssteve" title="American business magnate, industrial designer, investor, and media proprietor" class="implicit">Steve Jobs</a></td>
+<td>
+1955-2011</td>
+</tr>
+<tr>
+<td>
+Johnson</td>
+<td>
+<a href="https://ntnk.app/johnsonsteven" title="American popular science and history author, TV and podcast host, and software creator." class="implicit">Steven Johnson</a></td>
+<td>
+1968-</td>
+</tr>
+<tr>
+<td>
+Jung</td>
+<td>
+<a href="https://ntnk.app/jungcarl" title="Swiss psychiatrist and psychoanalyst who founded analytical psychology" class="implicit">Carl Jung</a></td>
+<td>
+1875-1961</td>
+</tr>
+<tr>
+<td>
+Kay</td>
+<td>
+<a href="https://ntnk.app/kayalan" title="American computer scientist" class="implicit">Alan Kay</a></td>
+<td>
+1940-</td>
+</tr>
+<tr>
+<td>
+Kelvin</td>
+<td>
+<a href="https://ntnk.app/kelvinlord" title="British mathematical physicist and engineer" class="implicit">Lord Kelvin</a></td>
+<td>
+1898-1963</td>
+</tr>
+<tr>
+<td>
+Keynes</td>
+<td>
+<a href="https://ntnk.app/keynesjohnmaynard" title="English economist whose ideas fundamentally changed the theory and practice of macroeconomics and the economic policies of governments" class="implicit">John Maynard Keynes</a></td>
+<td>
+1883-1946</td>
+</tr>
+<tr>
+<td>
+King</td>
+<td>
+<a href="https://ntnk.app/kingmartinlutherjr" title="American Christian minister and activist" class="implicit">Martin Luther King Jr.</a></td>
+<td>
+1929-1968</td>
+</tr>
+<tr>
+<td>
+Lamott</td>
+<td>
+<a href="https://ntnk.app/lamottanne" title="American novelist and non-fiction writer" class="implicit">Anne Lamott</a></td>
+<td>
+1954-</td>
+</tr>
+<tr>
+<td>
+Le Guin</td>
+<td>
+<a href="https://ntnk.app/leguinursulak" title="American author, best known for her works of speculative fiction" class="implicit">Le Guin and Ursula K.</a></td>
+<td>
+1929-2018</td>
+</tr>
+<tr>
+<td>
+Lee</td>
+<td>
+<a href="https://ntnk.app/leestan" title="American comic book writer, editor, publisher and producer" class="implicit">Stan Lee</a></td>
+<td>
+1922-2018</td>
+</tr>
+<tr>
+<td>
+Lennon</td>
+<td>
+<a href="https://ntnk.app/lennonjohn" title="English singer, songwriter, musician and peace activist" class="implicit">John Lennon</a></td>
+<td>
+1940-1980</td>
+</tr>
+<tr>
+<td>
+Lepore</td>
+<td>
+<a href="https://ntnk.app/leporejill" title="American historian and journalist" class="implicit">Jill Lepore</a></td>
+<td>
+1966-</td>
+</tr>
+<tr>
+<td>
+Levitsky</td>
+<td>
+<a href="https://ntnk.app/levitskystevenandziblattdaniel" title="American political scientist and Professor of Government at Harvard University" class="implicit">Levitsky, Steven, Ziblatt and Daniel</a></td>
+<td>
+1968-;</td>
+</tr>
+<tr>
+<td>
+Lewis</td>
+<td>
+<a href="https://ntnk.app/lewiscs" title="British writer, literary scholar and Anglican lay theologian" class="implicit">C. S. Lewis</a></td>
+<td>
+1898-1963</td>
+</tr>
+<tr>
+<td>
+Lightman</td>
+<td>
+<a href="https://ntnk.app/lightmanalan" title="American physicist, writer, and social entrepreneur" class="implicit">Alan Lightman</a></td>
+<td>
+1948-</td>
+</tr>
+<tr>
+<td>
+Lincoln</td>
+<td>
+<a href="https://ntnk.app/lincolnabraham" title="American statesman and lawyer and 16th president of the United States" class="implicit">Abraham Lincoln</a></td>
+<td>
+1809-1865</td>
+</tr>
+<tr>
+<td>
+Luce</td>
+<td>
+<a href="https://ntnk.app/luceedward" title="English journalist and chief US commentator for the *Financial Times*" class="implicit">Edward Luce</a></td>
+<td>
+1968-</td>
+</tr>
+<tr>
+<td>
+Madison</td>
+<td>
+<a href="https://ntnk.app/madisonjames" title="American statesman, diplomat, expansionist, philosopher, and Founding Father who served as the fourth president of the United States" class="implicit">James Madison</a></td>
+<td>
+1751-1836</td>
+</tr>
+<tr>
+<td>
+Marsalis</td>
+<td>
+<a href="https://ntnk.app/marsaliswynton" title="American trumpeter, composer and teacher" class="implicit">Wynton Marsalis</a></td>
+<td>
+1961-</td>
+</tr>
+<tr>
+<td>
+Mead</td>
+<td>
+<a href="https://ntnk.app/meadmargaret" title="American cultural anthropologist, author and speaker" class="implicit">Margaret Mead</a></td>
+<td>
+1901-1978</td>
+</tr>
+<tr>
+<td>
+Mencken</td>
+<td>
+<a href="https://ntnk.app/menckenhl" title="AAmerican journalist, essayist, satirist, cultural critic, and scholar of American English" class="implicit">H. L. Mencken</a></td>
+<td>
+1880-1956</td>
+</tr>
+<tr>
+<td>
+Miller</td>
+<td>
+<a href="https://ntnk.app/millerhenry" title="American writer and artist" class="implicit">Henry Miller</a></td>
+<td>
+1891-1980</td>
+</tr>
+<tr>
+<td>
+Morris</td>
+<td>
+<a href="https://ntnk.app/morrismichael" title="Cultural psychologist at Columbia University" class="implicit">Michael Morris</a></td>
+<td>
+1961?</td>
+</tr>
+<tr>
+<td>
+Mosley</td>
+<td>
+<a href="https://ntnk.app/mosleywalter" title="American author, most widely recognized for his crime fiction" class="implicit">Walter Mosley</a></td>
+<td>
+1952-</td>
+</tr>
+<tr>
+<td>
+Ng</td>
+<td>
+<a href="https://ntnk.app/ngceleste" title="American writer and novelist" class="implicit">Celeste Ng</a></td>
+<td>
+1980-</td>
+</tr>
+<tr>
+<td>
+Obama</td>
+<td>
+<a href="https://ntnk.app/obamabarack" title="American politician and attorney who served as the 44th president of the United States from 2009 to 2017" class="implicit">Barack Obama</a></td>
+<td>
+1961-</td>
+</tr>
+<tr>
+<td>
+O'Reilly</td>
+<td>
+<a href="https://ntnk.app/oreillytim" title="American leader of organized labor and civil rights activist" class="implicit">Tim O'Reilly</a></td>
+<td>
+1907-1970</td>
+</tr>
+<tr>
+<td>
+Ostrom</td>
+<td>
+<a href="https://ntnk.app/ostromelinor" title="American political scientist and political economist" class="implicit">Elinor Ostrom</a></td>
+<td>
+1933-2012</td>
+</tr>
+<tr>
+<td>
+Penny</td>
+<td>
+<a href="https://ntnk.app/pennylouise" title="Canadian crime-fiction author, best known for her Chief Inspector Armand Gamache series set in Quebec" class="implicit">Louise Penny</a></td>
+<td>
+1958-</td>
+</tr>
+<tr>
+<td>
+Pink</td>
+<td>
+<a href="https://ntnk.app/pinkdanielh" title="American non-fiction writer who has authored seven New York Times bestsellers" class="implicit">Daniel H. Pink</a></td>
+<td>
+1964-</td>
+</tr>
+<tr>
+<td>
+Putnam</td>
+<td>
+<a href="https://ntnk.app/putnamrobert" title="American political scientist specializing in comparative politics" class="implicit">Robert Putnam</a></td>
+<td>
+1941-</td>
+</tr>
+<tr>
+<td>
+Rogers</td>
+<td>
+<a href="https://ntnk.app/rogersjohn" title="American screenwriter" class="implicit">John Rogers</a></td>
+<td>
+1996-</td>
+</tr>
+<tr>
+<td>
+Sagan</td>
+<td>
+<a href="https://ntnk.app/sagancarlanddruyanann" title="American astronomer, planetary scientist, cosmologist, astrophysicist, astrobiologist, author, and science communicator; American writer, producer, and director." class="implicit">Sagan, Carl, Druyan and Ann</a></td>
+<td>
+1934-1996</td>
+</tr>
+<tr>
+<td>
+Samson</td>
+<td>
+<a href="https://ntnk.app/samsondavidr" title="Associate Professor of Evolutionary Anthropology" class="implicit">David R. Samson</a></td>
+<td>
+1989?-</td>
+</tr>
+<tr>
+<td>
+Santayana</td>
+<td>
+<a href="https://ntnk.app/santayanageorge" title="Philosopher, essayist, poet, and novelist" class="implicit">George Santayana</a></td>
+<td>
+1863-1952</td>
+</tr>
+<tr>
+<td>
+Sayers</td>
+<td>
+<a href="https://ntnk.app/sayersdorothyl" title="English crime novelist, playwright, translator and critic" class="implicit">Dorothy L. Sayers</a></td>
+<td>
+1893-1957</td>
+</tr>
+<tr>
+<td>
+Scorsese</td>
+<td>
+<a href="https://ntnk.app/scorsesemartin" title="American film director, producer, screenwriter, and actor" class="implicit">Martin Scorsese</a></td>
+<td>
+1942-</td>
+</tr>
+<tr>
+<td>
+Shaw</td>
+<td>
+<a href="https://ntnk.app/shawgeorgebernard" title="Irish playwright, critic, polemicist and political activist" class="implicit">George Bernard Shaw</a></td>
+<td>
+1856-1950</td>
+</tr>
+<tr>
+<td>
+Snowden</td>
+<td>
+<a href="https://ntnk.app/snowdendave" title="Welsh management consultant and researcher in the field of knowledge management and the application of complexity science" class="implicit">Dave Snowden</a></td>
+<td>
+1954-</td>
+</tr>
+<tr>
+<td>
+Spinoza</td>
+<td>
+<a href="https://ntnk.app/spinozabaruch" title="One of the foremost and seminal thinkers of the Enlightenment, modern biblical criticism, and 17th-century Rationalism" class="implicit">Baruch Spinoza</a></td>
+<td>
+1632-1677</td>
+</tr>
+<tr>
+<td>
+Taine</td>
+<td>
+<a href="https://ntnk.app/tainehippolyte" title="French historian, critic and philosopher." class="implicit">Hippolyte Taine</a></td>
+<td>
+1828-1893</td>
+</tr>
+<tr>
+<td>
+Trueblood</td>
+<td>
+<a href="https://ntnk.app/truebloodelton" title="noted 20th-century American Quaker author and theologian" class="implicit">Elton Trueblood</a></td>
+<td>
+1900-1994</td>
+</tr>
+<tr>
+<td>
+Voltaire</td>
+<td>
+<a href="https://ntnk.app/voltaire" title="French Enlightenment writer, philosopher, satirist, and historian" class="implicit">Voltaire</a></td>
+<td>
+1694-1778</td>
+</tr>
+<tr>
+<td>
+Vonnegut</td>
+<td>
+<a href="https://ntnk.app/vonnegutkurt" title="American writer" class="implicit">Kurt Vonnegut</a></td>
+<td>
+1922-2007</td>
+</tr>
+<tr>
+<td>
+Wales</td>
+<td>
+<a href="https://ntnk.app/walesjimmy" title="American Internet entrepreneur and former financial trader. Most notably, he co-founded Wikipedia, a nonprofit free encyclopedia." class="implicit">Jimmy Wales</a></td>
+<td>
+1966-</td>
+</tr>
+<tr>
+<td>
+Wallace</td>
+<td>
+<a href="https://ntnk.app/wallacedavidfoster" title="American author of novels, short stories and essays" class="implicit">David Foster Wallace</a></td>
+<td>
+1962-2008</td>
+</tr>
+<tr>
+<td>
+Watson-Watt</td>
+<td>
+<a href="https://ntnk.app/watsonwattrobert" title="British radio engineer and pioneer of radio direction finding and radar technology" class="implicit">Robert Watson-Watt</a></td>
+<td>
+1892-1973</td>
+</tr>
+<tr>
+<td>
+Wilber</td>
+<td>
+<a href="https://ntnk.app/wilberken" title="American philosopher and author" class="implicit">Ken Wilber</a></td>
+<td>
+1949-</td>
+</tr>
+<tr>
+<td>
+Wilson</td>
+<td>
+<a href="https://ntnk.app/wilsondavidsloan" title="American evolutionary biologist" class="implicit">David Sloan Wilson</a></td>
+<td>
+1949-</td>
+</tr>
+<tr>
+<td>
+Zeiders</td>
+<td>
+<a href="https://ntnk.app/zeidersed" title="Senior Pastor at St. Paul's United Methodist Church, State College, Pennsylvania" class="implicit">Ed Zeiders</a></td>
+<td>
+1950?-</td>
+</tr>
+</table>
+
+
 
 <hr />
 <div>
 
-<p>Next: <a href="https://ntnk.app/tableofcontents" class="nav-link">Table of Contents </a></p></div>
+<p>Next: <a href="https://ntnk.app/referencemodels" class="nav-link">Reference Models </a></p></div>
 
 
 </main>
