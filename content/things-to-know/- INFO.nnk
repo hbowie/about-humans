@@ -54,7 +54,7 @@ Hash Tags: notenik-field
 
 Window Numbers: 1325.0;0.0;1235.0;1410.0;511.5;
 
-Column Widths: author: 100, 200, 1500; date: 80, 120, 500; datemod: 100, 180, 250; rank: 50, 80, 250; x: 12, 20, 50; dateadded: 100, 180, 250; statusdigit: 20, 30, 50; title: 200, 336, 1500; klass: 60, 128, 150; tags: 50, 100, 1200; seq: 30, 105, 250; 
+Column Widths: date: 80, 120, 500; x: 12, 20, 50; tags: 50, 100, 1200; statusdigit: 20, 30, 50; title: 200, 336, 1500; author: 100, 200, 1500; rank: 50, 80, 250; dateadded: 100, 180, 250; klass: 60, 128, 150; datemod: 100, 180, 250; seq: 30, 105, 250; 
 
 description Note ID: pagedescriptioncode
 
