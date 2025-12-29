@@ -10,9 +10,9 @@ Topics Index: culture; language;
 
 Names Index: Christian, David; 
 
-Seq:    1.9
+Seq:    1.11
 
-Display Seq: 9
+Display Seq: 10
 
 Level:  3 - Topic
 
@@ -22,13 +22,16 @@ Timestamp: 20250918001334
 
 Date Added: 2025-09-17 17:13:34 -0700
 
-Date Modified: 2025-12-26 15:45:25 -0800
+Date Modified: 2025-12-29 15:42:56 -0800
 
+Inclusions: Cultural, as opposed to biological, evolution
 Inclusions: Symbolic Language
 
 Body:
 
 Humans develop complex and sophisticated languages (including mathematical languages, and programming languages, and other types) and these languages form important parts of our cultures. 
+
+Among other uses, we employ language to record our [[observations]], and to share them with others, and to compare notes with others. 
 
 Human languages allow us to reference, not just material objects, but abstract concepts. 
 
@@ -39,3 +42,5 @@ Note that while all humans have the capacity for language, details of a specific
 ##### Words from Others on this Topic
 
 {:include-quotebiblio:Symbolic Language}
+
+{:include-quotebiblio:Cultural, as opposed to biological, evolution}

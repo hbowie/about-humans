@@ -12,7 +12,7 @@ Names Index: Mencken, H. L.; Obama, Barack; Brown, William J.; Aikin, Scott F.; 
 
 Seq:    8.9
 
-Display Seq: 61
+Display Seq: 64
 
 Level:  3 - Topic
 
@@ -22,16 +22,16 @@ Timestamp: 20251024222705
 
 Date Added: 2025-10-24 15:27:05 -0700
 
-Date Modified: 2025-12-26 15:45:25 -0800
+Date Modified: 2025-12-29 11:56:15 -0800
 
 Inclusions: Conventional views
 Inclusions: Critical Thinking Followed by Action
 Inclusions: Cynefin Framework Model
 Inclusions: Easy solutions
+Inclusions: Hard Discipline of Reasonableness and Honesty
 Inclusions: Muddled thinking and self-deception
 Inclusions: The Myth of Simple Truths quote
 Inclusions: The Nirvana Antipattern
-Inclusions: No perfect answer
 
 Body:
 
@@ -52,11 +52,11 @@ In order to come up with the best possible solutions to such problems, we genera
 
 {:include-quotebiblio:Conventional views}
 
+{:include-quotebiblio:Hard Discipline of Reasonableness and Honesty}
+
 {:include-quotebiblio:Muddled thinking and self-deception}
 
 {:include-quotebiblio:Critical Thinking Followed by Action}
-
-{:include-quotebiblio:No perfect answer}
 
 {:include-quotebiblio:The Nirvana Antipattern}
 

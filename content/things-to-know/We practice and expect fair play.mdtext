@@ -12,7 +12,7 @@ Names Index: Core Design Principles for the Efficacy of Groups; The Four-Way Tes
 
 Seq:    8.8
 
-Display Seq: 60
+Display Seq: 63
 
 Level:  3 - Topic
 
@@ -22,16 +22,18 @@ Timestamp: 20251014184553
 
 Date Added: 2025-10-14 11:45:53 -0700
 
-Date Modified: 2025-12-26 15:45:25 -0800
+Date Modified: 2025-12-29 11:53:47 -0800
 
 Inclusions: Any love for justice
 Inclusions: The Arc of History
 Inclusions: Core Design Principles for the Efficacy of Groups
 Inclusions: The eternal struggle for human rights
 Inclusions: The Four-Way Test
+Inclusions: No person in America should be too poor to live
 Inclusions: The power of stakeholder capitalism
 Inclusions: Think win-win
 Inclusions: We should always be fighting evil
+Inclusions: What we need for happiness
 
 Body:
 
@@ -52,6 +54,8 @@ Fair play includes the following:
 
 {:include-quotebiblio:The Arc of History}
 
+{:include-quotebiblio:What we need for happiness}
+
 {:include-quotebiblio:We should always be fighting evil}
 
 {:include-quotebiblio:The power of stakeholder capitalism}
@@ -59,6 +63,8 @@ Fair play includes the following:
 {:include-quotebiblio:The eternal struggle for human rights}
 
 {:include-quotebiblio:Any love for justice}
+
+{:include-quotebiblio:No person in America should be too poor to live}
 
 ----
 
