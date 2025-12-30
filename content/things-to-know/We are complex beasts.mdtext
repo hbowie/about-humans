@@ -22,12 +22,15 @@ Timestamp: 20251002183509
 
 Date Added: 2025-10-02 11:35:09 -0700
 
-Date Modified: 2025-12-29 11:53:47 -0800
+Date Modified: 2025-12-30 12:49:48 -0800
 
+Inclusions: Always difficult decisions needing to be made
 Inclusions: Between Saturday night and Sunday morning
 Inclusions: Cinema was about revelation
+Inclusions: Do the Right Thing
 Inclusions: I'll take the big sordid dirty crooked city
 Inclusions: Life is not like formula fiction
+Inclusions: The sort of organisms that interpret and modify their agency
 Inclusions: We are idealists and we are realists
 
 Body:
@@ -50,9 +53,15 @@ But even though this journey of understanding may not be especially simple or st
 
 {:include-quotebiblio:Between Saturday night and Sunday morning}
 
+{:include-quotebiblio:Do the Right Thing}
+
+{:include-quotebiblio:The sort of organisms that interpret and modify their agency}
+
 {:include-quotebiblio:We are idealists and we are realists}
 
 {:include-quotebiblio:Life is not like formula fiction}
+
+{:include-quotebiblio:Always difficult decisions needing to be made}
 
 {:include-quotebiblio:Cinema was about revelation}
 

@@ -22,8 +22,10 @@ Timestamp: 20251002180845
 
 Date Added: 2025-10-02 11:08:45 -0700
 
-Date Modified: 2025-12-29 11:53:47 -0800
+Date Modified: 2025-12-30 10:51:30 -0800
 
+Inclusions: But above all, try something
+Inclusions: Complex Domain
 Inclusions: Knowledge is derived by observation, experimentation, and rational analysis
 Inclusions: One Test Result
 
@@ -39,8 +41,13 @@ Testing and experimentation are important elements of the [scientific method](ht
 
 {:include-quotebiblio:One Test Result}
 
+{:include-quotebiblio:But above all, try something}
+
 ----
 
 ##### Relevant Reference Models
 
 {:include-ref:Knowledge is derived by observation, experimentation, and rational analysis}
+
+{:include-ref:Complex Domain}
+
