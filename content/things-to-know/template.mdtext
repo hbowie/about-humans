@@ -16,7 +16,7 @@ Display Seq: <displayseq: XXX._>
 
 Level: <level: 1 - Book Title; 2 - Section; 3 - Topic; 4 - Subtopic; 5 - Detail; 6 - Subdetail; >
 
-Class: <class: application, author, back, biblio, cover, def, exclude, front, intro, model, model-element, quote, subtopic, text, text-section, title, title-page, topic, topic-with-image, work >
+Class: <class: application, author, back, biblio, cover, def, exclude, front, intro, model, model-element, post, quote, subtopic, text, text-section, title, title-page, topic, topic-with-image, work >
 
 Link: <link: x|s|s|x|x >
 
