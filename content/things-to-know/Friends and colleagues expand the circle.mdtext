@@ -8,8 +8,6 @@ AKA:    friends, social networks, camps, camp, village
 
 Topics Index: friends; social networks; Dunbar's number; camps; groups; villages; teams; 
 
-Names Index: Dunbar's number; Christakis, Nicholas; The Social Suite; Brooks, David; Dunbar, Robin; Wilson, David Sloan; 
-
 Seq:    7.7
 
 Display Seq: 50
@@ -22,13 +20,14 @@ Timestamp: 20251012213956
 
 Date Added: 2025-10-12 14:39:56 -0700
 
-Date Modified: 2026-01-06 13:47:37 -0800
+Date Modified: 2026-01-07 11:03:28 -0800
 
 Inclusions: Equals
 Inclusions: Friendship is a fundamental category
 Inclusions: Friendship - SS
 Inclusions: Life is more like settling a series of villages
 Inclusions: Small groups are a fundamental unit of human social organization
+Inclusions: Social Belonging Need
 Inclusions: Social networks - SS
 
 Body:
@@ -72,3 +71,5 @@ This organizational paradigm encourages loyalty to friends and colleagues, based
 {:include-ref:Friendship - SS}
 
 {:include-ref:Social networks - SS}
+
+{:include-ref:Social Belonging Need}

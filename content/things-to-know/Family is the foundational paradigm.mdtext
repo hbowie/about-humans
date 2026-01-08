@@ -8,8 +8,6 @@ AKA:    Family
 
 Topics Index: groups; family; love; values; stories; roles; specialization; culture; parenting; 
 
-Names Index: Christakis, Nicholas; The Social Suite; 
-
 Seq:    7.6
 
 Display Seq: 49
@@ -22,13 +20,14 @@ Timestamp: 20251012183432
 
 Date Added: 2025-10-12 11:34:32 -0700
 
-Date Modified: 2026-01-06 13:47:37 -0800
+Date Modified: 2026-01-07 11:01:03 -0800
 
 Inclusions: Increase nurturance thoughout the life span
 Inclusions: The institution of the family
 Inclusions: Love for family - SS
 Inclusions: Love is a distinctive human experience
 Inclusions: Quality of Children vs. Quantity
+Inclusions: Secure Structures Need
 
 Body:
 
@@ -65,3 +64,5 @@ Parents are the primary source of education and nurturance for their children, a
 ##### Relevant Reference Models
 
 {:include-ref:Love for family - SS}
+
+{:include-ref:Secure Structures Need}

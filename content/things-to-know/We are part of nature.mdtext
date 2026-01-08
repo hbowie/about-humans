@@ -8,8 +8,6 @@ AKA:    nature
 
 Topics Index: nature; evolution; science; 
 
-Names Index: Sagan, Carl; Druyan, Ann; Hesse, Herman; Humanist Manifesto III; Carson, Rachel; Durant, Will; 
-
 Seq:    1.1
 
 Display Seq: 1
@@ -22,13 +20,14 @@ Timestamp: 20250914211114
 
 Date Added: 2025-09-14 14:11:14 -0700
 
-Date Modified: 2026-01-06 13:47:37 -0800
+Date Modified: 2026-01-07 10:58:51 -0800
 
 Inclusions: All children of our Earth
 Inclusions: Chimps and Humans
 Inclusions: The conquest of nature
 Inclusions: History is a fragment of biology
 Inclusions: Humans are an integral part of nature
+Inclusions: Imminent Survival Need
 Inclusions: The Pulse of Nature
 
 Body:
@@ -60,3 +59,5 @@ Among other things, this means that we appear in our current form thanks to the 
 ##### Relevant Reference Models
 
 {:include-ref:Humans are an integral part of nature}
+
+{:include-ref:Imminent Survival Need}

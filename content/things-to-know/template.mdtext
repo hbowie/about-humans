@@ -6,8 +6,6 @@ AKA: <aka>
 
 Topics Index: <index>
 
-Names Index: <index>
-
 Tags: <tags>
 
 Seq: <seq: I.n.n.n.n.|I.|xn.|I.n.n|I.n.n.n.|I.n.n.n.n|I.n.n.n.n.n>
@@ -18,7 +16,7 @@ Level: <level: 1 - Book Title; 2 - Section; 3 - Topic; 4 - Subtopic; 5 - Detail;
 
 Class: <class: application, author, back, biblio, cover, def, exclude, front, intro, model, model-element, post, quote, subtopic, text, text-section, title, title-page, topic, topic-with-image, work >
 
-Link: <link: x|s|s|x|x >
+Link: <link: x|s|s|x|x>
 
 Image Name: <imagename>
 
@@ -28,7 +26,7 @@ Image Caption:
 
 Image Credit: 
 
-Image Credit Link: <link: x|s|s|x|x >
+Image Credit Link: <link: x|s|s|x|x>
 
 Attribution: <attribution>
 
