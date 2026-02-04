@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>About Humans: Humanism Defined</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="There is no single, universally accepted definition of the term humanism. 
+" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+</head>
+<body>
+
+<header class="nnk-header">
+<p><a href="important-things-to-know-about-humans.html" class="wiki-link">Important Things to Know About Humans</a> </p>
+
+</header>
+
+<nav class="nnk-nav">
+<ul>
+<li>
+<a href="table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li>
+<a href="index-of-topics.html" class="wiki-link">Topics</a> </li>
+<li>
+<a href="cited-authors.html" class="wiki-link">Names</a> </li>
+<li>
+<a href="random-thing-to-know.html" class="wiki-link">Random</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p><a href="back-matter.html" class="nav-link">Back Matter </a>&#160;&#8593;</p><h3 id="humanismdefined" style="clear:both">Humanism Defined</h3>
+<p>There is no single, universally accepted definition of the term <em>humanism</em>. </p>
+
+<p>Instead there are multiple useful sources that generally converge on some repeated elements. </p>
+
+<p>in the second table below I have tried to lay out the relevant <em>things to know</em> along with references to one or more of these sources, as identified in the first table below. Following the abbreviation for each source, I have identified the relevant element within that source (using added sequence numbering, where not already present). </p><table>
+<tr>
+<th>
+ Abbreviation </th>
+<th>
+ Source </th>
+ </tr>
+<tr>
+<td>
+ Bakewell </td>
+<td>
+ <em><a href="https://sarahbakewell.com/books-3/humanly-possible-700-years-of-humanist-freethinking-inquiry-and-hope/" class="ext-link" target="_blank" rel="noopener">Humanly Possible</a></em> </td>
+</tr>
+<tr>
+<td>
+ HM III </td>
+<td>
+ <a href="https://americanhumanist.org/what-is-humanism/manifesto3/" class="ext-link" target="_blank" rel="noopener">Humanist Manifesto III</a> </td>
+</tr>
+<tr>
+<td>
+ Aspects </td>
+<td>
+ <a href="https://humanists.international/what-is-humanism/" class="ext-link" target="_blank" rel="noopener">Aspects of Humanism</a> from Humanists International </td>
+</tr>
+</table>
+
+<p>Note that the first column contains an assigned sequence number based on appearance in sources. The second column contains the <em>About Humans</em> sequence number. You may click on a column heading to resort the table by that column. </p><script>
+function sortTable(tableID, n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  var firstElement = "";
+  var nextElement = "";
+  var firstLowered = "";
+  var nextLowered = "";
+  var firstNumber = 0;
+  var nextNumber = 0;
+  var firstValue = 0;
+  var nextValue = 0;
+  table = document.getElementById(tableID);
+  switching = true;
+  // Set the sorting direction to ascending:
+  dir = "asc";
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // Start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /* Loop through all table rows (except the
+    first, which contains table headers): */
+    for (i = 1; i < (rows.length - 1); i++) {
+      // Start by saying there should be no switching:
+      shouldSwitch = false;
+      /* Get the two elements you want to compare,
+      one from current row and one from the next: */
+      firstElement = rows[i].getElementsByTagName("TD")[n];
+      nextElement = rows[i + 1].getElementsByTagName("TD")[n];
+      firstLowered = firstElement.innerText.trim().toLowerCase();
+      nextLowered = nextElement.innerText.trim().toLowerCase();
+      firstNumber = Number(firstLowered);
+      nextNumber = Number(nextLowered);
+      if (isNaN(firstLowered) || isNaN(nextLowered)) {
+        x = firstLowered;
+        y = nextLowered;
+      } else {
+        x = firstNumber;
+        y = nextNumber;
+      }
+      
+      /* Check if the two rows should switch place,
+      based on the direction, asc or desc: */
+      if (dir == "asc") {
+        if (x > y) {
+          // If so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x < y) {
+          // If so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark that a switch has been done: */
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      // Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /* If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again. */
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<table id="humanism-elements">
+<tr>
+<th onclick="sortTable('humanism-elements',0)">
+ Hu # </th>
+<th onclick="sortTable('humanism-elements',1)">
+ AH # </th>
+<th onclick="sortTable('humanism-elements',2)">
+ Thing to Know </th>
+<th onclick="sortTable('humanism-elements',3)">
+ Humanism References </th>
+ </tr>
+<tr>
+<td>
+ 1 </td>
+<td>
+ 62 </td>
+<td>
+ <a href="we-feel-a-sense-of-shared-humanity.html" class="wiki-link">We feel a sense of shared humanity</a> </td>
+<td>
+ Bakewell - 1 </td>
+</tr>
+<tr>
+<td>
+ 2 </td>
+<td>
+ 11 </td>
+<td>
+ <a href="we-communicate-via-sophisticated-languages.html" class="wiki-link">We communicate via sophisticated languages</a> </td>
+<td>
+ Bakewell - 4 </td>
+</tr>
+<tr>
+<td>
+ 3 </td>
+<td>
+ 10 </td>
+<td>
+ <a href="we-observe-the-world-around-us.html" class="wiki-link">We observe the world around us</a> </td>
+<td>
+ HM III - 1.a <br />Aspects - 2.a </td>
+</tr>
+<tr>
+<td>
+ 4 </td>
+<td>
+ 23 </td>
+<td>
+ <a href="we-perform-tests.html" class="wiki-link">We perform tests</a> </td>
+<td>
+ HM III - 1.b <br />Aspects - 2.b </td>
+</tr>
+<tr>
+<td>
+ 5 </td>
+<td>
+ 30 </td>
+<td>
+ <a href="we-figure-things-out.html" class="wiki-link">We figure things out</a> </td>
+<td>
+ HM III - 1.c <br />Aspects - 2.c </td>
+</tr>
+<tr>
+<td>
+ 6 </td>
+<td>
+ 67 </td>
+<td>
+ <a href="we-use-critical-thinking-to-tackle-hard-problems.html" class="wiki-link">We use critical thinking to tackle hard problems</a> </td>
+<td>
+ Bakewell - 3 <br />HM III - 1.d <br />Aspects - 2.c </td>
+</tr>
+<tr>
+<td>
+ 7 </td>
+<td>
+ 31 </td>
+<td>
+ <a href="we-invent-new-things.html" class="wiki-link">We invent new things</a> </td>
+<td>
+ HM III - 1.e </td>
+</tr>
+<tr>
+<td>
+ 8 </td>
+<td>
+ 32 </td>
+<td>
+ <a href="we-improve-things.html" class="wiki-link">We improve things</a> </td>
+<td>
+ HM III - 1.f </td>
+</tr>
+<tr>
+<td>
+ 9 </td>
+<td>
+ 1 </td>
+<td>
+ <a href="we-are-part-of-nature.html" class="wiki-link">We are part of nature</a> </td>
+<td>
+ HM III - 2 <br />Aspects - 1.b </td>
+</tr>
+<tr>
+<td>
+ 10 </td>
+<td>
+ 70 </td>
+<td>
+ <a href="we-recognize-religions-as-human-constructs.html" class="wiki-link">We recognize religions as human constructs</a> </td>
+<td>
+ Aspects - 1.a </td>
+</tr>
+<tr>
+<td>
+ 11 </td>
+<td>
+ 14 </td>
+<td>
+ <a href="we-can-choose-to-help-or-hurt-one-another.html" class="wiki-link">We can choose to help or hurt one another</a> </td>
+<td>
+ Aspects - 5 </td>
+</tr>
+<tr>
+<td>
+ 12 </td>
+<td>
+ 66 </td>
+<td>
+ <a href="we-practice-and-expect-fair-play.html" class="wiki-link">We practice and expect fair play</a> </td>
+<td>
+ Bakewell - 4 <br />HM III - 3.a <br />Aspects - 4.b </td>
+</tr>
+<tr>
+<td>
+ 13 </td>
+<td>
+ 61 </td>
+<td>
+ <a href="we-cultivate-empathy.html" class="wiki-link">We cultivate empathy</a> </td>
+<td>
+ Aspects - 4.a </td>
+</tr>
+<tr>
+<td>
+ 14 </td>
+<td>
+ 9 </td>
+<td>
+ <a href="we-favor-individuation.html" class="wiki-link">We favor individuation</a> </td>
+<td>
+ Bakewell - 2 <br />HM III - 3.b </td>
+</tr>
+<tr>
+<td>
+ 15 </td>
+<td>
+ 37 </td>
+<td>
+ <a href="individuals-adapt-via-autonomy.html" class="wiki-link">Individuals adapt via autonomy</a> </td>
+<td>
+ HM III - 3.c </td>
+</tr>
+<tr>
+<td>
+ 16 </td>
+<td>
+ 29 </td>
+<td>
+ <a href="we-pursue-growth-and-development.html" class="wiki-link">We pursue growth and development</a> </td>
+<td>
+ HM III - 4.a </td>
+</tr>
+<tr>
+<td>
+ 17 </td>
+<td>
+ 15 </td>
+<td>
+ <a href="we-forge-identities-that-provide-meaning.html" class="wiki-link">We forge identities that provide meaning</a> </td>
+<td>
+ HM III - 4.b <br />Aspects - 3 </td>
+</tr>
+<tr>
+<td>
+ 18 </td>
+<td>
+ 21 </td>
+<td>
+ <a href="culture-provides-a-groups-operating-system.html" class="wiki-link">Culture provides a group&#8217;s operating system</a> </td>
+<td>
+ HM III - 4.d </td>
+</tr>
+<tr>
+<td>
+ 19 </td>
+<td>
+ 71 </td>
+<td>
+ <a href="first-and-last-there-is-wonder.html" class="wiki-link">First and last, there is wonder</a> </td>
+<td>
+ HM III - 4.c </td>
+</tr>
+<tr>
+<td>
+ 20 </td>
+<td>
+ 7 </td>
+<td>
+ <a href="we-live-in-cooperative-groups.html" class="wiki-link">We live in cooperative groups</a> </td>
+<td>
+ HM III - 5 </td>
+</tr>
+<tr>
+<td>
+ 21 </td>
+<td>
+ 36 </td>
+<td>
+ <a href="groups-adapt-via-cultural-change.html" class="wiki-link">Groups adapt via cultural change</a> </td>
+<td>
+ HM III - 6 <br />Aspects - 4.c </td>
+</tr>
+</table>
+
+
+<hr />
+<div>
+
+<p>Next: <a href="cited-authors.html" class="nav-link">Cited Authors </a></p></div>
+
+
+</main>
+
+<footer class="nnk-footer">
+<p>Copyright © 2026 by <a href="https://hbowie.net/about.html">Herb Bowie</a>, except where noted, and licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> </p>
+
+</footer>
+</body>
+</html>
