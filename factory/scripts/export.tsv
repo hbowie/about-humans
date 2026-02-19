@@ -10,7 +10,7 @@ sort	clear
 sort	add	ascending	Humanism Seq	
 sort	add	ascending	Seq	
 sort	set		params	
-template	open			#PATH#../templates/Humanism Defined Template.mdtext
+template	open			#PATH#../templates/Humanism Alignment Template.mdtext
 template	generate			
 input	set		xpltags	false
 input	set		dirdepth	1

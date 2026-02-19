@@ -1,0 +1,44 @@
+<?output "../../content/things-to-know/Alignment with Humanist Thought.mdtext"?>
+Title:  Alignment with Humanist Thought
+
+Topics Index: humanism; 
+
+Seq:    10.3
+
+Level:  3 - Topic
+
+Class:  back
+
+Body: 
+
+<!--
+REMINDER: This entire note is generated from a script, and it should not be modified directly. 
+--> 
+
+Although *Things to Know About Humans* is not intended as a defense of humanism, or an explanation of it, I judge the contents to be broadly consistent with the major strains of modern humanist thought.
+
+This page is an attempt to point out the major points of alignment between these *things to know* and the variously declared elements of modern humanism. 
+
+That being said, there is no single, universally accepted definition of the term *humanism*. 
+
+Instead there are multiple useful sources that generally converge on some repeated elements. 
+
+In the second table below I have tried to lay out the relevant *things to know* along with references to one or more of these sources, as identified in the first table below. Following the abbreviation for each source, I have identified the relevant element within that source (using added sequence numbering, where not already present). 
+
+| Abbreviation | Source |
+| ---- | ---- |
+| Bakewell | *[Humanly Possible](https://sarahbakewell.com/books-3/humanly-possible-700-years-of-humanist-freethinking-inquiry-and-hope/)* |
+| HM III | [Humanist Manifesto III](https://americanhumanist.org/what-is-humanism/manifesto3/) |
+| Aspects | [Aspects of Humanism](https://humanists.international/what-is-humanism/) from Humanists International |
+| DMH | [Declaration of Modern Humanism](https://humanists.international/policy/declaration-of-modern-humanism/) |
+
+Note that the first column contains an assigned sequence number based on appearance in sources. The second column contains the *About Humans* sequence number. You may click on a column heading to resort the table by that column.
+ 
+{:sort-table: humanism-elements}
+| Hu # | AH # | Thing to Know | Humanism References |
+| ---- | ---- | ---- |
+<?set count = 0?>
+<?nextrec?>
+<?set count += 1?>
+| =$count$= | =$display-seq$= | [[=$title$=]] | =$humanism-ref&-$= |
+<?loop?>

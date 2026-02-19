@@ -20,12 +20,13 @@ Timestamp: 20250918013320
 
 Date Added: 2025-09-17 18:33:20 -0700
 
-Date Modified: 2026-01-30 14:37:52 -0800
+Date Modified: 2026-02-12 10:49:42 -0800
 
 Inclusions: Autonomy - DRAMMA
 Inclusions: Autonomy - Drive
 Inclusions: Autonomy - SDT
 Inclusions: Be proactive
+Inclusions: The Dreyfus model of skill acquisition
 Inclusions: The Hero Instinct
 Inclusions: The largest and highest sphere
 Inclusions: Local Autonomy - CDP
@@ -40,7 +41,8 @@ Humanism Seq: 11
 
 Humanism Ref:
 
-HM III - 3.c
+HM III - 3.c <br />DMH - 1.b
+
 
 Body:
 
@@ -91,3 +93,5 @@ And it is generally this third means of adaptation that enables the second — a
 {:include-ref:Mild hierarchy - SS}
 
 {:include-ref:The Hero Instinct}
+
+{:include-ref:The Dreyfus model of skill acquisition}
