@@ -1,0 +1,25 @@
+Title:  Five Whys
+
+Seq:    10.5.7
+
+Level:  4 - Subtopic
+
+Class:  model
+
+Timestamp: 20260411195230
+
+Date Added: 2026-04-11 12:52:30 -0700
+
+Date Modified: 2026-04-11 13:01:22 -0700
+
+Referenced In: We use critical thinking to tackle hard problems
+
+Body:
+
+The Five Whys (or *5 Whys*) technique is the practice of asking *why* repeatedly when a problem is encountered in order to get beyond the obvious symptoms to discover deeper causation, and ideally perhaps, the "root cause". 
+
+This practice comes from the original Toyota implementation of what later became known as the lean discipline. 
+
+The Lean Enterprise Institute has a [good description of the practice](https://www.lean.org/lexicon-terms/5-whys/), including an example. Wikipedia also has a [page on the subject](https://en.wikipedia.org/wiki/Five_whys). 
+
+This is almost too simple to be included here as a reference model but I find that its simplicity is part of its usefulness. It's just a good reminder that, when you ask why something broke, or why something isn't working right, there is often a chain of causation and, if you simply stop with the first and most obvious answer, the problem will generally tend to recur. Five is of course an arbitrary number, but it's deep enough to encourage most people to keep going well beyond the obvious answers. 
