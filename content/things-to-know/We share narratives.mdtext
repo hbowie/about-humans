@@ -1,16 +1,14 @@
-Title:  We share stories
+Title:  We share narratives
 
 Tags:   art, stories
 
-Long Title: We share stories with one another.
-
-AKA:    stories
+Long Title: We share narratives with one another.
 
 Topics Index: stories; values; culture; heroes; 
 
 Seq:    3.5
 
-Display Seq: 25
+Display Seq: 24
 
 Level:  3 - Topic
 
@@ -18,32 +16,22 @@ Class:  text
 
 Timestamp: 20251009200921
 
-Date Added: 2025-10-09 13:09:21 -0700
+Date Added: 2025-10-09 14:09:21 -0600
 
-Date Modified: 2026-01-06 14:14:06 -0800
+Date Modified: 2026-10-15 12:30:01 -0600
 
 Inclusions: The dullness of fact
 Inclusions: The Enormous Extension of our Being
-Inclusions: The Hero Instinct
-Inclusions: Unbelievable Heroes
 Inclusions: We are writing myths
 Inclusions: The world is failing precisely because
 
 Body:
 
-Humans share stories with each other. 
+Humans share [[narratives]] with each other. 
 
-These can be quite simple tales, or very complex narratives. 
+These can be quite simple tales, or very complex stories. 
 
 And stories can be told and recorded using a variety of media. 
-
-A story generally includes the following elements:
-
-+ Setting;
-+ Situation;
-+ Character;
-+ Actions;
-+ Consequences. 
 
 Stories often embody a group's [[values]], and form important elements of their [[cultures]]. 
 
@@ -63,14 +51,6 @@ Stories, however, have their limits, and some necessary forms of wisdom are diff
 
 {:include-quotebiblio:The Enormous Extension of our Being}
 
-{:include-quotebiblio:Unbelievable Heroes}
-
 {:include-quotebiblio:We are writing myths}
 
 {:include-quotebiblio:The world is failing precisely because}
-
-----
-
-##### Relevant Reference Models
-
-{:include-ref:The Hero Instinct}

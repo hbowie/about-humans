@@ -10,7 +10,7 @@ Topics Index: groups; culture; norms;
 
 Seq:    3.1
 
-Display Seq: 21
+Display Seq: 20
 
 Level:  3 - Topic
 
@@ -18,10 +18,11 @@ Class:  text
 
 Timestamp: 20250916183827
 
-Date Added: 2025-09-16 11:38:27 -0700
+Date Added: 2025-09-16 12:38:27 -0600
 
-Date Modified: 2026-01-30 14:11:54 -0800
+Date Modified: 2026-10-15 12:30:01 -0600
 
+Inclusions: Culture became cumulative
 Inclusions: No single natural way of life for Sapiens
 Inclusions: A vast repository of information learned and passed down from previous generations
 
@@ -30,6 +31,7 @@ Humanism Seq: 13
 Humanism Ref:
 
 HM III - 4.d
+
 
 Body:
 
@@ -43,7 +45,7 @@ Well, unlike other sorts of groups formed by other species, such rules are not h
 
 Instead each group has some sort of culture that functions as a sort of operating system for the group. 
 
-A group's culture includes knowledge, customs, languages, technology and artifacts that are shared between group members, and passed on from one generation of members to the next.
+A group's culture includes knowledge, customs, languages, technology, [[narratives]] and artifacts that are shared between group members, and passed on from one generation of members to the next.
 
 And these group cultures are malleable, and can be developed and improved over time. 
 
@@ -54,3 +56,5 @@ And these group cultures are malleable, and can be developed and improved over t
 {:include-quotebiblio:No single natural way of life for Sapiens}
 
 {:include-quotebiblio:A vast repository of information learned and passed down from previous generations}
+
+{:include-quotebiblio:Culture became cumulative}

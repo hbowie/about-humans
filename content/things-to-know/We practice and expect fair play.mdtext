@@ -8,9 +8,9 @@ AKA:    fair play
 
 Topics Index: fair play; truth-telling; rewards; ethics; 
 
-Seq:    8.8
+Seq:    10.10
 
-Display Seq: 66
+Display Seq: 73
 
 Level:  3 - Topic
 
@@ -18,26 +18,28 @@ Class:  text
 
 Timestamp: 20251014184553
 
-Date Added: 2025-10-14 11:45:53 -0700
+Date Added: 2025-10-14 12:45:53 -0600
 
-Date Modified: 2026-01-30 16:53:37 -0800
+Date Modified: 2026-10-15 12:30:01 -0600
 
 Inclusions: Any love for justice
 Inclusions: The Arc of History
 Inclusions: Core Design Principles for the Efficacy of Groups
 Inclusions: The eternal struggle for human rights
-Inclusions: The Four-Way Test
+Inclusions: Is it FAIR to all concerned?
 Inclusions: No person in America should be too poor to live
 Inclusions: The power of stakeholder capitalism
 Inclusions: Think win-win
 Inclusions: We should always be fighting evil
 Inclusions: What we need for happiness
+Inclusions: Will it be BENEFICIAL to all concerned?
 
 Humanism Seq: 9
 
 Humanism Ref:
 
 Bakewell - 4 <br />HM III - 3.a <br />Aspects - 4.b
+
 
 Body:
 
@@ -78,6 +80,8 @@ Fair play includes the following:
 
 + elements 2 – 6
 
-{:include-ref:The Four-Way Test}
+{:include-ref:Is it FAIR to all concerned?}
+
+{:include-ref:Will it be BENEFICIAL to all concerned?}
 
 {:include-ref:Think win-win}

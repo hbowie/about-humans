@@ -8,9 +8,9 @@ AKA:    things we have made
 
 Topics Index: making; value creation; heroes; work; 
 
-Seq:    1.12
+Seq:    1.13
 
-Display Seq: 12
+Display Seq: 13
 
 Level:  3 - Topic
 
@@ -18,16 +18,18 @@ Class:  text
 
 Timestamp: 20251023225943
 
-Date Added: 2025-10-23 15:59:43 -0700
+Date Added: 2025-10-23 16:59:43 -0600
 
-Date Modified: 2026-02-06 12:49:11 -0800
+Date Modified: 2026-10-15 12:30:01 -0600
 
+Inclusions: Act for Flourishing
 Inclusions: Every economic system must rely upon some form of the profit motive
 Inclusions: The Hero Instinct
 Inclusions: Labor is the Superior of Capital
 Inclusions: The Makers of Things
 Inclusions: Only Two Sources of Real Wealth
 Inclusions: Work, Soul and Life
+Inclusions: The Wreckers Against The Builders
 Inclusions: You have to create more than you consume
 
 Humanism Seq: 25
@@ -35,6 +37,7 @@ Humanism Seq: 25
 Humanism Ref:
 
 DMH - 1.d
+
 
 Body:
 
@@ -66,8 +69,12 @@ In other words, we each make a profit from our labors, ending up with more than 
 
 {:include-quotebiblio:Only Two Sources of Real Wealth}
 
+{:include-quotebiblio:The Wreckers Against The Builders}
+
 ----
 
 ##### Relevant Reference Models
 
 {:include-ref:The Hero Instinct}
+
+{:include-ref:Act for Flourishing}

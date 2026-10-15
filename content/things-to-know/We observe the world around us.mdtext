@@ -6,9 +6,9 @@ AKA:    observations
 
 Topics Index: observation; 
 
-Seq:    1.10
+Seq:    1.11
 
-Display Seq: 10
+Display Seq: 11
 
 Level:  3 - Topic
 
@@ -16,11 +16,12 @@ Class:  text
 
 Timestamp: 20251229012637
 
-Date Added: 2025-12-28 17:26:37 -0800
+Date Added: 2025-12-28 18:26:37 -0700
 
-Date Modified: 2026-02-06 12:48:13 -0800
+Date Modified: 2026-10-15 12:30:01 -0600
 
 Inclusions: Everyone is entitled to his own opinion, but not his own facts
+Inclusions: Is it the TRUTH?
 Inclusions: Knowledge is derived by observation, experimentation, and rational analysis
 
 Humanism Seq: 2
@@ -50,3 +51,5 @@ And these observations are key to [[figure things out|figuring things out]].
 ##### Relevant Reference Models
 
 {:include-ref:Knowledge is derived by observation, experimentation, and rational analysis}
+
+{:include-ref:Is it the TRUTH?}

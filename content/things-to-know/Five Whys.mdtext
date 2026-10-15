@@ -1,6 +1,6 @@
 Title:  Five Whys
 
-Seq:    10.5.7
+Seq:    12.5.7
 
 Level:  4 - Subtopic
 
@@ -8,9 +8,9 @@ Class:  model
 
 Timestamp: 20260411195230
 
-Date Added: 2026-04-11 12:52:30 -0700
+Date Added: 2026-04-11 13:52:30 -0600
 
-Date Modified: 2026-04-11 13:01:22 -0700
+Date Modified: 2026-10-15 12:27:07 -0600
 
 Referenced In: We use critical thinking to tackle hard problems
 
@@ -22,4 +22,4 @@ This practice comes from the original Toyota implementation of what later became
 
 The Lean Enterprise Institute has a [good description of the practice](https://www.lean.org/lexicon-terms/5-whys/), including an example. Wikipedia also has a [page on the subject](https://en.wikipedia.org/wiki/Five_whys). 
 
-This is almost too simple to be included here as a reference model but I find that its simplicity is part of its usefulness. It's just a good reminder that, when you ask why something broke, or why something isn't working right, there is often a chain of causation and, if you simply stop with the first and most obvious answer, the problem will generally tend to recur. Five is of course an arbitrary number, but it's deep enough to encourage most people to keep going well beyond the obvious answers. 
+This is almost too simple to be included here as a reference model but I find that its simplicity is part of its usefulness. It's just a good reminder that, when you ask why something broke, or why something isn't working right, there is often a chain of causation and, if you simply stop with the first and most obvious answer, the problem will generally tend to recur. Five is of course an arbitrary number, but it's deep enough to encourage most people to keep going well beyond the obvious answers.

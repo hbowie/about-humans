@@ -4,9 +4,9 @@ Long Title: We recognize the need for balance.
 
 Topics Index: balance; 
 
-Seq:    8.6
+Seq:    10.8
 
-Display Seq: 64
+Display Seq: 71
 
 Level:  3 - Topic
 
@@ -14,10 +14,12 @@ Class:  text
 
 Timestamp: 20251201230026
 
-Date Added: 2025-12-01 15:00:26 -0800
+Date Added: 2025-12-01 16:00:26 -0700
 
-Date Modified: 2026-01-06 13:47:37 -0800
+Date Modified: 2026-10-15 12:30:01 -0600
 
+Inclusions: Everyone is Right
+Inclusions: The Four Quadrants
 Inclusions: Skepticism and Openness
 
 Body:
@@ -36,3 +38,11 @@ We are constantly observing, learning, comparing notes, evaluating and seeking t
 ##### Words from Others on this Topic
 
 {:include-quotebiblio:Skepticism and Openness}
+
+----
+
+##### Relevant Reference Models
+
+{:include-ref:Everyone is Right}
+
+{:include-ref:The Four Quadrants}

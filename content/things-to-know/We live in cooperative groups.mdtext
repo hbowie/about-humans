@@ -18,9 +18,9 @@ Class:  text
 
 Timestamp: 20250916173418
 
-Date Added: 2025-09-16 10:34:18 -0700
+Date Added: 2025-09-16 11:34:18 -0600
 
-Date Modified: 2026-01-30 14:38:48 -0800
+Date Modified: 2026-10-15 12:30:01 -0600
 
 Inclusions: Affiliation - DRAMMA
 Inclusions: A beast or a god
@@ -34,12 +34,14 @@ Inclusions: Societies are not merely statistical aggregations
 Inclusions: Synergize
 Inclusions: The Team, The Team, The Team
 Inclusions: We are innately equipped to cooperate
+Inclusions: Will it build GOODWILL and FRIENDSHIP?
 
 Humanism Seq: 15
 
 Humanism Ref:
 
 HM III - 5
+
 
 Body:
 
@@ -94,3 +96,5 @@ Even when there is no one else around, and we are enjoying a quiet moment to our
 {:include-ref:Synergize}
 
 {:include-ref:Humans are social by nature}
+
+{:include-ref:Will it build GOODWILL and FRIENDSHIP?}

@@ -8,7 +8,7 @@ Topics Index: improvement;
 
 Seq:    4.7
 
-Display Seq: 32
+Display Seq: 31
 
 Level:  3 - Topic
 
@@ -16,12 +16,14 @@ Class:  text
 
 Timestamp: 20251117213129
 
-Date Added: 2025-11-17 13:31:29 -0800
+Date Added: 2025-11-17 14:31:29 -0700
 
-Date Modified: 2026-01-30 14:36:15 -0800
+Date Modified: 2026-10-15 12:30:01 -0600
 
+Inclusions: Act for Flourishing
 Inclusions: Push outward
 Inclusions: Things must be loved first and improved afterwards
+Inclusions: A Working Simple System
 
 Humanism Seq: 7
 
@@ -46,3 +48,11 @@ We strive to improve our culture, including our values, our technology, our know
 {:include-quotebiblio:Things must be loved first and improved afterwards}
 
 {:include-quotebiblio:Push outward}
+
+{:include-quotebiblio:A Working Simple System}
+
+----
+
+##### Relevant Reference Models
+
+{:include-ref:Act for Flourishing}
